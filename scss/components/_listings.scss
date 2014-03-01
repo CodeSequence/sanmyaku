@@ -1,0 +1,34 @@
+//
+// # Listings
+//
+// No styleguide reference.
+
+// Dependencies
+// -----------------------------------------------------------------------------
+@import "type";
+
+// -----------------------------------------------------------------------------
+
+// ## Lists
+
+.DataList {
+  margin: 0 0 $hr-margin;
+  list-style: none;
+
+  .Item {
+    padding: $hr-margin 0;
+    border-color: $hr-border-color;
+    border-style: $hr-border-style;
+    border-width: $hr-border-width 0;
+
+    + .Item {
+      border-top-width: 0;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+// ## Tables
+
+.DataTable {}

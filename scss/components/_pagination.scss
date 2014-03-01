@@ -1,0 +1,103 @@
+//
+// # Pagination
+//
+// Pagination is a type of navigation that lets users tap through a series of
+// related pages. Moving between pages has become less common with the advent
+// of longer pages and AJAX loading, but if you need pagination, Foundation has
+// you covered.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-nav-classes: $include-html-classes;
+
+// We use these to control the pagination container
+// $pagination-height: rem-calc(24);
+// $pagination-margin: rem-calc(-5);
+
+// We use these to set the list-item properties
+// $pagination-li-float: $default-float;
+// $pagination-li-height: rem-calc(24);
+// $pagination-li-font-color: #222;
+// $pagination-li-font-size: rem-calc(14);
+// $pagination-li-margin: rem-calc(5);
+
+// We use these for the pagination anchor links
+// $pagination-link-pad: rem-calc(1 10 1);
+// $pagination-link-font-color: #999;
+// $pagination-link-active-bg: scale-color(#fff, $lightness: -10%);
+
+// We use these for disabled anchor links
+// $pagination-link-unavailable-cursor: default;
+// $pagination-link-unavailable-font-color: #999;
+// $pagination-link-unavailable-bg-active: transparent;
+
+// We use these for currently selected anchor links
+// $pagination-link-current-background: $primary-color;
+// $pagination-link-current-font-color: #fff;
+// $pagination-link-current-font-weight: bold;
+// $pagination-link-current-cursor: default;
+// $pagination-link-current-active-bg: $primary-color;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/components/pagination";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-pagination") {
+
+  .Pager {
+    display: block;
+    float: right;
+    height: $pagination-height;
+    margin-#{$default-float}: $pagination-margin;
+    margin-bottom: $paragraph-margin-bottom;
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+
+    > a,
+    > span {
+      display: block;
+      float: $pagination-li-float;
+      height: $pagination-li-height;
+      padding: $pagination-link-pad;
+      margin-#{$default-float}: $pagination-li-margin;
+      font-size: $pagination-li-font-size;
+    }
+
+    > a {
+      color: $pagination-link-font-color;
+      @include radius($global-radius);
+
+      &:hover,
+      a:focus {
+        background: $pagination-link-active-bg;
+      }
+    }
+
+    > span {
+      cursor: $pagination-link-unavailable-cursor;
+      color: $pagination-link-unavailable-font-color;
+    }
+
+    .Highlight {
+      font-weight: $pagination-link-current-font-weight;
+      color: $pagination-link-current-font-color;
+      cursor: $pagination-link-current-cursor;
+      background: $pagination-link-current-background;
+
+      &:hover,
+      &:focus {
+        background: $pagination-link-current-active-bg;
+      }
+    }
+  }
+
+  .PageControls {
+    @include clearfix;
+  }
+
+}

@@ -1,0 +1,53 @@
+//
+// # Grid
+//
+// Create powerful multi-device layouts quickly and easily with the default
+// 12-column, nest-able Foundation grid. If you're familiar with grid systems,
+// you'll feel right at home. If not, you'll learn quickly.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-grid-classes: $include-html-classes;
+// $include-xl-html-grid-classes: false;
+
+// $row-width: rem-calc(1000);
+// $column-gutter: rem-calc(30);
+// $total-columns: 12;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/components/grid";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-grid") {
+
+  .row {
+    @include grid-row;
+
+    .row {
+      @include grid-row($behavior: nest);
+    }
+  }
+
+  .page-content,
+  .page-sidebar {
+    @include grid-column(12);
+  }
+
+  .page-content {
+    @media #{$medium-up} {
+      @include grid-column(9);
+    }
+  }
+
+  .page-sidebar {
+    @media #{$medium-up} {
+      @include grid-column(3);
+    }
+  }
+
+}

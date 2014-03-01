@@ -1,0 +1,7 @@
+{
+  "name": "vanilla-foundation",
+  "private": true,
+  "dependencies": {
+    "foundation": "5.1.1"
+  }
+}

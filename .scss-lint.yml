@@ -1,0 +1,8 @@
+linters:
+  CapitalizationInSelector:
+    enabled: false
+  SortedProperties:
+    enabled: false
+  StringQuotes:
+    enabled: true
+    style: double_quotes

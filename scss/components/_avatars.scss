@@ -1,0 +1,32 @@
+//
+// # Avatars
+//
+// Avatars are used throughout Vanilla to identify users whenever they post
+// discussions, write comments, share things on their walls, earn badges, and
+// much, much more.
+//
+// This partial sets up a baseline size for profile photos (base line-height in
+// pixels, multipled by 2) and nothing more.
+//
+// No styleguide reference.
+
+// Dependencies
+// -----------------------------------------------------------------------------
+@import "type";
+
+// Variables
+// -----------------------------------------------------------------------------
+
+$profile-photo-default-size: floor($rem-base * $paragraph-line-height) * 2 !default;
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-avatars") {
+
+  .ProfilePhoto,
+  .ProfilePhotoMedium {
+    width: $profile-photo-default-size;
+    height: $profile-photo-default-size;
+  }
+
+}
