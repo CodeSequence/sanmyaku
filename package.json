@@ -1,7 +1,7 @@
 {
   "name": "vanilla-foundation",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "gulp": "3.5.x",
     "gulp-util": "2.2.x",
     "gulp-sass": "0.6.x",
