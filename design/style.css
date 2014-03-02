@@ -3572,6 +3572,10 @@ select {
     .DataList .Item + .Item {
       border-top-width: 0; }
 
+.DataList.ActivityComments {
+  padding-left: 50px;
+  margin: 1.25rem 0 0 1em; }
+
 
 [data-magellan-expedition] {
   background: #fff;
