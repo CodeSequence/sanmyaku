@@ -25,17 +25,10 @@
 
 @include exports("vanilla-grid") {
 
-  .row {
-    @include grid-row;
-
-    .row {
-      @include grid-row($behavior: nest);
-    }
-  }
-
   .page-content,
   .page-sidebar {
     @include grid-column(12);
+    margin: $column-gutter 0;
   }
 
   .page-content {

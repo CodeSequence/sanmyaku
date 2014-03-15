@@ -3157,38 +3157,12 @@ label.error {
 select {
   margin-bottom: 0; }
 
-.row {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1; }
-  .row:before, .row:after {
-    content: " ";
-    display: table; }
-  .row:after {
-    clear: both; }
-  .row .row {
-    width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1; }
-    .row .row:before, .row .row:after {
-      content: " ";
-      display: table; }
-    .row .row:after {
-      clear: both; }
-
 .page-content, .page-sidebar {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
-  float: left; }
+  float: left;
+  margin: 1.875rem 0; }
 
 @media only screen and (min-width:40.063em) {
   .page-content {

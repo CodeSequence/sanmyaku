@@ -21,11 +21,9 @@ gulp.task('watch', function () {
 
 gulp.task('scripts', function () {
   gulp.src([
-    'bower_components/foundation/js/foundation/foundation.js',
-    'bower_components/foundation/js/foundation/foundation.dropdown.js',
-    'bower_components/foundation/js/foundation/foundation.topbar.js',
-
-    'js/foundation.init.js'
+    'bower_components/foundation/js/foundation/foundation.js'
+  , 'bower_components/foundation/js/foundation/foundation.dropdown.js'
+  , 'bower_components/foundation/js/foundation/foundation.topbar.js'
   ])
     .pipe(uglify())
     .pipe(concat('custom.js'))

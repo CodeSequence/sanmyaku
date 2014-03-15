@@ -59,5 +59,7 @@
 
     {event name="AfterBody"}
 
+    <!-- Initialize Foundation -->
+    <script>jQuery(document).foundation();</script>
   </body>
 </html>
