@@ -1,6 +1,6 @@
 # Foundation for Vanilla
 
-[![GitHub version](https://badge.fury.io/gh/kasperisager%2Fvanilla-foundation.png)](http://badge.fury.io/gh/kasperisager%2Fvanilla-foundation) [![Dependency Status](https://gemnasium.com/kasperisager/vanilla-foundation.png)](https://gemnasium.com/kasperisager/vanilla-foundation)
+[![Release](http://img.shields.io/github/release/kasperisager/vanilla-foundation.svg)](https://github.com/kasperisager/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/kasperisager/vanilla-foundation.svg)](https://gemnasium.com/kasperisager/vanilla-foundation)
 
 ## Getting started
 
