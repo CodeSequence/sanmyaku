@@ -57,6 +57,7 @@
       </div>
     </main>
 
+    {asset name="Foot"}
     {event name="AfterBody"}
 
     <!-- Initialize Foundation -->
