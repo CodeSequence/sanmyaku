@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Quicksand:400,700|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
   {asset name="Head"}
 </head>
 <body id="{$BodyID}" class="{$BodyClass}">
