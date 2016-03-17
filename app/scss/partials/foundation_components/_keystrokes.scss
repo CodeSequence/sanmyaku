@@ -1,0 +1,43 @@
+//
+// # Keystrokes
+//
+// If you have keyboard affordances, you might need to explain them to users.
+// For example, to quit your browser hit Cmd + Q. (Don't actually type that now
+// - there are more docs to read.) Keystroke is Foundation's simple character
+// affordance tool.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-type-classes: $include-html-classes;
+
+// We use these to control text styles.
+// $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
+// $keystroke-font-size: rem-calc(14);
+// $keystroke-font-color: #222;
+// $keystroke-font-color-alt: #fff;
+// $keystroke-function-factor: -7%;
+
+// We use this to control keystroke padding.
+// $keystroke-padding: rem-calc(2 4 0);
+
+// We use these to control background and border styles.
+// $keystroke-bg: scale-color(#fff, $lightness: $keystroke-function-factor);
+// $keystroke-border-style: solid;
+// $keystroke-border-width: 1px;
+// $keystroke-border-color: scale-color($keystroke-bg, $lightness: $keystroke-function-factor);
+// $keystroke-radius: $global-radius;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/keystrokes";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-keystrokes") {
+
+  // Nothing to see here... yet!
+
+}

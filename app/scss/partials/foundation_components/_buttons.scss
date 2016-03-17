@@ -1,0 +1,249 @@
+//
+// # Buttons
+//
+// Buttons are convenient tools when you need more traditional actions. To that
+// end, Foundation has many easy to use button styles that you can customize or
+// override to fit your needs.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+
+
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/buttons";
+// -----------------------------------------------------------------------------
+
+// Not sure what this export wrapper does but leave it
+@include exports("vanilla-buttons") {
+
+// Start Custom styles //////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+
+// Make vanilla buttons act like foundation buttons
+.Button {
+  @include button;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.Button.BigButton {
+  @include button-size($full-width: true);
+}
+
+%btn{
+  box-sizing: border-box;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-radius: rem-calc(4);
+  text-shadow: none;
+  box-shadow: none;
+  margin-top: rem-calc(20);
+  font-weight: 300;
+  font-size: rem-calc(14);
+  padding: rem-calc(4 20 6);
+  font-family: $industry-book;
+  line-height: rem-calc(22);
+}
+
+// Our own styles applied to the new-discussion button
+.Button.NewDiscussion,
+.BigButton.NewConversation,
+.BigButton.Popup,
+.BigButton.ClearConversation{
+  @extend %btn;
+  line-height: rem-calc(34);
+	margin: rem-calc(30);
+	width: calc(100% - #{rem-calc(60)});
+}
+
+.Button.SignInPopup,
+.Button.ApplyButton{
+  @extend %btn;
+  margin: 0;
+  &.ApplyButton{
+    margin-left: rem-calc(15);
+  }
+}
+
+// General Button Styling
+.DataListWrap,
+.FormWrapper,
+.AddPeople,
+.Popup{
+  .Buttons{
+    text-align: left;
+    .Button{
+      @extend %btn;
+      margin-top: 0;
+    }
+  }
+}
+
+// Sidebar Hack for missing button container
+body.Section-ConversationList.inbox{
+  .page-sidebar{
+    padding: 0;
+    border-radius: rem-calc(3);
+    @media #{$large-up}{
+      margin-left: rem-calc(30);
+      width: rem-calc(300);
+    }
+    @media #{$xlarge-up}{
+      margin-left: rem-calc(45);
+    }
+    .is-content{
+      margin: 0;
+      box-shadow: none;
+      padding: rem-calc(30 0);
+    }
+  }
+}
+
+// FormWrapper Buttons
+.FormWrapper{
+  .Buttons{
+    display: flex;
+    a.SignInPopup.Stash{
+      align-self: flex-start;
+      margin-right: auto;
+    }
+    .Button{
+      height: rem-calc(40);
+      @media #{$small-only}{
+        width: 100%;
+        margin: rem-calc(5 0);
+      }
+      @media #{$medium-up}{
+        &.DiscussionButton, &.CommentButton{
+          display: flex;
+          align-self: space-between;
+          margin-right: auto;
+        }
+        &.PreviewButton, &.WriteButton{
+          margin: rem-calc(0 10);
+        }
+      }
+    }
+    .Back{
+      display: block;
+      margin-bottom: rem-calc(30);
+      width: 100%;
+      a{
+        padding-bottom: rem-calc(3);
+        font-size: rem-calc(15);
+        line-height: rem-calc(22);
+        border-bottom: 1px solid transparent;
+      }
+      span{
+        padding: rem-calc(0 5);
+      }
+    }
+  }
+}
+
+// Section Discussion Buttons
+.Section-Discussion{
+  .FormWrapper{
+    .Buttons{
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// Align Buttons
+.Activity{
+  .CommentForm .Buttons{
+    text-align: left;
+  }
+}
+
+// Activity Comment Form Button
+.Activity{
+  .CommentForm{
+    .Buttons{
+      justify-content: flex-start;
+      .Button{
+        @extend %btn;
+        &:hover{
+          border: 2px solid;
+        }
+      }
+    }
+  }
+}
+
+// User Profile & signin view buttons
+.Profile.Section-EditProfile, .signin{
+  .Buttons{
+    margin-left: rem-calc(25);
+  }
+  .Buttons, p{
+    .Button{
+      @extend %btn;
+    }
+  }
+}
+
+.GuestBox{
+  .P .Primary{
+    @extend %btn;
+  }
+}
+
+// Profile Ignore Button
+.Profile.ignore{
+  .IgnoreUserAction{
+    .Ignore{
+      @extend %btn;
+    }
+  }
+}
+
+// Discussion Polls Buttons
+#DP_NextQuestion, #DP_AddOption{
+  @extend %btn;
+}
+#DP_AddOption{
+  margin-left: rem-calc(15);
+}
+.DP_AnswerForm{
+  .Buttons{
+    .Button{
+      @extend %btn;
+    }
+  }
+}
+
+// Admin Sign In
+#Form_User_SignIn{
+  .Buttons .Button{
+    @extend %btn;
+  }
+}
+
+// Js Connect Button
+.connect .Connect{
+  .ButtonContainer .Button{
+    @extend %btn;
+  }
+}
+
+// Sign in Js Connect buttons
+.signin .MultipleEntryMethods{
+  .Button{
+    @extend %btn;
+  }
+}
+
+// End Custom styles ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+}

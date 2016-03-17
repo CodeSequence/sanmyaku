@@ -1,0 +1,23 @@
+// _new-message.scss - partials/custom_components
+// Styles the New Message View
+////////////////////////////////////////////////////////////////////
+
+
+.Section-PostConversation{
+  .FormWrapper{
+    padding: 0;
+  }
+  .P{
+    label{
+      font-size: rem-calc(13);
+      padding-bottom: rem-calc(5);
+    }
+    .editor-help-text{
+      font-size: rem-calc(13);
+    }
+  }
+  .Buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+}

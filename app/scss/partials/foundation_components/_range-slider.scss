@@ -1,0 +1,53 @@
+//
+// # Range Slider
+//
+// This handy slider will allow you to drag a handle to select a specific value
+// from a range.
+//
+// Deprecated: Range sliders have been deprecated in Foundation 5 and will be
+// removed in the future.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-range-slider-classes: $include-html-classes;
+
+// These variabels define the slider bar styles
+// $range-slider-bar-width: 100%;
+// $range-slider-bar-height: rem-calc(16);
+
+// $range-slider-bar-border-width: 1px;
+// $range-slider-bar-border-style: solid;
+// $range-slider-bar-border-color: #ddd;
+// $range-slider-radius: $global-radius;
+// $range-slider-bar-bg-color: #fafafa;
+
+// Vertical bar styles
+// $range-slider-vertical-bar-width: rem-calc(16);
+// $range-slider-vertical-bar-height: rem-calc(200);
+
+// These variabels define the slider handle styles
+// $range-slider-handle-width: rem-calc(32);
+// $range-slider-handle-height: $range-slider-handle-width;
+// $range-slider-handle-margin-top: rem-calc(-10);
+// $range-slider-handle-bg-color: $primary-color;
+// $range-slider-handle-border-width: 1px;
+// $range-slider-handle-border-style: solid;
+// $range-slider-handle-border-color: scale-color($range-slider-handle-bg-color, $lightness: -10%);
+// $range-slider-handle-radius: $global-radius;
+// $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
+// $range-slider-handle-cursor: pointer;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/range-slider";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-range-slider") {
+
+  // Nothing to see here... yet!
+
+}

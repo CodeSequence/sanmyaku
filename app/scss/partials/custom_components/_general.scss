@@ -1,0 +1,24 @@
+// _general.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Old Post Warning Message
+#OldPosts{
+	border-radius: rem-calc(4);
+	input[type=checkbox]{
+		margin-top: rem-calc(2);
+	}
+}
+
+// Fix width for flyout options menu
+.FlyoutMenu, .MenuItems{
+	min-width: rem-calc(145);
+}
+
+.Note.SignInOrRegister{
+	padding-bottom: rem-calc(25);
+	a{
+		padding-bottom: rem-calc(3);
+		border-bottom: 1px solid transparent;
+	}
+}

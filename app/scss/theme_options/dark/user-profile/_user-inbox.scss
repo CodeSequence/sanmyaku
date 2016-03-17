@@ -1,0 +1,76 @@
+// _user-inbox.scss - theme-options/dark
+//////////////////////////////////////////////////////////////////////
+
+
+// User Inbox
+.Conversation{
+  .Excerpt{
+    a{
+      color: $silver-sand;
+    }
+  }
+  .Meta{
+    span{
+      color: $dark-gray;
+    }
+  }
+}
+
+// Users Title
+body.inbox{
+  .DataListWrap{
+    .Users > a{
+      &:hover{
+        border-color: $sunglow;
+      }
+    }
+  }
+}
+
+// User Inbox Messages
+body.Section-Conversation{
+  .H{
+    a{
+      @extend %link;
+    }
+  }
+  .Conversation{
+    .Meta{
+      .Name{
+        @extend %link;
+      }
+    }
+    .Message{
+      color: $silver-sand;
+    }
+  }
+  .FormWrapper{
+    .Button{
+      @extend %yellow-btn;
+    }
+  }
+  .page-sidebar{
+    .Box{
+      h4{
+        color: $silver-sand;
+      }
+      &.InThisConversation{
+        .PanelInfo{
+          .Username{
+            color: $silver-sand;
+          }
+          a:hover .Username{
+            color: $white;
+          }
+        }
+      }
+      &.AddPeople{
+        .Buttons{
+          .Button{
+            border-color: $daisy;
+          }
+        }
+      }
+    }
+  }
+}

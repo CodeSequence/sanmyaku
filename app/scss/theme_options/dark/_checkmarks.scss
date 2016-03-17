@@ -1,0 +1,16 @@
+// _checkmarks.scss - theme-options/dark
+///////////////////////////////////////////////////////////////////////////////
+
+
+input[type=checkbox]{
+  border-color: $dove-gray;
+  &:hover{
+    border-color: $sunglow-dark;
+  }
+  &:checked{
+    background: $sunglow-dark;
+  }
+  &:checked:after{
+    border-color: $lightblack;
+  }
+}

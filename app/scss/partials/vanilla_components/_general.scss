@@ -1,0 +1,195 @@
+//
+// # Discussion
+//
+// Basic discussion item styling.
+//
+// No styleguide reference.
+
+
+@include exports("vanilla-discussion") {
+
+  // Page Titles
+  .is-content{
+    h1{
+      font-size: rem-calc(24);
+      line-height: rem-calc(34);
+      padding: rem-calc(15 25);
+      margin: 0;
+      &.H {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  // Fix spacing for official posts bg
+  .ItemDiscussion{
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Link Tags
+  a{
+    transition: all .3s ease;
+  }
+
+  // Style Empty class styles
+  .Empty{
+    margin: rem-calc(10 25);
+    padding-bottom: rem-calc(20);
+    line-height: rem-calc(22);
+  }
+
+  // Page Description styles
+  .PageDescription{
+    margin: rem-calc(5 25);
+    line-height: rem-calc(22);
+  }
+
+  // Discussions/Category layout
+  .Discussions, .CategoryList{
+    .Meta{
+      padding-left: rem-calc(25);
+      .Tag:first-child{
+        padding-left: 0;
+      }
+      .HasNew{
+        margin-right: rem-calc(8);
+      }
+    }
+    .Item{
+      padding-left: rem-calc(25);
+      padding-right: rem-calc(25);
+      transition: all .3s ease;
+      border-top: 1px solid transparent;
+      div.Title, .TitleWrap{
+        margin-left: rem-calc(25);
+        @media #{$medium-only}{
+          width: 55%;
+        }
+        @media #{$large-up}{
+          width: 70%;
+        }
+        a{
+          font-size: rem-calc(24);
+          line-height: rem-calc(34);
+          border-bottom: 1px solid transparent;
+          display: inline-block;
+        }
+      }
+      .MItem{
+        font-size: rem-calc(15);
+        line-height: rem-calc(22);
+        &.LastCommentBy{
+          margin-left: 0;
+        }
+        &.Category,
+        &.LastDiscussionTitle,
+        &.LastCommentBy{
+          a{
+            padding-bottom: rem-calc(3);
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+
+  // Add icons to Discussion items
+  .Discussions, .CategoryList{
+    .Meta, .Options{
+      .ViewCount,
+      .CommentCount,
+      .DiscussionCount{
+        position: absolute;
+        top: rem-calc(20);
+        display: flex;
+        align-items: center;
+      }
+      .ViewCount{
+        top: rem-calc(18);
+        .Number{
+          padding-top: rem-calc(3);
+        }
+      }
+      .DiscussionCount{
+        top: rem-calc(30);
+      }
+      .ViewCount,
+      .DiscussionCount{
+        right: rem-calc(130);
+      }
+      .CommentCount{
+        right: rem-calc(60);
+      }
+      @each $iconClass, $iconName in
+        (DiscussionCount, discussions),
+        (ViewCount,       views-icon),
+        (CommentCount,    comment-dark),
+        (OptionsTitle,    options)
+        {
+        & span.#{$iconClass}{
+          background: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.svg) no-repeat center;
+          height: rem-calc(15);
+          width: rem-calc(16);
+          padding-left: rem-calc(40);
+          transition: all .3s ease;
+          &:hover, &.Active, &.Active:hover{
+            background-image: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.active.svg);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Category Meta spacing
+.Section-CategoryList{
+  .Meta{
+    .CommentCount{
+      top: rem-calc(30);
+      padding-bottom: rem-calc(8);
+    }
+    .DiscussionCount{
+      top: rem-calc(28);
+      padding-bottom: rem-calc(3);
+    }
+  }
+}
+
+// Discussion Option Numbers Spacing
+.Section-DiscussionList{
+  .Meta{
+    .ViewCount .Number{
+      padding-bottom: rem-calc(5);
+    }
+    .CommentCount .Number{
+      padding-bottom: rem-calc(5);
+    }
+  }
+}
+
+// Wrap long meta content
+.Meta{
+  padding-right: rem-calc(30);
+  .LastDiscussionTitle, .LastCommentBy{
+    a{
+      white-space: pre-wrap;
+      word-break: break-word;
+      @media #{$large-up}{
+        width: 100%;
+        white-space: pre-wrap;
+        word-wrap: break-all;
+        white-space: normal;
+      }
+    }
+  }
+  .LastCommentDate{
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+// Adds extra space for the Admin Checkbox
+.Meta-Discussion{
+  padding-right: rem-calc(125);
+}

@@ -1,0 +1,21 @@
+// _inform-messages.scss - theme_options/dark
+// This styles the box in the lower left portion after selecting a checkbox
+////////////////////////////////////////////////////////////////////////////////
+
+
+.InformMessages{
+  div{
+    color: $silver-sand;
+    &.Actions{
+      .Delete, .Move, .Merge, .Split{
+        @extend %link;
+      }
+      .CancelAction{
+        color: $dark-gray;
+        &:hover{
+          border-color: $sunglow;
+        }
+      }
+    }
+  }
+}

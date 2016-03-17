@@ -1,0 +1,13 @@
+// _roles.scss - theme_options/modules/
+////////////////////////////////////////////////////////////////////////////////
+
+@mixin roles($color){
+  background-color: rgba($color, 0.05);
+  border-color: $color;
+  .RoleTitle{
+    color: $color;
+    &:before{
+      color: $silver-sand;
+    }
+  }
+}

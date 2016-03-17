@@ -1,0 +1,113 @@
+// _messages - partials/custom_components
+// This file styles the User Inbox Message view
+/////////////////////////////////////////////////////////////
+
+
+body.Section-Conversation{
+  .H a{
+    border-bottom: 1px solid transparent;
+    padding-bottom: rem-calc(3);
+  }
+  .Conversation{
+    .Meta{
+      margin-left: rem-calc(25);
+      .Author{
+        padding: 0;
+        .Name{
+          font-size: rem-calc(18);
+        }
+        .PhotoWrap:hover{
+          border: none;
+        }
+      }
+    }
+    .Message{
+      margin-left: rem-calc(85);
+      font-size: rem-calc(18);
+      padding-right: rem-calc(60);
+    }
+  }
+  .CommentForm{
+    .H{
+      font-size: rem-calc(24);
+    }
+    .PhotoWrap{
+      margin-left: rem-calc(25);
+    }
+    .editor-help-text{
+      font-size: rem-calc(13);
+    }
+    .Buttons{
+      margin-top: rem-calc(25);
+    }
+  }
+  .BigButton{
+    margin-top: 0;
+  }
+}
+
+// Sidebar
+body.Section-Conversation{
+  .page-sidebar{
+    .Box{
+      h4{
+        padding-top: rem-calc(20);
+        margin-left: rem-calc(25);
+      }
+      &.InThisConversation{
+        h4{
+          margin-left: rem-calc(25);
+        }
+        .PanelInfo{
+          li{
+            margin: 0;
+            a .Conversation-User{
+              display: flex;
+              align-items: center;
+              .ProfilePhoto{
+                position: static;
+              }
+              .Username{
+                margin-left: rem-calc(10);
+                font-size: rem-calc(15);
+              }
+            }
+          }
+        }
+      }
+      &.AddPeople{
+        .TextBoxWrapper{
+          margin: rem-calc(25);
+          textarea{
+            font-size: rem-calc(18);
+          }
+        }
+        .Buttons{
+          margin-left: rem-calc(25);
+        }
+      }
+    }
+  }
+}
+
+// Inbox Home Messages
+.Conversations.Messages{
+  .Conversations .ItemContent .Excerpt{
+    margin-left: 0;
+  }
+  .Conversation{
+    .Meta{
+      padding-left: 0;
+    }
+    .Users{
+      .PhotoWrap{
+        margin-top: rem-calc(20);
+      }
+      a{
+        font-size: rem-calc(24);
+        padding-bottom: rem-calc(3);
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}

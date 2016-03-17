@@ -1,0 +1,36 @@
+// _side-menu.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Username, Email & photo
+.UserBox{
+  background: $rangoon-green;
+  .WhoIs{
+    .Username{
+      @extend %link;
+    }
+    .Email{
+      color: $silver-sand;
+    }
+  }
+}
+
+// Side menu body
+.Profile.Section-EditProfile{
+  .SideMenu{
+    .PanelInfo{
+      li{
+        a{
+          color: $dark-gray;
+          &:hover{
+            color: $white;
+          }
+        }
+        &:hover,&.Active a{
+          color: $white;
+          background: $dark-oil;
+        }
+      }
+    }
+  }
+}

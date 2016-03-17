@@ -1,0 +1,35 @@
+//
+// # Accordion
+//
+// Accordions are elements used to expand and collapse content that is broken
+// into logical sections, much like tabs.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-accordion-classes: $include-html-classes;
+
+// $accordion-navigation-padding: rem-calc(16);
+// $accordion-navigation-bg-color: #efefef;
+// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+// $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
+// $accordion-navigation-font-color: #222;
+// $accordion-navigation-font-size: rem-calc(16);
+// $accordion-navigation-font-family: $body-font-family;
+
+// $accordion-content-padding: $column-gutter/2;
+// $accordion-content-active-bg-color: #fff;
+
+// Library
+// -----------------------------------------------------------------------------
+@import 'foundation/foundation/components/accordion';
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-accordion") {
+
+  // Nothing to see here... yet!
+
+}

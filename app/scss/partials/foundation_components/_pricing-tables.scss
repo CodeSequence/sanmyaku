@@ -1,0 +1,72 @@
+//
+// # Pricing Tables
+//
+// If you're making a rockin' marketing site for a subscription-based product,
+// you're likely in need of a pricing table. These tables fill 100% of their
+// container and are made from a simple unordered list.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-pricing-classes: $include-html-classes;
+
+// We use this to control the border color
+// $price-table-border: solid 1px #ddd;
+
+// We use this to control the bottom margin of the pricing table
+// $price-table-margin-bottom: rem-calc(20);
+
+// We use these to control the title styles
+// $price-title-bg: #333;
+// $price-title-padding: rem-calc(15 20);
+// $price-title-align: center;
+// $price-title-color: #eee;
+// $price-title-weight: normal;
+// $price-title-size: rem-calc(16);
+// $price-title-font-family: $body-font-family;
+
+// We use these to control the price styles
+// $price-money-bg: #f6f6f6;
+// $price-money-padding: rem-calc(15 20);
+// $price-money-align: center;
+// $price-money-color: #333;
+// $price-money-weight: normal;
+// $price-money-size: rem-calc(32);
+// $price-money-font-family: $body-font-family;
+
+// We use these to control the description styles
+// $price-bg: #fff;
+// $price-desc-color: #777;
+// $price-desc-padding: rem-calc(15);
+// $price-desc-align: center;
+// $price-desc-font-size: rem-calc(12);
+// $price-desc-weight: normal;
+// $price-desc-line-height: 1.4;
+// $price-desc-bottom-border: dotted 1px #ddd;
+
+// We use these to control the list item styles
+// $price-item-color: #333;
+// $price-item-padding: rem-calc(15);
+// $price-item-align: center;
+// $price-item-font-size: rem-calc(14);
+// $price-item-weight: normal;
+// $price-item-bottom-border: dotted 1px #ddd;
+
+// We use these to control the CTA area styles
+// $price-cta-bg: #fff;
+// $price-cta-align: center;
+// $price-cta-padding: rem-calc(20 20 0);
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/pricing-tables";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-pricing-tables") {
+
+  // Nothing to see here... yet!
+
+}

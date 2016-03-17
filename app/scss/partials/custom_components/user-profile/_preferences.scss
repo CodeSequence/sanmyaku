@@ -1,0 +1,51 @@
+// _preferences.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Preferences{
+  h2{
+    font-size: rem-calc(24);
+    line-height: rem-calc(34);
+    margin-left: rem-calc(25);
+  }
+  .PreferenceGroup{
+    width: 100%;
+    border: none;
+    margin-bottom: rem-calc(30);
+    thead, tbody, tr, td{
+      border: none;
+      padding: rem-calc(0 25);
+    }
+    thead td{
+      font-size: rem-calc(13);
+      line-height: rem-calc(22);
+      padding-bottom: rem-calc(20);
+      &.PrefCheckBox, &.TopHeading{
+        padding-left: rem-calc(15);
+      }
+      &.TopHeading{
+        padding-bottom: 0;
+      }
+    }
+    tbody td{
+      font-size: rem-calc(15);
+      line-height: rem-calc(40);
+    }
+  }
+  .InfoMessage{
+    border: none;
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+    text-align: center;
+    padding: rem-calc(30 0 35);
+    margin: rem-calc(25);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+}
+
+body.Profile.preferences{
+  .FormTitleWrapper{
+    margin: 0;
+  }
+}

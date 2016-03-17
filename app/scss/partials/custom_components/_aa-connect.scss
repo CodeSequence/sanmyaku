@@ -1,0 +1,40 @@
+// _aa-connect.scss - partials/custom_components/
+////////////////////////////////////////////////////////////////////////////////
+
+
+.connect .Connect{
+  form{
+    margin: rem-calc(0 25 16);
+    ul{
+      margin-left: 0;
+    }
+  }
+}
+
+// Profile Photo
+.connect .Connect{
+  .PhotoWrap{
+    .ProfilePhoto{
+      position: static;
+    }
+  }
+}
+
+// Profile name & header
+.connect .Connect{
+  .WhoIs{
+    h3{
+      font-size: rem-calc(22);
+    }
+  }
+}
+
+// Fine Print & Existing Username
+.connect .Connect{
+  .FinePrint{
+    font-size: rem-calc(14);
+  }
+  .ExistingUsername{
+    font-size: rem-calc(16);
+  }
+}

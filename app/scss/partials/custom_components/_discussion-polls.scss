@@ -1,0 +1,78 @@
+// _discussion-polls.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Discussion Poll Form
+.DP_Question{
+  border: none;
+  padding: 0;
+}
+
+// Discussion Poll Answer Form
+.DP_AnswerForm, .DP_ResultsForm{
+  font-size: rem-calc(24);
+  line-height: rem-calc(34);
+  font-weight: 300;
+  margin: rem-calc(0 25);
+  .DP_AnswerQuestions, .DP_ResultQuestions{
+    .DP_AnswerQuestion, .DP_ResultQuestion{
+      span{
+        font-size: rem-calc(18);
+        line-height: rem-calc(22);
+        font-weight: 300;
+        &.DP_VoteCount{
+          margin-left: rem-calc(50);
+        }
+      }
+      .DP_AnswerOptions, .DP_ResultOptions{
+        margin-top: rem-calc(15);
+        .RadioLabel{
+          font-size: rem-calc(15);
+          line-height: rem-calc(22);
+        }
+        .DP_ResultOption{
+          &, & .DP_Bar{
+            font-size: rem-calc(15);
+            line-height: rem-calc(22);
+            margin-top: rem-calc(15);
+          }
+          .DP_Bar{
+            margin: rem-calc(10 5);
+          }
+        }
+      }
+    }
+  }
+  .Buttons{
+    margin-left: rem-calc(25);
+  }
+}
+
+// Discussion Poll Tools
+#DP_Tools{
+  margin-left: rem-calc(50);
+  li{
+    display: inline-block;
+    margin-right: rem-calc(15);
+    a{
+      background-image: none;
+      float: none;
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+// Attach Poll Checkbox
+.DiscussionForm .P label{
+  &[for=Form_DP_Attach]{
+    font-family: $industry-light;
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+    font-weight: 300;
+    input{
+      margin-bottom: rem-calc(-5);
+      display: inline-block;
+    }
+  }
+}

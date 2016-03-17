@@ -1,0 +1,47 @@
+// _footer.scss - theme-options/dark
+// Footer Styles
+// default styles found in custom_components/_footer.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Footer Main Section layout
+.global-footer{
+	.footer-main{
+		background: $shark;
+		@media screen and (min-width: 770px){
+			background: $shark url(/themes/vanilla-foundation/design/images/dark/footer-image.jpg) no-repeat center;
+		}
+	}
+}
+
+// General footer layout stuff
+.global-footer{
+	background: $lightblack;
+	color: $white;
+	border-color: $charcoal;
+}
+
+// Footer links
+.global-footer{
+	.footer-links{
+		a{
+			@extend %link;
+		}
+	}
+}
+
+// Footer Goarmy button style
+.global-footer{
+	.goarmy-button{
+		border-color: $sunglow;
+		color: $seashell;
+	}
+}
+
+// Footer Copyright
+.global-footer{
+	.footer-copyright{
+		background: $charcoal;
+		color: $tin;
+	}
+}

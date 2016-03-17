@@ -1,0 +1,33 @@
+//
+// # Block Grid
+//
+// Block grids give you a way to evenly split contents of a list within the
+// grid. If you wanted to create a row of five images or paragraphs that need
+// to stay evenly spaced no matter the screen size, the block grid is for you.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-grid-classes: $include-html-classes;
+
+// We use this to control the maximum number of block grid elements per row
+// $block-grid-elements: 12;
+// $block-grid-default-spacing: rem-calc(20);
+
+// Enables media queries for block-grid classes. Set to false if writing
+// semantic HTML.
+// $block-grid-media-queries: true;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/block-grid";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-block-grid") {
+
+  // Nothing to see here... yet!
+
+}

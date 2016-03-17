@@ -1,0 +1,55 @@
+// _sidebar.scss - partials/custom_components/user-profile/
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Profile photo, username & email
+.UserBox{
+  margin: 0;
+  padding: rem-calc(20 25);
+  display: flex;
+  align-items: center;
+  border-top-left-radius: rem-calc(2);
+  border-top-right-radius: rem-calc(2);
+  .PhotoWrap, .ProfilePhoto{
+    width: rem-calc(40);
+    height: rem-calc(40);
+  }
+  .ProfilePhoto{
+    position: static;
+  }
+  .WhoIs{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .Username, .Email{
+      font-size: rem-calc(16);
+      margin-left: rem-calc(5);
+    }
+    .Username{
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+  }
+}
+
+// Side menu body
+.Profile.Section-EditProfile{
+  .SideMenu{
+    margin-top: 0;
+    .PanelInfo{
+      border-bottom-right-radius: rem-calc(2);
+      border-bottom-left-radius: rem-calc(2);
+      padding-bottom: rem-calc(20);
+      li{
+        border: none;
+        padding: 0;
+        margin: 0;
+        a{
+          padding: rem-calc(10 25);
+          height: 100%;
+          font-size: rem-calc(16);
+          font-family: $industry-light;
+        }
+      }
+    }
+  }
+}

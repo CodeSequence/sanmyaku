@@ -1,0 +1,174 @@
+// _user-profile.scss - partials/custom_components
+// This file contains styling for the user profile section
+////////////////////////////////////////////////////////////////////////
+
+
+// Profile NavButton
+.ProfileOptions{
+  margin: rem-calc(25);
+}
+
+// Profile Status
+.Profile{
+  #Status{
+    font-size: rem-calc(18);
+    margin-left: rem-calc(25);
+    a{
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+// About Section
+.Profile{
+  .H{
+    font-size: rem-calc(24);
+    font-weight: 300;
+    font-family: $industry-book;
+    line-height: rem-calc(34);
+    white-space: pre-wrap;
+    word-break: break-word;
+    a{
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+  }
+  .DataListWrap{
+    margin-left: rem-calc(25);
+    margin-right: rem-calc(25);
+  }
+  .About{
+    padding-bottom: rem-calc(20);
+    a{
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+    &:not(dl){
+      margin: rem-calc(50 25);
+      border-bottom: 1px solid transparent;
+      dt, dd{
+        font-size: rem-calc(16);
+        font-family: $industry-book;
+        font-weight: 300;
+        line-height: rem-calc(22);
+        background: none;
+        margin-bottom: rem-calc(20);
+      }
+      dd{
+        margin-right: rem-calc(10);
+      }
+      dt{
+        padding-left: 0;
+        display: inline-block;
+        font-family: $industry-book;
+        &:after{
+          padding: rem-calc(0 3);
+          content: ':';
+        }
+      }
+    }
+  }
+}
+
+// Warnings & Notification Styles
+.Profile{
+  .Warnings{
+    border-bottom: 1px solid transparent;
+    margin: rem-calc(0 25);
+    padding-bottom: rem-calc(50);
+    div{
+      text-align: left;
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+    }
+  }
+  .DataListWrap{
+    .Empty{
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+      padding-bottom: rem-calc(50);
+      margin-left: 0;
+    }
+  }
+}
+
+// Notification Specific
+.Profile.notifications,
+.Profile.activity{
+  .DataListWrap{
+    .Item{
+      &:first-child{
+        margin-top: rem-calc(30);
+      }
+      .ActivityComment{
+        .Excerpt{
+          padding: 0;
+        }
+        .Meta{
+          padding-left: rem-calc(20);
+        }
+      }
+      .Photo{
+        padding-left: 0;
+      }
+      .Activity{
+        margin-left: rem-calc(50);
+        .Title{
+          a{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.DataList.ActivityComments{
+  .ActivityComment a{
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+
+// Word wrap for activity/comments in profile
+.Title a,
+.ItemContent a{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.ItemContent{
+  padding-right: rem-calc(25);
+}
+
+// Fix margin space
+.Profile{
+  .CommentForm{
+    .CommentLink{
+      margin: 0;
+    }
+  }
+}
+
+// Profile Photo
+.PhotoWrapLarge{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: rem-calc(260);
+  .ChangePicture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid transparent;
+  }
+  .ProfilePhotoLarge{
+    width: rem-calc(160);
+    height: rem-calc(160);
+    border-radius: 50%;
+    border: 3px solid;
+  }
+}

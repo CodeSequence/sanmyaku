@@ -1,0 +1,71 @@
+// _user-inbox.scss - partials/custom_components
+// This file contains styling of user inbox
+///////////////////////////////////////////////////////////////////
+
+
+// Top Page Controls
+.PageControls.Top{
+  padding-left: rem-calc(25);
+  .BoxButtons{
+    box-shadow: none;
+    .Button{
+      text-transform: uppercase;
+      font-family: $industry-book;
+      font-size: rem-calc(14);
+      border-radius: rem-calc(4);
+      border: 2px solid;
+    }
+  }
+}
+
+// Main Content Spacing
+body.inbox{
+  .DataListWrap{
+    margin-left: 0;
+    margin-right: 0;
+    .Item{
+      padding: 0;
+      .Users > a{
+        border-bottom: 1px solid transparent;
+        padding-bottom: rem-calc(3);
+      }
+      .Excerpt{
+        padding-left: 0;
+      }
+      .Meta{
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// Messages section
+.Conversation{
+  .Author{
+    margin-top: 0;
+    padding-top: rem-calc(30);
+    .PhotoWrap{
+      font-size: rem-calc(24);
+      line-height: rem-calc(34);
+      height: rem-calc(80);
+    }
+  }
+  .Excerpt{
+    .Message{
+      font-size: rem-calc(18);
+      line-height: rem-calc(26);
+    }
+  }
+  .Meta{
+    margin-left: rem-calc(85);
+    span{
+      font-family: $industry-book;
+      font-size: rem-calc(13);
+    }
+    strong{
+      font-family: $industry-bold;
+      text-transform: uppercase;
+      font-family: rem-calc(13);
+    }
+  }
+}

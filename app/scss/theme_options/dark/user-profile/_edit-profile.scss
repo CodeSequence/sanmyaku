@@ -1,0 +1,30 @@
+// _edit-profile.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+// Back to profile button
+.Profile{
+  .ProfileOptions{
+    .ProfileButtons:not(.NavButton){
+      @extend %link;
+    }
+    .ProfileButtons.NavButton{
+      &:hover{
+        color: $oil;
+      }
+    }
+  }
+}
+
+// Form settings
+.Profile{
+  .FormTitleWrapper{
+    li{
+      label{
+        color: $silver-sand;
+      }
+      .InputBox{
+        @extend %input-box;
+      }
+    }
+  }
+}

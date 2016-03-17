@@ -1,0 +1,117 @@
+// _comment-activity.scss - partials/custom_components
+// This styles the Comments & Activity sections
+////////////////////////////////////////////////////////////////////
+
+
+// Activities Styling
+.Activities,
+.Conversations{
+  .ActivityComments{
+    background: transparent;
+    margin-top: 0;
+    .ActivityComment{
+      border-top: 1px solid;
+      .Excerpt{
+        padding-left: rem-calc(20);
+      }
+      .Meta{
+        padding-left: rem-calc(45);
+      }
+    }
+  }
+  .Activity,
+  .ActivityComment,
+  .Conversation{
+    background: transparent;
+    padding-bottom: rem-calc(25);
+    li{
+      background: transparent;
+    }
+    &:last-child{
+    border: none;
+    }
+    .Title a,
+    .Meta:not(.Photo) a,
+    .Name{
+      font-family: $industry-book;
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+    .Title a,
+    .Title{
+      font-size: rem-calc(18);
+    }
+    .Delete{
+      font-family: $industry-book;
+      font-size: rem-calc(20);
+      &:hover{
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+  .ItemContent{
+    .Title, .Excerpt{
+      font-size: rem-calc(18);
+      line-height: rem-calc(26);
+      padding-right: rem-calc(30);
+    }
+    .Title{
+      margin-right: rem-calc(5);
+      &.Name{
+        font-size: rem-calc(16);
+        line-height: rem-calc(22)
+      }
+    }
+    .Meta{
+      font-size: rem-calc(13);
+      line-height: rem-calc(22);
+      padding-right: rem-calc(30);
+      .AddComment,
+      .DeleteComment{
+        margin-left: rem-calc(5);
+      }
+    }
+  }
+}
+
+// Activiy Flag icon spacing
+.Activity .Reactions{
+  margin: rem-calc(0 30 25);
+}
+
+// Form Header user name
+.Form-Header{
+  .Author{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    padding-left: 0;
+    .PhotoWrap{
+      margin-top: 0;
+      .ProfilePhoto{
+        margin-top: 0;
+      }
+    }
+    .Username{
+      display: flex;
+      margin-left: rem-calc(15);
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+      font-size: rem-calc(24);
+      width: auto;
+    }
+  }
+}
+
+
+// Activity Specific styling
+.Activity .Item.Activity,
+.Profile .Item.Activity{
+  .ItemContent.Activity{
+    margin-left: rem-calc(85);
+    .Reactions{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// _online.scss - partials/vanilla_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+.onlineNow{
+  padding-bottom: rem-calc(25);
+  h4{
+    padding: rem-calc(10 25 0);
+    font-size: rem-calc(24);
+    line-height: rem-calc(34);
+  }
+  .PanelInfo{
+    padding-left: rem-calc(25);
+    li{
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+      a{
+        padding: rem-calc(7 0 3);
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}

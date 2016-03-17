@@ -1,0 +1,68 @@
+// _editor-actions.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Layout
+.editor-dropdown{
+  .Flyout{
+    background: $light-oil;
+    border-color: transparent;
+    &:before, &:after{
+      border-bottom-color: $light-oil;
+    }
+  }
+}
+
+// Emoji Styles
+.editor-dropdown{
+  [class^="emoji"]:hover{
+    background: $daisy;
+  }
+}
+
+// Add link
+.editor-dropdown-link{
+  .Flyout{
+    .InputBox{
+      @extend %input-box;
+    }
+    .MenuButtons{
+      .Button{
+        &:not(.Cancel){
+          @extend %sage-btn;
+        }
+        &.Cancel{
+          @extend %cancel-btn;
+        }
+      }
+    }
+  }
+}
+
+// File Drop
+.editor-dropdown{
+  .drop-section{
+    &.file-drop{
+      border-color: $ship-gray;
+    }
+    &.image-input{
+      border-top-color: $daisy;
+      .InputBox{
+        @extend %input-box;
+      }
+    }
+  }
+}
+
+// Full Page Editor View
+.editor-fullpage #editor-fullpage-candidate{
+  background: $onyx;
+  .editor-format-bbcode{
+    background: $onyx;
+  }
+  .TextBoxWrapper{
+    .TextBox, .TextBox:focus{
+      color: $silver-sand;
+    }
+  }
+}

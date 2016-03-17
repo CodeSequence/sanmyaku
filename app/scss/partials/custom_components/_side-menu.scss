@@ -1,0 +1,160 @@
+// _side-menu.scss --partials
+// Styles for the side off-canvas menus.
+/////////////////////////////////////////////////////////////////////////
+// This file is called in foundation_components/_offcanvas.scss
+
+// Menu Header
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.menu-top-bar{
+		height: $tabbar-height;
+		font-size: rem-calc(18);
+		line-height: $tabbar-height;
+		position: relative;
+	}
+}
+
+
+// Menu Bar title
+.left-off-canvas-menu{
+	.menu-top-bar-title{
+		padding-left: rem-calc(37);
+	}
+}
+.right-off-canvas-menu{
+	.menu-top-bar-title{
+		text-align: right;
+		padding-right: rem-calc(37);
+	}
+}
+
+
+// Menu close button
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.menu-top-bar-close{
+		height: $tabbar-height;
+		width: $tabbar-height;
+		position: absolute;
+		top: 0;
+		right: 0;
+		span.exit-off-canvas{
+			background: none;
+			text-align: center;
+			height: $tabbar-height;
+			width: $tabbar-height;
+			position: absolute;
+			&:hover{
+				img{
+					opacity: 1.0;
+				}
+			}
+			img{
+				opacity: 0.6;
+				height: rem-calc(18);
+				width: rem-calc(18);
+			}
+		}
+	}
+}
+.right-off-canvas-menu{
+	.menu-top-bar-close{
+		right: initial;
+		left: 0;
+	}
+}
+
+
+// Menu List Items
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.off-canvas-list{
+		padding: rem-calc(40 0);
+		a{
+			font-size: rem-calc(16);
+			padding: rem-calc(8 0 8 37);
+			border-bottom-width: 0;
+      span{
+        font-size: rem-calc(16);
+        font-family: $industry-light;
+      }
+		}
+	}
+}
+.left-off-canvas-menu{
+	.off-canvas-list{
+		a{
+			&:hover{
+				border-left: rem-calc(2) solid $white;
+				padding-left: rem-calc(35);
+			}
+		}
+	}
+}
+.right-off-canvas-menu{
+	.off-canvas-list{
+		a{
+      span{
+
+      }
+			&:hover{
+				border-right: rem-calc(2) solid $white;
+				padding-right: rem-calc(35);
+			}
+		}
+	}
+}
+
+
+
+// Menu Seperator
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.menu-seperator{
+		width: 90%;
+		margin: 0 auto;
+		border: 0;
+	}
+}
+
+
+// Forum Stats Styles
+.ForumStats{
+	padding: rem-calc(30 0);
+	h4{
+		padding-left: rem-calc(37);
+		font-size: rem-calc(16);
+		font-weight: bold;
+		margin-bottom: rem-calc(20);
+	}
+	.FS-wrap{
+		padding: rem-calc(0 37);
+		.FSBox{
+			width: 100%;
+			position: relative;
+			height: rem-calc(40);
+			.FSTitle, .FSCount{
+				position: absolute;
+				top: 0;
+				line-height: rem-calc(40);
+				font-size: rem-calc(12);
+			}
+			.FSTitle{
+
+			}
+			.FSCount{
+				right: 0;
+				text-align: right;
+			}
+		}
+	}
+}
+
+
+// Social Icons
+.social-icons{
+	padding: rem-calc(30 0 30 37);
+	a{
+		padding-right: rem-calc(10);
+		opacity: 0.3;
+		&:hover{
+			opacity: 1.0;
+		}
+	}
+}

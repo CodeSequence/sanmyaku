@@ -1,0 +1,28 @@
+//
+// # Magellan
+//
+// Magellan is a style-agnostic plugin that lets you give your site sticky
+// navigation. This fixed-position navigation helps users keep track of where
+// they are on a page without scrolling.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-magellan-classes: $include-html-classes;
+
+// $magellan-bg: #fff;
+// $magellan-padding: 10px;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/magellan";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-magellan") {
+
+  // Nothing to see here... yet!
+
+}

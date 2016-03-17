@@ -1,0 +1,34 @@
+// _post-bg.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Comments, .Discussion{
+  [class*='Tier-'] {
+    .CommentHeader, .DiscussionHeader{
+      @include roles($tier3);
+    }
+  }
+  .Tier-3{
+    .CommentHeader, .DiscussionHeader{
+      opacity: 1;
+      border-color: $ship-gray;
+      background: $rangoon-green;
+      .RoleTitle{
+        color: $tier3;
+        &:before{
+          color: $silver-sand;
+        }
+      }
+    }
+  }
+  .Tier-2 {
+    .CommentHeader, .DiscussionHeader{
+      @include roles($tier2);
+    }
+  }
+  .Tier-1 {
+    .CommentHeader, .DiscussionHeader{
+      @include roles($tier1);
+    }
+  }
+}

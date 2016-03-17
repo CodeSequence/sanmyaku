@@ -1,0 +1,83 @@
+// _forms.scss - theme-options/dark
+// Form Wrapper styling
+////////////////////////////////////////////////////////////////////////////////
+
+
+.TextBoxWrapper{
+  .MultiComplete,
+  .token-input-list,
+  .token-input-input-token input{
+    @include form-colors($silver-sand);
+  }
+  .InputBox, .InputBox:focus,
+  .TextBox, .TextBox:focus{
+    @include form-colors($silver-sand);
+  }
+}
+label, .List b,
+.List li{
+  color: $silver-sand;
+}
+
+// Form Styles
+.DataListWrap{
+  .CommentForm{
+    .CommentLink{
+      @include form-colors($dark-gray);
+      &:hover{
+        cursor: pointer;
+        background: $lightblack;
+      }
+    }
+    .TextBox{
+      @include form-colors($dark-gray);
+    }
+  }
+}
+
+// Activities Comment Form
+.Activities{
+  .CommentForm{
+    .CommentLink{
+      @include form-colors($dark-gray);
+      &:hover{
+        cursor: pointer;
+        background: $lightblack;
+      }
+    }
+  }
+}
+
+// Preview
+.P .Preview, .Preview{
+  @include form-colors($silver-sand);
+}
+
+// BBCode styles
+.editor{
+  span{
+    color: $silver-sand;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+.editor-help-text{
+  color: $dark-gray;
+  a{
+    @extend %link;
+  }
+}
+.bbcode_url{
+  @extend %link;
+}
+
+// JS Connect
+.connect .Connect{
+  .FinePrint{
+    color: $scarlet;
+  }
+  .InputBox{
+    @include form-colors($silver-sand);
+  }
+}

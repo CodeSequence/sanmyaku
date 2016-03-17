@@ -1,0 +1,234 @@
+// _popup.scss - partials/custom_components
+// Styling for the popup modals
+///////////////////////////////////////////////////////////
+
+
+// General Layout
+.Popup{
+  .Border{
+    background: transparent;
+    .Body{
+      border-top: rem-calc(15) solid;
+      border-bottom: rem-calc(15) solid;
+      overflow-y: auto;
+      max-height: calc(100vh - 175px);
+      border-radius: rem-calc(4);
+      width: 100%;
+      padding: rem-calc(25);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 0 5px $black;
+      @media #{$medium-up}{
+        width: rem-calc(600);
+      }
+      .Content{
+        width: 100%;
+        .P{
+          font-size: rem-calc(18);
+        }
+        .Buttons{
+          display: flex;
+          justify-content: space-between;
+          div{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer Buttons
+.Popup{
+  .Footer.Buttons{
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .Buttons{
+    margin-top: rem-calc(50);
+  }
+}
+.Profile.EditMode .Buttons{
+  &.Buttons-Confirm{
+    margin-left: 0;
+    div{
+      display: none;
+    }
+  }
+}
+
+// Error Messages
+.Popup{
+  .Errors, .Messages{
+    ul{
+      margin-left: 0;
+    }
+  }
+}
+
+// Profile Popup Warnings
+.Profile .Popup{
+  .Warnings{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+// Ban User Popup
+.Popup{
+  .WarningMessage{
+    font-family: $industry-light;
+    font-weight: 300;
+    line-height: rem-calc(22);
+    font-size: rem-calc(15);
+    border: none;
+    border-radius: rem-calc(3);
+    a{
+      font-weight: 700;
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+  }
+  .CheckBoxLabel{
+    display: flex;
+    align-items: center;
+    input[type=checkbox]{
+      margin-right: rem-calc(5);
+    }
+  }
+}
+
+// Popup Form
+.Popup{
+  .Body{
+    .Content{
+      h2{
+        margin-bottom: rem-calc(15);
+        text-align: left;
+      }
+      form div{
+        ul{
+          margin-left: 0;
+          text-align: left;
+          li{
+            a{
+              padding-bottom: rem-calc(3);
+              border-bottom: 1px solid transparent;
+            }
+            label{
+              font-size: rem-calc(18);
+              line-height: rem-calc(26);
+              font-family: $industry-book;
+              font-weight: 300;
+              &.CheckBoxLabel{
+                display: flex;
+                align-items: center;
+                input[type=checkbox]{
+                  margin-right: rem-calc(5);
+                }
+              }
+            }
+          }
+        }
+        textarea{
+          border-radius: rem-calc(3);
+          border: 1px solid;
+          font-family: $industry-light;
+          font-size: rem-calc(15);
+          font-weight: 300;
+          line-height: rem-calc(22);
+        }
+      }
+    }
+  }
+}
+
+// Sign in modal
+.Popup.SignInPopup{
+  .Body{
+    .Content{
+      text-align: left;
+      width: 100%;
+      h1{
+        margin: rem-calc(0 25 8);
+        font-size: rem-calc(24);
+        line-height: rem-calc(34);
+        font-weight: 300;
+      }
+      form div{
+        margin: rem-calc(0 25);
+      }
+      .Entry{
+        margin: 0;
+      }
+      .Buttons{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        .Button.Primary{
+          width: rem-calc(90);
+        }
+        .CheckBoxLabel{
+          font-family: $industry-book;
+          display: flex;
+          input{
+            margin-right: rem-calc(5);
+          }
+        }
+        .CreateAccount{
+          font-family: $industry-book;
+          margin: 0;
+          padding-top: rem-calc(5);
+          a{
+            border-bottom: 1px solid transparent;
+            padding-bottom: rem-calc(3);
+          }
+        }
+      }
+      .MainForm{
+        margin: 0;
+        ul{
+          margin-left: 0;
+          li{
+            .TextBoxWrapper{
+              margin: 0;
+            }
+            .InputBox{
+              width: 100%;
+              max-width: 100%;
+              font-size: rem-calc(18);
+              line-height: rem-calc(26);
+              font-family: $industry-light;
+              border-radius: rem-calc(3);
+            }
+            label{
+              font-size: rem-calc(18);
+              line-height: rem-calc(26);
+              font-weight: 300;
+              font-family: $industry-light;
+            }
+            a{
+              margin-left: 0;
+              border-bottom: 1px solid transparent;
+              padding-bottom: rem-calc(3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Close Button
+.Overlay > .Popup a.Close{
+  top: rem-calc(15);
+  right: rem-calc(20);
+  font-weight: 300;
+  font-family: $industry-light;
+  span{
+    transition: all .3s ease;
+  }
+}

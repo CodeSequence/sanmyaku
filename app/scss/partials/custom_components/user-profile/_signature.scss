@@ -1,0 +1,23 @@
+// _signature.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Profile.Section-EditProfile.signature{
+  .FormTitleWrapper{
+    h2.H{
+      margin-left: rem-calc(25);
+    }
+    .SignatureRules{
+      font-size: rem-calc(13);
+      font-family: $industry-light;
+    }
+    .TextBoxWrapper{
+      textarea{
+        font-size: rem-calc(15);
+        line-height: rem-calc(22);
+        border-radius: rem-calc(3);
+        padding: rem-calc(10 15);
+      }
+    }
+  }
+}

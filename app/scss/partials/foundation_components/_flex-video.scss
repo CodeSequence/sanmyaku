@@ -1,0 +1,37 @@
+//
+// # Flex Video
+//
+// Flex Video lets browsers automatically scale video objects in your webpages.
+// If you're embedding a video from YouTube, Vimeo, or another site that uses
+// iframe, embed or object elements, you can wrap your video in div.flex-video
+// to create an intrinsic ratio that will properly scale your video on any
+// device.
+//
+// No styleguide reference.
+
+// Dependencies
+// -----------------------------------------------------------------------------
+@import "type";
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// $include-html-media-classes: $include-html-classes;
+
+// We use these to control video container padding and margins
+// $flex-video-padding-top: rem-calc(25);
+// $flex-video-padding-bottom: 67.5%;
+// $flex-video-margin-bottom: rem-calc(16);
+
+// We use this to control widescreen bottom padding
+// $flex-video-widescreen-padding-bottom: 56.55%;
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/flex-video";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-flex-video") {
+
+}

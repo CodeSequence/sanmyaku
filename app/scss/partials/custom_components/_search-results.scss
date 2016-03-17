@@ -1,0 +1,85 @@
+// _search-results.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Layout
+.SearchForm{
+  padding: rem-calc(25);
+  margin-top: 0;
+  .SiteSearch{
+    max-width: 100%;
+    .InputBox{
+      border-radius: rem-calc(3);
+      border: 1px solid;
+      font-family: $industry-light;
+      font-size: rem-calc(18);
+      line-height: rem-calc(26);
+      height: rem-calc(50);
+      padding-left: rem-calc(15);
+    }
+    .Button{
+      background: url(/themes/vanilla-foundation/design/images/icons/forum.search-icon.svg) no-repeat center;
+      top: rem-calc(15);
+      right: rem-calc(15);
+      height: rem-calc(20);
+      width: rem-calc(20);
+      transition: background .3s ease;
+      &:hover{
+        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.search-icon.active.svg);
+      }
+    }
+  }
+}
+
+// No Results
+.Search .NoResults{
+  margin: rem-calc(25);
+  font-size: rem-calc(16);
+  font-family: $industry-light;
+}
+
+// PagerControls
+.Search{
+  .Next, .Previous{
+    padding-bottom: rem-calc(3);
+    border-bottom: 1px solid transparent;
+    padding: rem-calc(1 0 3);
+    margin-right: rem-calc(15);
+    border-radius: 0;
+  }
+}
+
+// Search Results
+#search-results{
+  .Item-Search{
+    padding: rem-calc(20 25);
+    transition: background .3s ease;
+    h3 a{
+      font-family: $industry-book;
+      font-size: rem-calc(24);
+      font-weight: 300;
+      line-height: rem-calc(34);
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+    .Media-Body{
+      span{
+        font-family: $industry-light;
+        font-size: rem-calc(15);
+        font-weight: 300;
+        line-height: rem-calc(22);
+        &.Bullet{
+          padding: rem-calc(0 5);
+          font-family: $industry-bold;
+          font-weight: 700;
+        }
+        &.MItem-Author{
+          a{
+            padding-bottom: rem-calc(3);
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}

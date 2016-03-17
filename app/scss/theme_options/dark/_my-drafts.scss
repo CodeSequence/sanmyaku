@@ -1,0 +1,39 @@
+// _my-drafts.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Layout
+.Drafts{
+  .Draft{
+    &:hover{
+      background: rgba($white, 0.03);
+    }
+    .ItemContent{
+      .Title{
+        @extend %link;
+      }
+      .Excerpt{
+        a{
+          color: $dark-gray;
+          &:hover{
+            border-color: $sunglow;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Delete Button
+.Drafts{
+  .Draft{
+    .Options{
+      .Delete{
+        &:hover{
+          color: $white;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

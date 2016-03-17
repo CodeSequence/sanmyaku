@@ -1,0 +1,15 @@
+// _messages.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+// Add link colors to Inbox Message title
+.Conversations.Messages{
+  .Conversation .Users a:not(.PhotoWrap){
+    @extend %link;
+  }
+  .Conversations .Read .Conversation .Users a{
+    color: $aluminum;
+  }
+  .Conversations .Unread .Conversation .Users a{
+    color: $white;
+  }
+}

@@ -1,0 +1,126 @@
+// _off-canvas.scss - theme-options/dark
+// Offcanvas Styles
+// default styles found in foundation_components/_offcanvas.scss
+////////////////////////////////////////////////////////////////////////////////
+
+// Tab bar and side menu background color
+.off-canvas-wrap{
+	.tab-bar{
+		background: $lightblack;
+	}
+	.right-off-canvas-menu, .left-off-canvas-menu{
+		background: $onyx;
+    li:hover{
+      background: $rangoon-green;
+    }
+	}
+}
+
+// Tab bar custom image
+.tab-bar{
+	.title{
+		padding-left: 20px;
+		.logo{
+			width: 300px;
+			background: url(/themes/vanilla-foundation/design/images/dark/header_logo.png) no-repeat center;
+			background-size: contain;
+			text-indent: -99999px;
+		}
+	}
+}
+
+// Tab-bar borders
+.off-canvas-wrap{
+	.tab-bar{
+		border-color: $bastille;
+	}
+  .TitleBar{
+    border-color: $bastille;
+  }
+}
+
+// Profile image
+.off-canvas-wrap{
+	.ProfilePhoto{
+    border-color: $armadillo;
+	}
+}
+
+// Username (signedin)
+.off-canvas-wrap{
+	.UserName{
+		color: $white;
+	}
+}
+
+// Avatar Placeholder
+.off-canvas-wrap{
+	.right-menu-signedout{
+		a{
+			color: rgba($snow, 0.5);
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+}
+
+// Menu Header
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.menu-top-bar{
+		background: $onyx;
+		color: $silver-sand;
+		border-bottom: 1px solid $bastille;
+	}
+}
+
+// Menu List Items
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.off-canvas-list{
+		a{
+			color: $dark-gray;
+			padding: rem-calc(8 0 8 37);
+			&:hover{
+				color: $white;
+				background: $rangoon-green;
+			}
+		}
+	}
+}
+.left-off-canvas-menu{
+	.off-canvas-list{
+		a{
+			&:hover{
+				border-left: 2px solid $sunglow !important;
+			}
+		}
+	}
+}
+.right-off-canvas-menu{
+	.off-canvas-list{
+		a{
+      span{
+        background-color: transparent;
+        color: $dark-gray;
+      }
+			&:hover{
+				border-right: 2px solid $sunglow !important;
+			}
+		}
+	}
+}
+
+// Menu Seperator
+.left-off-canvas-menu, .right-off-canvas-menu{
+	.menu-seperator{
+		border-top: 1px solid $bastille;
+	}
+}
+
+// Forum Stats Styles
+.ForumStats{
+	h4{
+		color: $mountain-mist;
+	}
+}
+////////////////////////////////////////////////////////////////////////////////

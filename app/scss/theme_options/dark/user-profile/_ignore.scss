@@ -1,0 +1,45 @@
+// _ignore.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Main Layout
+.Profile.ignore{
+  .is-content{
+    form{
+      div{
+        color: $dark-gray;
+        ul li{
+          label{
+            color: $silver-sand;
+          }
+          .InputBox{
+            @extend %input-box;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Table Layout
+.Profile.ignore{
+  .IgnoreList{
+    thead{
+      tr{
+        th{
+          color: $white;
+        }
+      }
+    }
+    tbody{
+      tr td{
+        &.IgnoreUserName a{
+          @extend %link;
+        }
+        &.IgnoreUserDate{
+          color: $silver-sand;
+        }
+      }
+    }
+  }
+}

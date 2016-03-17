@@ -1,0 +1,59 @@
+// _sub-header.scss --partials
+// Styles for the sub-header section.
+/////////////////////////////////////////////////////////////////////////
+// This file is called in _base.scss
+
+
+$search-width: rem-calc(700);
+$search-height: rem-calc(60);
+$search-button-width: rem-calc(60);
+$search-bar-radius: rem-calc(3);
+
+
+
+// Subheader layout and background
+.sub-header{
+	background: url(/themes/vanilla-foundation/design/images/generic-subheader-bg.jpg) no-repeat center;
+	height: rem-calc(148);
+	background-size: cover;
+	position: relative;
+}
+
+
+// Search button styling
+.big-search{
+	width: $search-width;
+	height: $search-height;
+	position: absolute;
+	top: calc(48.5% - #{$search-height} / 2);
+	left: calc(50% - #{$search-width} / 2);
+	margin: 0 auto;
+	box-sizing: content-box;
+	border-radius: $search-bar-radius;
+	max-width: 100%;
+	@media #{$small-only}{
+		left: 0;
+	}
+	.InputBox, .Button{
+		height: $search-height;
+	}
+	.InputBox{
+		width: calc(#{$search-width} - #{$search-button-width});
+		max-width: 100%;
+		left: 0;
+		padding-left: rem-calc(20);
+		border-width: 0;
+		border-radius: $search-bar-radius 0 0 $search-bar-radius;
+		font-size: rem-calc(18);
+		line-height: rem-calc(26);
+	}
+	.Button{
+		width: $search-button-width ;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 0 $search-bar-radius $search-bar-radius 0;
+		padding: 0;
+		box-shadow: none;
+	}
+}

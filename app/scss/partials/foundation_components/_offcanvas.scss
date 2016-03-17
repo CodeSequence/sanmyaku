@@ -1,0 +1,80 @@
+//
+// # Offcanvas
+//
+// Off-canvas menus are positioned outside of the viewport and slide in when
+// activated. Setting up an off-canvas layout in Foundation is super easy.
+//
+// No styleguide reference.
+
+// Variables - These variables are listed here for reference only. They are
+// changed in the _settings.scss file as to be global variables.
+// -----------------------------------------------------------------------------
+//
+// $tabbar-height: rem-calc(60);
+// $tabbar-left-section-border: solid 1px #414141;
+// $tabbar-right-section-border: $tabbar-left-section-border;
+// $off-canvas-overlay-box-shadow: none;
+// $off-canvas-overlay-background: rgba(black, 0.5);
+// $off-canvas-overlay-background-hover: rgba(black, 0.5);
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/offcanvas";
+// -----------------------------------------------------------------------------
+
+// Not sure what this export wrapper does but leave it
+@include exports("vanilla-offcanvas") {
+
+// Start Custom styles //////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+
+@import "../custom_components/tab-bar"; // This is the top-bar. It is called tab-bar with off-canvas
+
+@import "../custom_components/side-menu";
+
+
+// Fix the screen when menu is open
+.off-canvas-wrap{
+	&.move-left, &.move-right{
+		position: fixed;
+	}
+}
+
+
+// Tab bar and side menu background color
+.off-canvas-wrap{
+	.tab-bar{
+		// background: rgba($lightblack, 0.05);
+	}
+	.right-off-canvas-menu, .left-off-canvas-menu{
+		// background: rgba($lightblack, 0.05);
+	}
+}
+
+
+// Tab-bar bottom border color
+.off-canvas-wrap{
+	.tab-bar{
+		// border-bottom: 1px solid $white;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// End Custom styles ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+}

@@ -1,0 +1,37 @@
+//
+// # Listings
+//
+// No styleguide reference.
+
+
+// ## Lists
+
+.DataList {
+  margin: 0 0 $hr-margin;
+  list-style: none;
+
+  .Item {
+    padding: $hr-margin 0;
+    border-color: $hr-border-color;
+    border-style: $hr-border-style;
+    border-width: $hr-border-width 0;
+    &:first-child{
+      border-top: 1px solid transparent;
+    }
+
+    + .Item {
+      border-top: 1px solid transparent;
+    }
+  }
+}
+
+.DataList.ActivityComments {
+  padding-left: $profile-photo-default-size;
+  margin: $hr-margin 0 0 1em;
+}
+
+// -----------------------------------------------------------------------------
+
+// ## Tables
+
+.DataTable {}

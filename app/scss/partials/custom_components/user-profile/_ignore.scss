@@ -1,0 +1,82 @@
+// _ignore.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Main Layout
+.Profile.ignore{
+  .is-content{
+    .H{
+      margin-left: rem-calc(25);
+      padding-top: rem-calc(15);
+    }
+    form{
+      margin: rem-calc(0 25);
+      div{
+        ul{
+          margin-left: 0;
+          li{
+            label{
+              font-family: $industry-book;
+              font-size: rem-calc(18);
+              font-weight: 300;
+              line-height: rem-calc(26);
+            }
+          }
+        }
+        .Buttons{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Table Layout
+.Profile.ignore{
+  .IgnoreList{
+    background: transparent;
+    width: 100%;
+    border: none;
+    thead{
+      background: transparent;
+      tr{
+        th{
+          font-weight: 300;
+          padding-left: 0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        background: transparent;
+      }
+      td{
+        &.IgnoreUserPhoto{
+          padding: 0;
+          .PhotoWrap{
+            height: rem-calc(40);
+            width: rem-calc(40);
+            .ProfilePhoto{
+              position: static;
+              height: rem-calc(40);
+              width: rem-calc(40);
+            }
+          }
+        }
+        &.IgnoreUserName{
+          a{
+            font-size: rem-calc(15);
+            padding-bottom: rem-calc(3);
+            border-bottom: 1px solid transparent;
+          }
+        }
+        &.IgnoreUserDate{
+          font-size: rem-calc(15);
+        }
+        &.IgnoreUserAction{
+          float: right;
+        }
+      }
+    }
+  }
+}

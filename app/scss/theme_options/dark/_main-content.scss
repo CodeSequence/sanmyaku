@@ -1,0 +1,11 @@
+// _main-content.scss - theme-options/dark
+// Main Content Styles
+// default styles found in custom_components/_main-content.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Main Content items wrapper
+.is-content, .BoxFilter, .BoxButtons, .BoxCategories, .Box{
+	background: $rangoon-green;
+	box-shadow: 0px 2px 0px 0px rgba($black, 0.2);
+}

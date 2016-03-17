@@ -1,0 +1,36 @@
+// _guest-box.scss - partials/custom_components
+// Styling for the Guest box (Register, Sign In)
+/////////////////////////////////////////////////////////////////////
+
+.GuestBox{
+  margin-top: 0;
+  padding: rem-calc(25);
+  h4{
+    font-size: rem-calc(24);
+    line-height: rem-calc(34);
+  }
+  p{
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+  }
+  .P{
+    margin: 0;
+  }
+}
+
+// JS Connect
+.JsConnect-Connect{
+  .UserPhoto{
+    border-radius: 50%;
+  }
+  .Username, .ConnectLabel{
+    font-family: $industry-light;
+  }
+  .ConnectLabel{
+    display: inline-block;
+    padding-bottom: rem-calc(3);
+    border-bottom: 1px solid transparent;
+    font-weight: normal;
+    transition: border .3s ease;
+  }
+}

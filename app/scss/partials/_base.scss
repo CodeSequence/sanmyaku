@@ -1,0 +1,71 @@
+// _base.scss --partials
+// This file includes all of our modules first then partials.
+// No styling code here.
+/////////////////////////////////////////////////////////////////////////
+
+// Get All Modules first
+////////////////////////////////////////////////
+@import "../modules/all";
+
+
+// Get partials
+////////////////////////////////////////////////
+// Get all customized foundation components
+@import "partials/foundation_components/all";
+
+
+// Vanilla Components
+@import "vanilla_components/avatars";
+@import "vanilla_components/general";
+@import "vanilla_components/listings";
+@import "vanilla_components/discussion-header";
+@import "vanilla_components/discussion-body";
+@import "vanilla_components/online";
+@import "vanilla_components/new-discussion";
+
+
+// Our own custom patritals
+@import "custom_components/general";
+@import "custom_components/optionsMenu";
+@import "custom_components/sub-header";
+@import "custom_components/main-content";
+@import "custom_components/footer";
+@import "custom_components/guest-box";
+@import "custom_components/user-profile/profile";
+@import "custom_components/user-profile/edit-profile";
+@import "custom_components/user-profile/side-menu";
+@import "custom_components/user-profile/change-password";
+@import "custom_components/user-profile/preferences";
+@import "custom_components/user-profile/change-picture";
+@import "custom_components/user-profile/edit-thumbnail";
+@import "custom_components/user-profile/online-settings";
+@import "custom_components/user-profile/quotes-settings";
+@import "custom_components/user-profile/signature";
+@import "custom_components/user-profile/user-inbox";
+@import "custom_components/user-profile/comments";
+@import "custom_components/user-profile/ignore";
+@import "custom_components/comment-activity";
+@import "custom_components/messages";
+@import "custom_components/new-message";
+@import "custom_components/popup";
+@import "custom_components/checkmarks";
+@import "custom_components/category";
+@import "custom_components/sign-in";
+@import "custom_components/register";
+@import "custom_components/editor-actions";
+@import "custom_components/my-drafts";
+@import "custom_components/splash-info";
+@import "custom_components/discussion-polls";
+@import "custom_components/inform-messages";
+@import "custom_components/tags";
+@import "custom_components/warnings";
+@import "custom_components/search-results";
+@import "custom_components/post-bg";
+@import "custom_components/aa-connect";
+
+
+
+
+
+// Our shame file for testing
+@import "custom_components/shame";

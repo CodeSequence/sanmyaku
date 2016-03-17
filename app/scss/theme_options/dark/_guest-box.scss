@@ -1,0 +1,17 @@
+// _guest-box.scss - theme_options/dark/
+////////////////////////////////////////////////////////////////////////////////
+
+
+// JS Connect
+.JsConnect-Connect{
+  .ConnectLink{
+    .Username, .ConnectLabel{
+      color: $white;
+    }
+    &:hover{
+      .ConnectLabel{
+        border-color: $sunglow;
+      }
+    }
+  }
+}

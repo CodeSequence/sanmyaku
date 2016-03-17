@@ -1,0 +1,34 @@
+//
+// # Icon Bar
+//
+// An Icon Bar provides a menu to quickly navigate an app. Use the Icon Bar horizontally or
+// vertically, with the labels below the icons or to the right. Have it your way.
+//
+// $include-html-icon-bar-classes: $include-html-classes
+
+// We use these to style the icon-bar and items
+// $icon-bar-bg: $oil;
+// $icon-bar-font-color: $white;
+// $icon-bar-font-color-hover: $icon-bar-font-color;
+// $icon-bar-font-size: 1rem;
+// $icon-bar-hover-color: $primary-color;
+// $icon-bar-icon-color: $white;
+// $icon-bar-icon-color-hover: $icon-bar-icon-color;
+// $icon-bar-icon-size: 1.875rem;
+// $icon-bar-image-width: 1.875rem;
+// $icon-bar-image-height: 1.875rem;
+// $icon-bar-active-color: $primary-color;
+// $icon-bar-item-padding: 1.25rem;
+// $icon-bar-disabled-opacity: 0.7
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/icon-bar";
+
+// -----------------------------------------------------------------------------
+
+@include exports("vanilla-icon-bar") {
+
+  // Nothing to see here... yet!
+
+}

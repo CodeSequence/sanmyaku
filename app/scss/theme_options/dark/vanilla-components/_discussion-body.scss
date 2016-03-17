@@ -1,0 +1,66 @@
+// _discussion-body.scss - theme_options/dark/vanilla-components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Discussion Messages
+.Discussion{
+  .Item-Body{
+    .Message, .UserSignature{
+      color: $dark-gray;
+      h1, h2, h3, h4, h5, h6{
+        color: $dark-gray;
+      }
+      a{
+        @extend %link;
+      }
+    }
+  }
+}
+
+// Quote another member
+.QuoteAuthor{
+  a{
+    @extend %link;
+    &, .ArrowLink{
+      color: $white;
+    }
+  }
+
+}
+
+// Pre tag styles
+pre{
+  background: $lightblack;
+  border-color: $charcoal;
+}
+code{
+  color: $silver-sand;
+}
+
+// File upload box
+.editor-file-preview{
+  background: $lightblack;
+  border-color: $ship-gray;
+  .file-data .filename{
+    color: $silver-sand;
+  }
+  .editor-file-remove{
+    background: $lightblack;
+  }
+}
+
+// Spoiler Styles
+div.UserSpoiler{
+  border-color: $cardinal;
+  .SpoilerTitle{
+    &, .SpoilerToggle{
+      color: $white;
+    }
+    .SpoilerToggle{
+      border-color: rgba($white, .20);
+    }
+  }
+  div.SpoilerText{
+    color: $dark-terra-cota;
+  }
+}

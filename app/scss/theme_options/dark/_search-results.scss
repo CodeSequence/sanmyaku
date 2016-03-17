@@ -1,0 +1,50 @@
+// _search-results.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Layout
+.SearchForm{
+  .SiteSearch{
+    .InputBox{
+      @extend %input-box;
+    }
+  }
+}
+
+// No Results
+.Search .NoResults{
+  color: $silver-sand;
+}
+
+// PagerControls
+.Search{
+  .Next, .Previous{
+    @extend %link;
+  }
+}
+
+// Search Results
+#search-results.DataList{
+  .Item-Search{
+    &:hover{
+      background: rgba($white, 0.03);
+    }
+    h3 a{
+      @extend %link;
+    }
+    .Media-Body{
+      span{
+        color: $mountain-mist;
+        &.MItem-Author{
+          color: $mountain-mist;
+          a{
+            @extend %link;
+          }
+        }
+      }
+      .Summary{
+        color: $silver-sand;
+      }
+    }
+  }
+}

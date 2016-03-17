@@ -1,0 +1,55 @@
+// _discussion-header.scss - theme_options/dark/vanilla-components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Vanilla Components Discussions
+.DataList{
+  .Item {
+    border-color: $charcoal;
+    &.Read{
+      background: transparent;
+      &.Checked{
+        background: rgba($white, 0.03);
+      }
+      &:hover{
+        background: rgba($white, 0.03);
+      }
+    }
+  }
+}
+
+// Discussion Header
+.is-content .Discussion, .is-content .Comment{
+  .Username{
+    &:hover{
+      border-color: $sunglow;
+    }
+  }
+  .DiscussionMeta{
+    .DateCreated time{
+      @extend %link;
+    }
+  }
+  .CommentMeta{
+    .IPAddress{
+      @extend %link;
+    }
+  }
+}
+
+.DiscussionHeader,
+.CommentHeader{
+  background: rgba($black, 0.1);
+}
+
+// Read/Unread states
+.Discussions{
+  .Item{
+    &.Read .Title a{
+      color: $aluminum;
+    }
+    &.Unread .Title a{
+      color: $white;
+    }
+  }
+}

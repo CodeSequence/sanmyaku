@@ -1,0 +1,99 @@
+// _checkmarks.scss - partials/custom_components
+// Global checkmark styles
+//////////////////////////////////////////////////////////////////////////////
+
+
+// Position the Admin Check on Discussions view
+.AdminCheck{
+  position: absolute;
+  right: rem-calc(125);
+  top: rem-calc(53);
+  transition: all .3s ease;
+}
+
+// Header Admin Check Discussions View
+.H .AdminCheck{
+	position: static;
+	display: inline-block;
+	padding-left: 0;
+	input[name=Toggle]{
+		margin-right: rem-calc(20);
+	}
+}
+
+// Comment Admin Check
+.ItemComment{
+  .AdminCheck{
+    top: rem-calc(-3);
+		right: rem-calc(50);
+		display: none;
+  }
+	&:hover{
+		.AdminCheck{
+			display: inline-block;
+		}
+	}
+}
+
+// Page Title Admin Check
+.PageTitle{
+	position: relative;
+	.AdminCheck{
+		position: static;
+		display: inline-block;
+		margin-top: rem-calc(-3);
+		input[name=Toggle]{
+			margin-right: rem-calc(20);
+		}
+	}
+}
+
+// Bump Checkmark
+label[for="Form_NoBump"]{
+	display: flex;
+	align-items: center;
+	margin: rem-calc(10 0);
+	input[type=checkbox]{
+		display: inline-block;
+		margin-right: rem-calc(5);
+	}
+}
+
+// Default checkmark styles
+input[type=checkbox]{
+	position: relative;
+	appearance: none;
+	width: rem-calc(18);
+	height: rem-calc(20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0;
+	&:checked{
+		background: transparent;
+	}
+	&:after{
+    position: absolute;
+    top: rem-calc(4);
+		right: rem-calc(2);
+		content: "";
+		width: rem-calc(12);
+		height: rem-calc(7);
+		border: 2px solid;
+		border-top: none;
+		border-right: none;
+		background: transparent;
+		opacity: 0;
+		transform: rotate(-50deg);
+		transition: opacity 250ms;
+	}
+	&:hover:after{
+		opacity: 0.3;
+	}
+	&:checked:after{
+		opacity: 1;
+	}
+}

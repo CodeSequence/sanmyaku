@@ -1,0 +1,15 @@
+// _colors.scss --theme_options
+// This file sets up all vanilla theme-option colors. These colors are
+// available to all theme options but are not global to the entire
+// project.
+/////////////////////////////////////////////////////////////////////////
+
+
+// Get Colors from our main variables file
+@import "../variables";
+
+// Role Color Variables
+$no-tier: $snow;
+$tier1: $gold;
+$tier2: $blue;
+$tier3: $green;
