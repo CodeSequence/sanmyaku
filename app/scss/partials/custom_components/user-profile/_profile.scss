@@ -25,7 +25,6 @@
   .H{
     font-size: rem-calc(24);
     font-weight: 300;
-    font-family: $industry-book;
     line-height: rem-calc(34);
     white-space: pre-wrap;
     word-break: break-word;
@@ -49,7 +48,6 @@
       border-bottom: 1px solid transparent;
       dt, dd{
         font-size: rem-calc(16);
-        font-family: $industry-book;
         font-weight: 300;
         line-height: rem-calc(22);
         background: none;
@@ -61,7 +59,6 @@
       dt{
         padding-left: 0;
         display: inline-block;
-        font-family: $industry-book;
         &:after{
           padding: rem-calc(0 3);
           content: ':';

@@ -1,0 +1,520 @@
+// _fonts.scss - theme_options/
+// This file contains all the font-family settings
+// $theme-font-light
+// $theme-font-normal
+// $theme-font-bold
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+// Foundation Components
+////////////////////////////////////////////////////////////////////////////////
+// _buttons.scss
+////////////////////////////////////////////////////////////////////////////////
+.Button.NewDiscussion,
+.BigButton.NewConversation,
+.BigButton.Popup,
+.BigButton.ClearConversation,
+.Button.SignInPopup,
+.Button.ApplyButton{
+  font-family: $theme-font-normal;
+}
+
+.DataListWrap, .FormWrapper, .AddPeople, .Popup{
+  .Buttons .Button{
+    font-family: $theme-font-normal;
+  }
+}
+
+// Activity Comment Form Button
+.Activity .CommentForm .Buttons .Button{
+  font-family: $theme-font-normal;
+}
+
+// User Profile & Signin view buttons
+.Profile.Section-EditProfile, .signin{
+  .Buttons, p{
+    .Button{
+      font-family: $theme-font-normal;
+    }
+  }
+}
+
+// Guest Box
+.GuestBox  .P .Primary{
+  font-family: $theme-font-normal;
+}
+
+// Profile Ignore Button
+.Profile.ignore .IgnoreUserAction .Ignore{
+  font-family: $theme-font-normal;
+}
+
+// Discussion Polls Buttons
+#DP_NextQuestion, #DP_AddOption{
+  font-family: $theme-font-normal;
+}
+.DP_AnswerForm .Buttons .Button{
+  font-family: $theme-font-normal;
+}
+
+// Admin Sign In
+#Form_User_SignIn .Buttons .Button{
+  font-family: $theme-font-normal;
+}
+
+// JS Connect Button
+.connect .Connect .ButtonContainer .Button{
+  font-family: $theme-font-normal;
+}
+
+// Signin JS Connect Buttons
+.signin .MultipleEntryMethods .Button{
+  font-family: $theme-font-normal;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _labels.scss
+////////////////////////////////////////////////////////////////////////////////
+.Tag{
+  font-family: $theme-font-normal;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _side-nav.scss
+////////////////////////////////////////////////////////////////////////////////
+// Side-nav Discussion Filter
+.BoxFilter .FilterMenu{
+  li{
+    a, .Aside span{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+// Side-nav Categories
+.BoxCategories, .BoxDiscussionSidebar,
+#SharedFingerprint, #FollowingPluginUsers{
+  .PanelCategories, .PanelDiscussionSidebar, .PanelInfo{
+    li{
+      a, .Aside span{
+        font-family: $theme-font-light;
+      }
+    }
+  }
+}
+
+// Shared Accounts
+#SharedFingerprint li{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _type.scss
+////////////////////////////////////////////////////////////////////////////////
+*, h1, h2, h3, h4, h5, h6, a{
+  font-family: $theme-font-normal;
+}
+p, div{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+// Vanilla Components
+////////////////////////////////////////////////////////////////////////////////
+// Discussion Body
+////////////////////////////////////////////////////////////////////////////////
+// Pre Tags
+pre{
+  font-family: $theme-font-light;
+}
+
+// Spoiler
+div.UserSpoiler{
+  .SpoilerTitle{
+    &, .SpoilerToggle{
+      font-family: $theme-font-normal;
+    }
+  }
+  div.SpoilerText{
+    font-family: $theme-font-light;
+  }
+}
+
+// Comments
+.CommentHeading{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// New Discussion
+////////////////////////////////////////////////////////////////////////////////
+.DiscussionForm .P .Inline li{
+  b{
+    font-family: $theme-font-normal;
+  }
+  .RadioLabel{
+    &, & b{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+// Custom Components
+////////////////////////////////////////////////////////////////////////////////
+// _general.scss
+////////////////////////////////////////////////////////////////////////////////
+.Gloss{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _guest-box.scss
+////////////////////////////////////////////////////////////////////////////////
+// JS Connect
+.JsConnect-Connect{
+  .Username, .ConnectLabel{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// User Profile
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_edit-profile.scss
+////////////////////////////////////////////////////////////////////////////////
+// About Section
+.Profile{
+  .H{
+    font-family: $theme-font-normal;
+  }
+  .About{
+    &:not(dl){
+      dt, dd{
+        font-family: $theme-font-normal;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/edit-profile.scss
+////////////////////////////////////////////////////////////////////////////////
+// Form Settings
+body.Profile.Section-EditProfile{
+  ul li label{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_side-menu.scss
+////////////////////////////////////////////////////////////////////////////////
+// Side Menu Body
+.Profile.Section-EditProfile{
+  .SideMenu .PanelInfo li a{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_change-password.scss
+////////////////////////////////////////////////////////////////////////////////
+.PasswordStrength .StrengthText{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_change-picture.scss
+////////////////////////////////////////////////////////////////////////////////
+// Table Styles
+.Profile.Section-EditProfile{
+  .CurrentPicture, .Thumnail{
+    table thead td{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+// Warning Message
+.Profile.Section-EditProfile.picture{
+  .WarningMessage{
+    font-family: $theme-font-light;
+  }
+}
+
+// Buttons
+.Profile.Section-EditProfile{
+  input[type=file]{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_signature.scss
+////////////////////////////////////////////////////////////////////////////////
+.Profile.Section-EditProfile.signature{
+  .FormTitleWrapper .SignatureRules{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_user-inbox.scss
+////////////////////////////////////////////////////////////////////////////////
+// Top Page Controls
+.PageControls.Top .BoxButtons .Button{
+  font-family: $theme-font-normal;
+}
+
+// Messages Section
+.Conversation{
+  .Meta{
+    span{
+      font-family: $theme-font-normal;
+    }
+    strong{
+      font-family: $theme-font-bold;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_comments.scss
+////////////////////////////////////////////////////////////////////////////////
+body.comments .Item .ItemContent{
+  .Message{
+    font-family: $theme-font-normal;
+  }
+  .MItem{
+    &, & a{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// user-profile/_ignore.scss
+////////////////////////////////////////////////////////////////////////////////
+.Profile.ingnore .is-content form{
+  div ul li label{
+    font-family: $theme-font-normal;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _comment-activity.scss
+////////////////////////////////////////////////////////////////////////////////
+// Activities Styling
+.Activities, .Conversations{
+  .Activity, .ActivityComment, .Conversation{
+    .Name, .Delete{
+      font-family: $theme-font-normal;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _popup.scss
+////////////////////////////////////////////////////////////////////////////////
+// Ban User Popup
+.Popup .WarningMessage{
+  font-family: $theme-font-light;
+}
+
+// Popup Form
+.Popup .Body .Content{
+  form div{
+    ul li label{
+      font-family: $theme-font-normal;
+    }
+    textarea{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+// Sign in Modal
+.Popup.SignInPopup{
+  .Body{
+    .Content{
+      .Buttons{
+        .CheckBoxLabel, .CreateAccount{
+          font-family: $theme-font-normal;
+        }
+      }
+      .MainForm{
+        ul{
+          li{
+            .InputBox, label{
+              font-family: $theme-font-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Close Button
+.Overlay > .Popup a.Close{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _category.scss
+////////////////////////////////////////////////////////////////////////////////
+.CategoryList{
+  .Meta span{
+    font-family: $theme-font-light;
+  }
+}
+
+// Category Description
+.CategoryList .Item .CategoryDescription{
+  font-family: $theme-font-normal;
+}
+
+// Child Categories
+.CategoryList .Category{
+  .Childcategories{
+    b{
+      font-family: $theme-font-normal;
+    }
+    &, a{
+      font-family: $theme-font-light;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _sign-in.scss
+////////////////////////////////////////////////////////////////////////////////
+// Signin Form
+.signin .SingleEntryMethod .MainForm ul{
+  label, .InputBox{
+    font-family: $theme-font-light;
+  }
+}
+
+// Admin Sign-in
+#Form_User_SignIn ul{
+  label, .InputBox{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _register.scss
+////////////////////////////////////////////////////////////////////////////////
+.register .FormWrapper ul{
+  label, .InputBox, .Gloss{
+    font-family: $theme-font-light;
+  }
+  .Incorrect, .Gender .RadioLabel, .CaptchaInput,
+  .CaptchaInput a, .CheckBoxLabel{
+    font-family: $theme-font-normal;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _editor-actions
+////////////////////////////////////////////////////////////////////////////////
+// Add Link
+.editor-dropdown-link .Flyout{
+  .InputBox{
+    font-family: $theme-font-light;
+  }
+  .MenuButtons .Button{
+    font-family: $theme-font-normal;
+  }
+}
+
+// File Drop
+.editor-dropdown{
+  .drop-section .InputBox{
+    font-family: $theme-font-light;
+  }
+}
+
+// Full Page Editor View
+.editor-fullpage #editor-fullpage-candidate{
+  .TextBoxWrapper .TextBox{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _my-drafts.scss
+////////////////////////////////////////////////////////////////////////////////
+.Drafts{
+  .Draft .ItemContent{
+    .Title{
+      font-family: $theme-font-normal;
+    }
+    .Excerpt a{
+      font-family: $theme-font-normal;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _splash-info.scss
+////////////////////////////////////////////////////////////////////////////////
+.SplashInfo #Message{
+  font-family: $theme-font-light;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _discussion-polls.scss
+////////////////////////////////////////////////////////////////////////////////
+// Attach Poll Checkbox
+.DiscussionForm .P label{
+  &[for=Form_DP_Attach]{
+    font-family: $theme-font-light;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _inform-messages.scss
+////////////////////////////////////////////////////////////////////////////////
+.InformMessages div{
+  font-family: $theme-font-normal;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _tags.scss
+////////////////////////////////////////////////////////////////////////////////
+.Count, .Tag, .Alert{
+  font-family: $theme-font-normal;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// _search-results.scss
+////////////////////////////////////////////////////////////////////////////////
+.SearchForm .SiteSearch .InputBox{
+  font-family: $theme-font-light;
+}
+
+// No Results
+.Search .NoResults{
+  font-family: $theme-font-light;
+}
+
+// Search Results
+#search-results .Item-Search{
+  h3 a{
+    font-family: $theme-font-normal;
+  }
+  .Media-Body{
+    span{
+      font-family: $theme-font-light;
+      &.Bullet{
+        font-family: $theme-font-bold;
+      }
+    }
+  }
+}

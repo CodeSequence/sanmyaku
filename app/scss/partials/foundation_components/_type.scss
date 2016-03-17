@@ -124,15 +124,9 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 
-*, h1, h2, h3, h4, h5, h6, a{
-	font-family: $industry-book;
+*, h1, h2, h3, h4, h5, h6, a, p, div{
 	font-weight: normal;
 }
-p, div{
-	font-family: $industry-light;
-	font-weight: normal;
-}
-
 h1{
 	font-size: rem-calc(32);
 	line-height: rem-calc(40);

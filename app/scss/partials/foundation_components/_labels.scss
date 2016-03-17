@@ -40,7 +40,6 @@
 
   .Tag {
     @include label-style;
-    font-family: $industry-book;
     font-size: rem-calc(15);
     line-height: rem-calc(22);
   }

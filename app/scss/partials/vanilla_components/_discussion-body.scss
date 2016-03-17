@@ -31,7 +31,6 @@ pre{
   padding: rem-calc(25);
   overflow: auto;
   word-wrap: normal;
-  font-family: $industry-light;
   white-space: pre;
   border-radius: rem-calc(15);
   margin: rem-calc(25 0);
@@ -79,7 +78,6 @@ div.UserSpoiler{
     &, .SpoilerToggle{
       font-size: rem-calc(13);
       font-weight: 700;
-      font-family: $industry-book;
       text-transform: uppercase;
     }
     .SpoilerToggle{
@@ -92,7 +90,6 @@ div.UserSpoiler{
     font-size: rem-calc(15);
     line-height: rem-calc(22);
     font-weight: 300;
-    font-family: $industry-light;
     padding-left: 0;
   }
 }
@@ -162,7 +159,6 @@ code.CodeInline{
 .CommentHeading{
   font-size: rem-calc(18);
   font-weight: 300;
-  font-family: $industry-light;
   line-height: rem-calc(26);
   padding: rem-calc(25 85);
   border-top: 1px solid;

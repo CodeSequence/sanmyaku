@@ -11,7 +11,6 @@
     .InputBox{
       border-radius: rem-calc(3);
       border: 1px solid;
-      font-family: $industry-light;
       font-size: rem-calc(18);
       line-height: rem-calc(26);
       height: rem-calc(50);
@@ -35,7 +34,6 @@
 .Search .NoResults{
   margin: rem-calc(25);
   font-size: rem-calc(16);
-  font-family: $industry-light;
 }
 
 // PagerControls
@@ -55,7 +53,6 @@
     padding: rem-calc(20 25);
     transition: background .3s ease;
     h3 a{
-      font-family: $industry-book;
       font-size: rem-calc(24);
       font-weight: 300;
       line-height: rem-calc(34);
@@ -64,13 +61,11 @@
     }
     .Media-Body{
       span{
-        font-family: $industry-light;
         font-size: rem-calc(15);
         font-weight: 300;
         line-height: rem-calc(22);
         &.Bullet{
           padding: rem-calc(0 5);
-          font-family: $industry-bold;
           font-weight: 700;
         }
         &.MItem-Author{

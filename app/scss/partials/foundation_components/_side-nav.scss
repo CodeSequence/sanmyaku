@@ -44,7 +44,6 @@
 		 	height: rem-calc(40);
 			a{
 				font-size: rem-calc(16);
-				font-family: IndustryLight;
 				padding-left: rem-calc(65);
 				padding-right: rem-calc(25);
 			}
@@ -52,7 +51,6 @@
 				float: right;
 				span{
 					font-size: rem-calc(16);
-					font-family: IndustryLight;
 				}
 			}
 		}
@@ -109,7 +107,6 @@
 		 	padding: 0;
 			a{
 				font-size: rem-calc(16);
-				font-family: IndustryLight;
 				padding-left: rem-calc(25);
 				padding-right: rem-calc(25);
 			}
@@ -117,7 +114,6 @@
 				float: right;
 				span{
 					font-size: rem-calc(16);
-					font-family: IndustryLight;
 				}
 			}
 			&.Depth2{
@@ -135,7 +131,6 @@
 		font-size: rem-calc(16);
 	}
 	li{
-		font-family: $industry-light;
 		height: rem-calc(40);
 	}
 }
