@@ -1,0 +1,59 @@
+// _change-picture.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Table Styles
+.Profile.Section-EditProfile{
+  .CurrentPicture, .Thumbnail{
+    table{
+      border: none;
+      thead{
+        border-bottom: 1px solid;
+        td{
+          font-family: $industry-light;
+          font-size: rem-calc(13);
+          line-height: rem-calc(22);
+          padding-bottom: rem-calc(20);
+          &:first-child{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Warning Message
+.Profile.Section-EditProfile.picture{
+  .WarningMessage{
+    border-radius: rem-calc(3);
+    margin-left: rem-calc(25);
+    margin-bottom: rem-calc(50);
+    font-size: rem-calc(15);
+    font-family: $industry-light;
+    line-height: rem-calc(22);
+    text-align: center;
+    padding: rem-calc(20 50);
+    border: none;
+  }
+}
+
+// Buttons
+.Profile.Section-EditProfile{
+  input[type=file]{
+    font-family: $industry-light;
+    font-size: rem-calc(13);
+    padding-bottom: rem-calc(25);
+    border-bottom: 1px solid;
+  }
+  .CurrentPicture, .Thumbnail{
+    table tbody{
+      td{
+        padding-top: rem-calc(25);
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// _splash-info.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+.SplashInfo{
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+  #Message{
+    font-family: $industry-light;
+  }
+}

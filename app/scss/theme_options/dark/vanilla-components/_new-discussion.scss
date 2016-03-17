@@ -1,0 +1,20 @@
+// _new-discussion.scss - theme_options/dark/vanilla-components
+////////////////////////////////////////////////////////////////////////////////
+
+
+.DiscussionForm{
+  .P{
+    .PostOptions{
+      b{
+        &:first-child{
+          color: $silver-sand;
+        }
+      }
+      .RadioLabel{
+        &, & b{
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}

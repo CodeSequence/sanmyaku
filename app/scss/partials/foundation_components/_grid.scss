@@ -1,0 +1,56 @@
+//
+// # Grid
+//
+// Create powerful multi-device layouts quickly and easily with the default
+// 12-column, nest-able Foundation grid. If you're familiar with grid systems,
+// you'll feel right at home. If not, you'll learn quickly.
+//
+// No styleguide reference.
+
+// Variables - These variables are listed here for reference only. They are
+// changed in the _settings.scss file as to be global variables.
+// -----------------------------------------------------------------------------
+//
+// $row-width: rem-calc(1154);
+// $total-columns: 16;
+
+// Library
+// -----------------------------------------------------------------------------
+@import 'foundation/foundation/components/grid';
+// -----------------------------------------------------------------------------
+
+// Not sure what this export wrapper does but leave it
+@include exports("vanilla-grid") {
+
+
+// Start Custom styles //////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+// Change the size of the main layout
+.page-content {
+  @media #{$medium-up} {
+    @include grid-column(11);
+  }
+}
+
+.page-sidebar {
+  @media #{$medium-up} {
+    @include grid-column(5);
+    padding-left: rem-calc(45);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// End Custom styles ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+}

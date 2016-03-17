@@ -1,0 +1,52 @@
+// _fonts.scss --partials
+// This file sets up all @font-faces and imports all font files.
+/////////////////////////////////////////////////////////////////////////
+
+
+// San Francisco Fonts = body fonts
+@each $font-face in sanfrancisco_heavy, sanfrancisco_bold, sanfrancisco_light {
+  @font-face {
+    font-family: $font-face;
+    src: url('../fonts/sanfrancisco/#{$font-face}.eot');
+    src: url('../fonts/sanfrancisco/#{$font-face}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sanfrancisco/#{$font-face}.woff2') format('woff2'),
+         url('../fonts/sanfrancisco/#{$font-face}.woff') format('woff'),
+         url('../fonts/sanfrancisco/#{$font-face}.ttf') format('truetype'),
+         url('../fonts/sanfrancisco/#{$font-face}.svg##{$font-face}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Quadon Fonts
+@import url("//hello.myfonts.net/count/2a81b8"); // Required for license
+
+@each $font-face in quadon-medium, quadon-extrabold {
+  @font-face {
+    font-family: $font-face;
+    src: url('../fonts/quadon/#{$font-face}.eot');
+    src: url('../fonts/quadon/#{$font-face}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quadon/#{$font-face}.woff') format('woff'),
+         url('../fonts/quadon/#{$font-face}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  font-family: IndustryBold;
+  src: url("../fonts/industry/industry-bold.otf") format('opentype');
+  src: url("../fonts/industry/industry-bold.woff") format('woff');
+}
+@font-face {
+  font-family: IndustryBook;
+  src: url("../fonts/industry/industry-book.otf") format('opentype');
+  src: url("../fonts/industry/industry-book.woff") format('woff');
+
+}
+@font-face {
+  font-family: IndustryLight;
+  src: url("../fonts/industry/industry-light.otf") format('opentype');
+  src: url("../fonts/industry/industry-light.woff") format('woff');
+
+}

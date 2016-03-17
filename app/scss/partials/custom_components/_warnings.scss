@@ -1,0 +1,36 @@
+// _warnings.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Warnings
+span.Warning, div.Warning{
+	border-radius: rem-calc(3);
+	border: none;
+	font-weight: 300;
+	a{
+		border-bottom: 1px solid transparent;
+		padding-bottom: rem-calc(3);
+		font-weight: 700;
+	}
+}
+
+// Mod Warnings
+.Profile .Warnings div{
+	text-shadow: none;
+	border-radius: rem-calc(3);
+}
+.Warnings .WarningReason{
+	margin-bottom: rem-calc(25);
+}
+// Note the THREE G's...
+.WarningTogggleHistory{
+	border-bottom: 1px solid transparent;
+	padding-bottom: rem-calc(3);
+}
+
+// Troll Hero Warning
+.Hero{
+  &, &.Warning{
+		margin: rem-calc(10 25);
+	}
+}

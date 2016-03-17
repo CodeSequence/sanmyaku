@@ -1,0 +1,26 @@
+// _comments.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General Layout
+body.comments{
+  .Item{
+    .ItemContent{
+      .Message{
+        color: $silver-sand;
+      }
+      .MItem{
+        a{ @extend %link; }
+      }
+    }
+  }
+}
+
+// More Comments
+body.comments{
+  .DataList{
+    .MorePager{
+      a{ @extend %link; }
+    }
+  }
+}

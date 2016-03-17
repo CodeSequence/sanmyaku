@@ -1,0 +1,28 @@
+// _post-bg.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Comments, .Discussion{
+  [class*="Tier-"]{
+    &:not(.MessageForm){
+      background: url(/themes/vanilla-foundation/design/images/dark/post-bg.png) center;
+    }
+    .CommentHeader, .DiscussionHeader{
+      border-top: 1px solid;
+      .AuthorInfo{
+        [class*='Tier-']{
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+// Fix online now bg issue
+.onlineNow{
+  .PanelInfo{
+    [class*='Tier-']{
+      background: transparent;
+    }
+  }
+}

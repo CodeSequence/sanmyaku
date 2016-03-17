@@ -1,0 +1,170 @@
+// _discussion-body.scss - partials/vanilla_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Messages Section
+.Discussion{
+  .Item-Body{
+    .Message, .UserSignature{
+      padding: rem-calc(25 85);
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+      border-top: none;
+      h1{
+        padding-left: 0;
+        font-size: rem-calc(45);
+      }
+      li{
+        padding-left: rem-calc(10);
+      }
+      a{
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+        padding-bottom: rem-calc(3);
+      }
+    }
+  }
+}
+
+// Pre tag styles
+pre{
+  padding: rem-calc(25);
+  overflow: auto;
+  word-wrap: normal;
+  font-family: $industry-light;
+  white-space: pre;
+  border-radius: rem-calc(15);
+  margin: rem-calc(25 0);
+  border: 1px solid;
+}
+
+// Quote Another Member
+.QuoteAuthor{
+  a{
+    border-bottom: 1px solid transparent;
+    padding-bottom: rem-calc(3);
+  }
+}
+
+// Italics
+.Message{
+  i{ font-style: italic; }
+}
+
+// Upload box item-body
+.editor-upload-saved{
+  margin: rem-calc(0 65);
+}
+
+// Upload box new comment
+.editor-upload-previews{
+  margin: rem-calc(0 0 8);
+  border-radius: rem-calc(4);
+  .editor-file-preview{
+    text-shadow: none;
+    margin: 0;
+    .editor-file-remove:after{
+      transition: all .3s ease;
+    }
+  }
+}
+
+// Spoiler
+div.UserSpoiler{
+  background-color: transparent;
+  border: 1px solid;
+  padding: rem-calc(25);
+  border-radius: rem-calc(15);
+  .SpoilerTitle{
+    &, .SpoilerToggle{
+      font-size: rem-calc(13);
+      font-weight: 700;
+      font-family: $industry-book;
+      text-transform: uppercase;
+    }
+    .SpoilerToggle{
+      background: transparent;
+      padding: rem-calc(5 10 7);
+    }
+  }
+  div.SpoilerText{
+    border-left: none;
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+    font-weight: 300;
+    font-family: $industry-light;
+    padding-left: 0;
+  }
+}
+
+// Blockquote
+blockquote.Quote,
+blockquote{
+  border-left: 3px solid;
+  padding-left: rem-calc(20);
+}
+
+// Code
+code.CodeInline{
+  border: none;
+}
+
+// Reactions
+.Reactions{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: rem-calc(0 85 25);
+  a{
+    font-size: rem-calc(13);
+    font-weight: 300;
+    line-height: rem-calc(22);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    .ReactQuote{
+      background: url(/themes/vanilla-foundation/design/images/icons/quote.forum.svg) no-repeat center;
+      margin-right: rem-calc(8);
+      height: rem-calc(13);
+      width: rem-calc(13);
+      transition: all .3s ease;
+    }
+    &.Quote{
+      margin-left: 0;
+      width: rem-calc(85);
+      &:hover{
+        .ReactQuote{
+          background-image: url(/themes/vanilla-foundation/design/images/icons/quote.forum.active.svg);
+        }
+      }
+    }
+  }
+  .CommentFlag{
+    .FlagContent{
+      display: flex;
+      align-items: center;
+      &:before{
+        content: '';
+        width: rem-calc(13);
+        height: rem-calc(13);
+        background: url(/themes/vanilla-foundation/design/images/icons/forum.flag.svg) no-repeat center;
+        margin-right: rem-calc(8);
+        transition: all .3s ease;
+      }
+      &:hover:before{
+        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.flag.active.svg);
+      }
+    }
+  }
+}
+
+// Comments
+.CommentHeading{
+  font-size: rem-calc(18);
+  font-weight: 300;
+  font-family: $industry-light;
+  line-height: rem-calc(26);
+  padding: rem-calc(25 85);
+  border-top: 1px solid;
+  margin-top: 0;
+}

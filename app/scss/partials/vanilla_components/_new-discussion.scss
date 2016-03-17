@@ -1,0 +1,68 @@
+// _new-discussion.scss - partials/vanilla_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+.DiscussionForm{
+  .P{
+    label{
+      font-size: rem-calc(18);
+      font-weight: 300;
+      line-height: rem-calc(26);
+    }
+    select option{
+      font-size: rem-calc(18);
+      line-height: rem-calc(26);
+    }
+    .TextBoxWrapper{
+      .InputBox{
+        font-size: rem-calc(18);
+        line-height: rem-calc(26);
+        height: rem-calc(50);
+      }
+      textarea{
+        font-size: rem-calc(15);
+        line-height: rem-calc(22);
+        font-weight: 300;
+      }
+    }
+    .Inline{
+      li{
+        b{
+          font-size: rem-calc(18);
+          font-weight: 300;
+          font-family: $industry-book;
+          line-height: rem-calc(26);
+        }
+        .RadioLabel{
+          &, & b{
+            font-size: rem-calc(15);
+            font-weight: 300;
+            line-height: rem-calc(22);
+            font-family: $industry-light;
+          }
+        }
+      }
+    }
+    .PostOptions{
+      b:first-child{
+        display: block;
+      }
+      .Inline{
+        margin-left: 0;
+        li{
+          padding-right: rem-calc(12);
+          input{
+            margin-right: rem-calc(5);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Buttons
+.Buttons{
+  .Cancel{
+    // float: right;
+  }
+}

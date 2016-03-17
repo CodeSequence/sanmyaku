@@ -1,0 +1,41 @@
+// _change-picture.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Table Styles
+.Profile.Section-EditProfile{
+  .CurrentPicture, .Thumbnail{
+    table{
+      background: transparent;
+      thead{
+        background: transparent;
+        border-color: $charcoal;
+        td{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Instructions
+.Profile.Section-EditProfile{
+  p{
+    color: $silver-sand;
+  }
+}
+
+// Warning Message
+.Profile.Section-EditProfile.picture{
+  .WarningMessage{
+    background: $charcoal;
+    color: $white;
+  }
+}
+
+// Buttons
+.Profile.Section-EditProfile{
+  input[type=file]{
+    color: $silver-sand;
+  }
+}

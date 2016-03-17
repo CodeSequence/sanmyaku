@@ -1,0 +1,60 @@
+// _register.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+// Typography Settings
+.register .FormWrapper ul{
+  label, .InputBox{
+    font-size: rem-calc(18);
+    font-weight: 300;
+    font-family: $industry-light;
+    line-height: rem-calc(26);
+  }
+  .Gloss{
+    font-size: rem-calc(13);
+    font-family: $industry-light;
+  }
+  .Incorrect{
+    font-family: $industry-book;
+  }
+  .Gender .RadioLabel, .CaptchaInput,
+  .CaptchaInput a, .CheckBoxLabel{
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+    font-family: $industry-book;
+  }
+}
+
+// Register form
+.register{
+  .FormWrapper{
+    ul{
+      margin-left: 0;
+      .InputBox{
+        height: rem-calc(50);
+        border-radius: rem-calc(3);
+      }
+      .Gender .RadioLabel{
+        input{
+          margin-right: rem-calc(5);
+        }
+      }
+      .CaptchaInput{
+        padding-bottom: rem-calc(5);
+      }
+      .CheckBoxLabel{
+        display: flex;
+        align-items: center;
+        a{
+          padding-left: rem-calc(5);
+          border-bottom: 1px solid transparent;
+        }
+        input{
+          margin-right: rem-calc(10);
+        }
+      }
+      .Buttons{
+        margin-top: rem-calc(25);
+      }
+    }
+  }
+}

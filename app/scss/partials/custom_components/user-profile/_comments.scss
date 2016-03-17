@@ -1,0 +1,57 @@
+// _comments.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// General layout
+body.comments{
+  .Item{
+    .ItemContent{
+      .Message{
+        font-size: rem-calc(18);
+        font-weight: 300;
+        line-height: rem-calc(26);
+        font-family: $industry-book;
+      }
+      .Meta{
+        padding-top: rem-calc(5);
+      }
+      .MItem{
+        &, & a{
+          font-family: $industry-light;
+          font-size: rem-calc(13);
+          font-weight: 300;
+          line-height: rem-calc(22);
+        }
+        a{
+          border-bottom: 1px solid transparent;
+          padding-bottom: rem-calc(3);
+        }
+        &:last-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Comments ul element
+body.comments{
+  .DataList{
+    margin-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+  }
+}
+
+// More Comments Styles
+body.comments{
+  .DataList{
+    .MorePager{
+      padding: rem-calc(20 0);
+      text-align: center;
+      a{
+        border-bottom: 1px solid transparent;
+        padding-bottom: rem-calc(3);
+      }
+    }
+  }
+}

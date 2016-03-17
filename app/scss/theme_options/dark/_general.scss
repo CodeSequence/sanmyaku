@@ -1,0 +1,25 @@
+// _general.scss - theme-options/dark
+///////////////////////////////////////////////////////////////////////////////
+
+
+// Main background color
+html,body{background: $lightblack;}
+
+// Warning Divs
+span.Warning, div.Warning{
+  background: $scarlet;
+  color: $white;
+  a{
+    @extend %link;
+  }
+}
+
+// Sign In or Register Link at bottom of Discussion
+.Note.Closed{
+  &.SignInOrRegister{
+    color: $dark-gray;
+    a{
+      @extend %link;
+    }
+  }
+}

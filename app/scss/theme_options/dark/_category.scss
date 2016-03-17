@@ -1,0 +1,48 @@
+// _category.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Category Picture
+.CategoryList{
+  .Category{
+    .PhotoWrap-Category{
+      .CategoryPhoto{
+        border-color: $dark-gray-2;
+      }
+    }
+  }
+}
+
+// Read/Unread States
+.CategoryList{
+  .Read .TitleWrap a{
+    color: $aluminum;
+  }
+  .Unread .TitleWrap a{
+    color: $white;
+  }
+}
+
+// Category Description
+.CategoryList{
+  .Item{
+    .CategoryDescription{
+      color: $dark-gray;
+    }
+  }
+}
+
+// Child Categories
+.CategoryList{
+  .Category{
+    .ChildCategories{
+      color: $mountain-mist;
+      a{
+        @extend %link;
+      }
+      b{
+        color: $dark-gray;
+      }
+    }
+  }
+}

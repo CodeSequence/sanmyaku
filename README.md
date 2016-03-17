@@ -1,34 +1,46 @@
 # Foundation for Vanilla
 
-[![Release](http://img.shields.io/github/release/kasperisager/vanilla-foundation.svg)](https://github.com/kasperisager/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/kasperisager/vanilla-foundation.svg)](https://gemnasium.com/kasperisager/vanilla-foundation)
+[![Release](http://img.shields.io/github/release/codesequence/vanilla-foundation.svg)](https://github.com/codesequence/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/valeryan/vanilla-foundation.svg)](https://gemnasium.com/valeryan/vanilla-foundation)
 
 ## Getting started
 
 To get started using Foundation for Vanilla, either:
 
-* [__Download the latest release__](https://github.com/kasperisager/vanilla-foundation/releases)
+* [__Download the latest release__](https://github.com/codesequence/vanilla-foundation/releases)
 * Clone the repository directly into your Vanilla `themes` directory:
 
 ```sh
-$ git clone kasperisager/vanilla-foundation foundation
+$ git clone codesequence/vanilla-foundation foundation
 ```
 
 ## Compiling assets
 
-Foundation for Vanilla was scaffolded using [Ninja](https://github.com/kasperisager/vanilla-ninja). For instructions on how to install the development dependencies and front-end components, please refer to the [Ninja documentation](https://github.com/kasperisager/vanilla-ninja#getting-started). Once you've got everything set up, use the following tasks to re-compile the theme assets:
+Run `npm install` to get started.
 
-#### Build - `gulp`
-Runs the default Gulp task which will compile all theme assets. Sass stylesheets will be compiled to [`design/style.css`](design/style.css) and Javascripts will be concatenated and output to [`js/custom.js`](js/custom.js).
+#### Build - `gulp build`
+Runs the default Gulp task which will compile all theme assets.
+* Javascripts will be concatenated and output to (js/custom.js).
+* Sass stylesheets will be compiled to (design/custom.css).
+*Sass theme-option stylesheets will be prefixed with `custom_` and compiled to (design/custom_themeoptionname.css).
+* Images are optimized and placed in (app/images).
+* Theme screenshots are optimized and place in (design/imagename.png).
+* Icons are compiled to (app/icons).
 
-#### Watch - `gulp watch`
-Starts an instance of [tiny-lr](https://github.com/mklabs/tiny-lr) (a tiny LiveReload server) that watches the compiled assets for changes and pushes these to your Vanilla installation automatically whenever they change.
 
-## [Issue tracking](https://github.com/kasperisager/vanilla-foundation/issues)
+#### Watch - `gulp`
+Starts the build process and then uses browserync to watch and update the browser on changes.
+To use the watch process you will need to update your (`gulp/config.js`) `projectUrl` to be the url used by homestead to access the vanilla instance.
+
+#### Theme Options
+The actual theme is contained in theme options that must be set through the admin dashboard.
+
+## [Issue tracking](https://github.com/codesequence/vanilla-foundation/issues)
 
 If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. Foundation for Vanilla won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
 
-[__File a new issue or feature request__](https://github.com/kasperisager/vanilla-foundation/issues/new)
+[__File a new issue or feature request__](https://github.com/codesequence/vanilla-foundation/issues/new)
 
 ---
+Copyright 2014 © [CodeSequence](https://github.com/codesequence). Licensed under the terms of the [MIT License](LICENSE.md)
+Original developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
 
-Copyright 2014 © [Kasper Kronborg Isager](http://kasperisager.github.io). Licensed under the terms of the [MIT License](LICENSE.md)

@@ -1,11 +1,20 @@
-<?php if (!defined('APPLICATION')) exit;
+<?php if (!defined('APPLICATION')) {
+    exit;
+}
 
-$ThemeInfo['foundation'] = array(
-  'Name'        => 'Foundation',
-  'Description' => "An advanced theming boilerplate built on Foundation 5 by ZURB. Geared towards developers and designers who know their way around Sass.",
-  'Version'     => '0.0.2',
-  'Author'      => 'Kasper K. Isager',
-  'AuthorEmail' => 'kasperisager@gmail.com',
-  'AuthorUrl'   => 'https://github.com/kasperisager',
-  'RequiredApplications' => array('Vanilla' => '2.1.x')
-);
+$ThemeInfo['vanillafoundation'] = [
+  'Name'        => 'Zurb Foundation Theme',
+  'Description' => "A Zurb Foundation 6 Theme for vanilla forums",
+  'Version'     => '0.0.1',
+  'Author'      => 'Samuel Hilson, Ryan Jordan',
+  'AuthorEmail' => 'samrhilson@gmail.com',
+  'AuthorUrl'   => 'https://github.com/codesequence',
+  'RequiredApplications' => ['Vanilla' => '2.2.x'],
+
+  'Options' => [
+    'Styles' => [
+      'Dark'   => '%s_dark',
+      'Light'   => '%s_light',
+    ],
+  ]
+];

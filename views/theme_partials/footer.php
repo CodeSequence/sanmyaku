@@ -1,0 +1,1 @@
+<a class="footer-button" href="//www.vanillaforums.org">Powered By Vanilla Forums</a>

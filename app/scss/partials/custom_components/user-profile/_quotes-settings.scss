@@ -1,0 +1,19 @@
+// _quotes-settings - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Profile.Section-EditProfile.quotes{
+  .H{
+    margin-left: rem-calc(25);
+    padding-top: rem-calc(15);
+  }
+  form{
+    ul{
+      margin-left: rem-calc(25);
+      margin-right: rem-calc(25);
+      div{
+        padding-bottom: rem-calc(10);
+      }
+    }
+  }
+}

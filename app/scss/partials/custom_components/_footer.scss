@@ -1,0 +1,128 @@
+// _footer.scss --partials
+// Styles for the global footer.
+/////////////////////////////////////////////////////////////////////////
+// This file is called in _base.scss
+
+
+$footer-links-height: rem-calc(100);
+$footer-main-height: rem-calc(200);
+$footer-cp-height: rem-calc(60);
+$flogo-height: rem-calc(92) / 1.5;
+$flogo-width: rem-calc(212) / 1.5;
+
+
+
+
+// General footer layout stuff
+.global-footer{
+	margin-top: rem-calc(20);
+	border-top: 1px solid;
+}
+
+
+// Footer links
+.global-footer{
+	.footer-links{
+		@media #{$medium-up}{
+			height: $footer-links-height;
+		}
+		ul{
+			text-align: center;
+			margin: 0;
+		}
+		li{
+			margin: rem-calc(0 20);
+			padding: rem-calc(15 0);
+			@media #{$medium-up}{
+				padding: rem-calc(0 0 5);
+				display: inline;
+			}
+		}
+		a{
+			font-size: rem-calc(18);
+			padding-bottom: rem-calc(3);
+			border-bottom: 1px solid transparent;
+			@media #{$medium-up}{
+				line-height: $footer-links-height;
+				font-size: rem-calc(14);
+			}
+		}
+	}
+}
+
+
+// Footer Main Section layout
+.global-footer{
+	.footer-main{
+		position: relative;
+		text-align: center;
+		height: calc(#{$footer-main-height} * 2);
+		@media #{$medium-up}{
+			background: url(/themes/vanilla-foundation/design/images/generic-subheader-bg.jpg) no-repeat center;
+			background-size: cover;
+			height: $footer-main-height;
+		}
+	}
+}
+
+
+// Goarmy button style
+.global-footer{
+	.footer-button{
+		border: 2px solid;
+		font-size: rem-calc(15);
+		padding: rem-calc(14 48 15 48);
+		border-radius: rem-calc(50);
+		line-height: $footer-main-height;
+		&:hover{
+			transition: border-width .3s ease;
+			border-width:rem-calc(5);
+		}
+	}
+}
+
+// Vanilla logo in footer
+.global-footer{
+	.vanilla-logo{
+		height: $flogo-height;
+		width: $flogo-width;
+		position: absolute;
+		top: calc(60% - #{$flogo-height} / 2);
+		right: calc(50% - #{$flogo-width} / 2);
+		@media #{$medium-up}{
+			top: calc(50% - #{$flogo-height} / 2);
+			right: rem-calc(40);
+		}
+	}
+}
+
+
+// Footer Copyright
+.global-footer{
+	.footer-copyright{
+		height: $footer-cp-height;
+		line-height: rem-calc(60);
+		font-size: rem-calc(12);
+		padding-left: rem-calc(40);
+		position: relative;
+	}
+}
+
+// Footer Social Icons
+.global-footer{
+	.social-icons{
+		position: absolute;
+		padding: 0;
+		top: 0;
+		right: rem-calc(40);
+	}
+}
+
+.vanilla-logo{
+  width: 70px;
+}
+.pre-footer-links {
+  li {
+    display: inline-block;
+  }
+}

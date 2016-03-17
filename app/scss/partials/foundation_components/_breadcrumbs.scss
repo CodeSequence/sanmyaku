@@ -1,0 +1,78 @@
+//
+// # Breadcrumbs
+//
+// Breadcrumbs come in handy to show a navigation trail for users clicking
+// through a site or app. They'll fill out 100% of the width of their parent
+// container.
+//
+// No styleguide reference.
+
+// Variables - These variables are listed here for reference only. They are
+// changed in the _settings.scss file as to be global variables.
+// -----------------------------------------------------------------------------
+//
+// $crumb-bg: #1F1F1F;
+// $crumb-border-size: 0;
+// $crumb-radius: 0;
+// $crumb-font-size: rem-calc(12);
+// $crumb-font-color: #fffcfc;
+// $crumb-slash: ">";
+// $crumb-font-color-current: #fff;
+// $crumb-font-color-unavailable: #999999;
+// $crumb-font-transform: capitalize;
+
+
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/breadcrumbs";
+// -----------------------------------------------------------------------------
+
+// Not sure what this export wrapper does but leave it
+@include exports("vanilla-breadcrumbs") {
+
+// Start Custom styles //////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Make vanilla breadcrumbs act like foundation breadcrumbs
+.Breadcrumbs {
+    @extend .breadcrumbs;
+}
+.Breadcrumbs .Crumb {
+    display: none;
+}
+
+
+
+// Setup the breadcrumb container
+.breadcrumb-container{
+	@extend .row;
+	padding: rem-calc(30 20);
+  .breadcrumbs li a,
+  .breadcrumbs > *:before,
+  .Breadcrumbs > *:before{
+    font-size: rem-calc(15);
+    line-height: rem-calc(22);
+  }
+  .breadcrumbs li{
+    a{
+      padding-bottom: rem-calc(5);
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+    }
+    &:hover a{
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+
+
+// End Custom styles ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+}

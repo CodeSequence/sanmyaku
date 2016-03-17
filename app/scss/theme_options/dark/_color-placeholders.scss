@@ -1,0 +1,52 @@
+// _color-placeholders.scss - theme_options/dark/
+// This is where all placeholders reside inside the dark forum project
+////////////////////////////////////////////////////////////////////////////////
+
+
+// A tag links
+%link{
+  @include link-colors($snow, $white, $sunglow);
+}
+
+// .InputBox
+%input-box{
+  @include input-boxes($silver-sand, $lightblack, $ship-gray);
+}
+
+// Buttons
+%yellow-btn{
+  @include btn-color(transparent, $daisy, $wan-white);
+  &:hover{
+    @include btn-color($daisy, $daisy, $lightblack);
+  }
+  &:focus{
+    @include btn-color(darken($daisy, 15%), darken($daisy, 15%), $lightblack);
+  }
+}
+%gray-btn{
+  @include btn-color(transparent, transparent, $wan-white);
+  &:hover{
+    @include btn-color($light-oil, $light-oil, $wan-white);
+  }
+  &:focus, &:active{
+    @include btn-color($ship-gray, $ship-gray, $wan-white);
+  }
+}
+%sage-btn{
+  @include btn-color(transparent, $locust, $wan-white);
+  &:hover{
+    @include btn-color($sage, $sage, $wan-white);
+  }
+  &:focus, &:active{
+    @include btn-color($bitter, $bitter, $wan-white);
+  }
+}
+%cancel-btn{
+  @include btn-color(transparent, transparent, $wan-white);
+  &:hover{
+    @include btn-color($charcoal, $charcoal, $wan-white);
+  }
+  &:focus, &:active{
+    @include btn-color($armadillo, $armadillo, $wan-white);
+  }
+}

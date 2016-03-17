@@ -1,0 +1,28 @@
+// _warnings.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Mod Warnings
+.Profile .Warnings{
+  .Warn, .WarningReason{
+    color: $oil;
+  }
+}
+// Note the THREE G's...
+.WarningTogggleHistory{
+  @extend %link;
+  &:focus{
+    color: $white;
+  }
+}
+
+// Banned Hero
+.Hero.Warning{
+  h3{
+    color: $white;
+  }
+}
+.Banned .Hero{
+  background: $scarlet;
+  color: $white;
+}

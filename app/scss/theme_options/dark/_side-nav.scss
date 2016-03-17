@@ -1,0 +1,77 @@
+// _side-nav.scss - theme-options/dark
+// Side-nav Styles
+// default styles found in foundation_components/_side-nav.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Side-nav Discussion Filter
+.BoxFilter{
+	.FilterMenu{
+		 li{
+			a{
+				color: $dark-gray;
+			}
+			&:hover, &.Active{
+				background-color: $dark-oil;
+				a{
+					color: $white;
+				}
+			}
+			.Aside{
+				span{
+					background-color: transparent;
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+// Side-nav Categories
+.BoxCategories, .BoxDiscussionSidebar,
+#SharedFingerprint, #FollowingPluginUsers{
+	h4{
+		color: $silver-sand;
+	}
+	.PanelCategories, .PanelDiscussionSidebar,
+	.PanelInfo{
+		li{
+			a{
+				color: $dark-gray;
+			}
+			&:hover, &.Active{
+				background-color: $dark-oil;
+				a{
+					color: $white;
+				}
+			}
+			.Aside{
+				span{
+					background-color: transparent;
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+// Share Accounts
+#SharedFingerprint{
+	h4 .Count{
+		background: transparent;
+		color: $silver-sand;
+	}
+}
+
+// Guest box Styling
+.GuestBox{
+  h4{
+    color: $silver-sand;
+  }
+  p{
+    color: $mountain-mist;
+  }
+  .Button{
+		@extend %sage-btn;
+  }
+}

@@ -1,0 +1,49 @@
+// _sign-in.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Signin Form
+.signin{
+  .SingleEntryMethod{
+    .MainForm{
+      ul{
+        .InputBox{
+          @extend %input-box;
+        }
+        .ForgotPassword{
+          @extend %link;
+        }
+      }
+    }
+  }
+}
+
+// Buttons
+.signin .Buttons,
+#Form_User_SignIn{
+  .CreateAccount{
+    color: $silver-sand;
+    a{
+      @extend %link;
+    }
+  }
+}
+
+// Admin SignIn
+#Form_User_SignIn{
+  ul{
+    .InputBox{
+      @extend %input-box;
+    }
+    .ForgotPassword{
+      @extend %link;
+    }
+  }
+}
+
+// Multiple Sign on Methods
+.MultipleEntryMethods{
+  .Methods b{
+    color: $silver-sand;
+  }
+}

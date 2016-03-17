@@ -1,0 +1,9 @@
+// _register.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+.register .FormWrapper ul{
+  .CheckBoxLabel a{
+    @extend %link;
+  }
+}

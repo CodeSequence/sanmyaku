@@ -1,0 +1,9 @@
+// _buttons.scss - theme_options/modules/
+////////////////////////////////////////////////////////////////////////////////
+
+
+@mixin btn-color($background, $border, $color){
+  background: $background;
+  border-color: $border;
+  color: $color;
+}

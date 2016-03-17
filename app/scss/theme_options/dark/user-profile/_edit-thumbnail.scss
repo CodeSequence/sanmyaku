@@ -1,0 +1,15 @@
+// _edit-thumbnail.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Profile.Section-EditProfile.thumbnail{
+  .Thumbnail{
+    .Info{
+      background: transparent;
+      color: $silver-sand;
+    }
+    .Buttons{
+      border-color: $charcoal;
+    }
+  }
+}

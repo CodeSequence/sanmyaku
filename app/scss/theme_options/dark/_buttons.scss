@@ -1,0 +1,174 @@
+// _buttons.scss - theme-options/dark
+// Button Styles
+// default styles found in foundation_components/_buttons.scss
+////////////////////////////////////////////////////////////////////////////////
+
+// BigButton button colors
+.Button.NewDiscussion,
+.Button.NewConversation,
+.BigButton.Popup,
+.BigButton.ClearConversation{
+  @extend %yellow-btn;
+}
+
+// General Button Colors
+.Buttons{
+  .Button{
+    @extend %yellow-btn;
+  }
+}
+
+// User Inbox New Conversation Big Button
+body.inbox{
+  .page-sidebar{
+    background: $rangoon-green;
+    .is-content{
+      background: $lightblack;
+    }
+  }
+}
+
+// User Inbox New Conversation Button
+.PageControls.Top{
+  .BoxButtons{
+    .Button{
+      border-color: $daisy;
+    }
+  }
+}
+
+// Form Buttons
+.FormWrapper{
+  .Buttons{
+    .CommentButton, .DiscussionButton{
+      border-color: $daisy;
+    }
+    .PreviewButton, .DraftButton, .Cancel, .WriteButton{
+      @extend %gray-btn;
+    }
+    a.SignInPopup.Stash{
+      @extend %sage-btn;
+    }
+    .Back a{
+      @extend %link;
+    }
+    .Bullet{
+      color: $dark-gray;
+    }
+  }
+}
+
+.DataListWrap{
+  .Buttons{
+    .Button{
+      @extend %yellow-btn;
+    }
+  }
+}
+
+.Activity{
+  .FormWrapper{
+    .Buttons{
+      .Button{
+        border-color: $daisy;
+      }
+    }
+  }
+}
+
+.Activity{
+  .CommentForm{
+    #Form_Comment{
+      border-color: $daisy;
+    }
+  }
+}
+
+// Edit Profile, signin & register Buttons
+.Profile.Section-EditProfile, .signin, .register{
+  .Buttons, p{
+    .Button{
+      @extend %sage-btn;
+    }
+  }
+}
+
+// Multiple Entry Js Connect
+.signin .MultipleEntryMethods{
+  .Button{
+    @extend %sage-btn;
+  }
+}
+
+// SSO Sign in btn
+.GuestBox .P .Primary{
+  @extend %sage-btn;
+}
+
+// Popup Buttons
+.Overlay{
+  .Popup{
+    .Body{
+      .Buttons .Button{
+        @extend %sage-btn;
+        &.Primary, &.Cancel{
+          @extend %sage-btn;
+        }
+        &.Close{
+          @extend %gray-btn;
+        }
+      }
+    }
+  }
+}
+
+// Profile Ignore Button
+.Profile.ignore{
+  .IgnoreUserAction{
+    .Ignore{
+      @extend %sage-btn;
+    }
+  }
+}
+
+// Change Author Button
+.ChangeAuthorForm{
+  .Buttons{
+    .Button{
+      @extend %sage-btn;
+    }
+  }
+}
+
+// Discussion Polls Button
+#DP_NextQuestion, #DP_AddOption{
+  @extend %gray-btn;
+}
+.DP_AnswerForm{
+  .Buttons{
+    .Button{
+      @extend %sage-btn;
+    }
+  }
+}
+
+// Popup Flag Button
+.Buttons{
+  #Form_Flagthis{
+    @extend %sage-btn;
+  }
+}
+
+// Admin SignIn
+#Form_User_SignIn{
+  .Buttons .Button{
+    @extend %sage-btn;
+  }
+}
+
+// Js Connect
+.connect .Connect{
+  .ButtonContainer .Button{
+    @extend %sage-btn;
+  }
+}

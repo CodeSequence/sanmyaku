@@ -1,0 +1,94 @@
+// _sign-in.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Signin Form
+.signin{
+  .SingleEntryMethod{
+    .MainForm{
+      ul{
+        margin: rem-calc(0 25 20);
+        label{
+          font-size: rem-calc(18);
+          font-weight: 300;
+          line-height: rem-calc(26);
+          font-family: $industry-light;
+        }
+        .InputBox{
+          max-width: 100%;
+          width: 100%;
+          border-radius: rem-calc(3);
+          font-size: rem-calc(18);
+          font-weight: 300;
+          line-height: rem-calc(26);
+          font-family: $industry-light;
+        }
+        .ForgotPassword{
+          margin-left: 0;
+          border-bottom: 1px solid transparent;
+          padding-bottom: rem-calc(3);
+        }
+      }
+    }
+  }
+}
+
+// Messages
+.signin .Messages{
+  padding-right: rem-calc(25);
+  padding-left: rem-calc(5);
+}
+
+// Buttons
+.signin .Buttons,
+#Form_User_SignIn .Buttons{
+  padding-bottom: rem-calc(25);
+  .CheckBoxLabel{
+    display: flex;
+    align-items: center;
+    padding-bottom: rem-calc(5);
+    input{
+      margin-right: rem-calc(10);
+    }
+  }
+  .CreateAccount{
+    a{
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+// Admin Sign-in
+#Form_User_SignIn{
+  padding-bottom: rem-calc(25);
+  ul{
+    margin: rem-calc(0 25);
+    label{
+      font-size: rem-calc(18);
+      font-weight: 300;
+      line-height: rem-calc(26);
+      font-family: $industry-light;
+    }
+    .InputBox{
+      max-width: 100%;
+      width: 100%;
+      border-radius: rem-calc(3);
+      font-size: rem-calc(18);
+      font-weight: 300;
+      line-height: rem-calc(26);
+      font-family: $industry-light;
+    }
+    .ForgotPassword{
+      margin-left: 0;
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+  }
+  .CreateAccount{
+    a{
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+  }
+}

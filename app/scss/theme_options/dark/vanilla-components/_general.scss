@@ -1,0 +1,97 @@
+// _discussion-general.scss - theme_options/dark/vanilla-components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Page Discussion List
+.is-content{
+  h1{
+    color: $silver-sand;
+  }
+  .Discussion, .Comment,
+  .Category{
+    .Title a,
+    .Username,
+    .Title{
+      color: $white;
+    }
+    p, time{
+      color: $dark-gray;
+    }
+    .MItem{
+      color: $dark-gray;
+      a{
+        @extend %link;
+      }
+    }
+  }
+}
+.Discussions,
+.CategoryList{
+  .Item.Checked{
+    background: rgba($white, 0.03);
+    border-color: $sunglow;
+  }
+  .Item{
+    &:hover{
+      background: rgba($white, 0.03);
+    }
+    .Title a:hover,
+    .TitleWrap a:hover{
+      border-color: $sunglow;
+    }
+    .MItem{
+      &.LastCommentBy a:hover{
+        border-color: $sunglow;
+      }
+    }
+  }
+}
+
+// Blockquote Styles
+blockquote.Quote{
+  background: transparent;
+  border-color: $charcoal;
+  color: $dark-gray;
+}
+code.CodeInline{
+  background: $lightblack;
+  color: $dark-gray;
+}
+
+// Reactions Styles
+.Reactions{
+  a{
+    color: $white;
+  }
+}
+
+// Comment Header
+.CommentHeading{
+  color: $dark-gray;
+  border-color: $charcoal;
+}
+
+// Comment Admin Checked
+.MessageList{
+  .Item.Checked{
+    background: rgba($white, 0.03);
+  }
+}
+
+// Comment Form Notes
+.Note.Closed{
+  color: $scarlet;
+}
+.MessageForm{
+  .H{
+    color: $silver-sand;
+  }
+}
+
+// General Element Colors
+.Empty{
+  color: $silver-sand;
+}
+.PageDescription{
+  color: $silver-sand;
+}

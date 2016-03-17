@@ -1,0 +1,12 @@
+// _online-colors.scss - theme_options/modules/
+// Online now plugin color mixin
+////////////////////////////////////////////////////////////////////////////////
+
+
+@mixin online-color($color){
+  color: $color;
+  &:hover{
+    color: $color;
+    border-color: $sunglow;
+  }
+}

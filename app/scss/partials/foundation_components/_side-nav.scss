@@ -1,0 +1,160 @@
+//
+// # Side Nav
+//
+// Side nav, like you see on the Foundation docs, is a great way to provide
+// navigation for your entire site, or for sections of an individual page.
+//
+// No styleguide reference.
+
+// Variables
+// -----------------------------------------------------------------------------
+
+
+
+// Library
+// -----------------------------------------------------------------------------
+@import "foundation/foundation/components/side-nav";
+// -----------------------------------------------------------------------------
+
+// Not sure what this export wrapper does but leave it
+@include exports("vanilla-side-nav") {
+
+// Start Custom styles //////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+
+// Make vanilla sidenav stuff act like foundation sidenav stuff
+.FilterMenu,
+.PanelInfo {
+  @include side-nav;
+	overflow: hidden;
+  word-break: break-all;
+  .page-content & {
+    display: none;
+  }
+}
+
+
+// Side-nav Discussion Filter
+.BoxFilter{
+	.FilterMenu{
+			padding: rem-calc(30 0);
+		 li{
+		 	margin: 0;
+		 	height: rem-calc(40);
+			a{
+				font-size: rem-calc(16);
+				font-family: IndustryLight;
+				padding-left: rem-calc(65);
+				padding-right: rem-calc(25);
+			}
+			.Aside{
+				float: right;
+				span{
+					font-size: rem-calc(16);
+					font-family: IndustryLight;
+				}
+			}
+		}
+	}
+}
+
+
+
+// Add icons beside Discussion Filter
+.BoxFilter{
+	.FilterMenu{
+		li{
+			$iconLeftPad: rem-calc(30);
+
+
+			@each $iconClass, $iconName in
+				(Activities    , activity),
+				(Activity      , activity),
+				(AllCategories , categories),
+				(Discussions   , discussions),
+				(MyDiscussions , user-discussion),
+				(MyDrafts      , drafts),
+				(Participated  , participated),
+				(Notifications , notification),
+				(Inbox         , inbox),
+				(Comments      , comment),
+        (MyBookmarks   , bookmark)
+				{
+				&.#{$iconClass}{
+					background: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.svg) no-repeat $iconLeftPad center;
+          transition: all .3s ease;
+					&:hover, &.Active, &.Active:hover{
+						background-image: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.active.svg);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Side-nav Categories
+.BoxCategories, .BoxDiscussionSidebar,
+#SharedFingerprint, #FollowingPluginUsers{
+	h4{
+		margin: 0;
+		padding: rem-calc(28 0 0 25);
+	}
+	.PanelCategories, .PanelDiscussionSidebar,
+	.PanelInfo{
+			padding: rem-calc(30 0);
+		li{
+		 	margin: 0;
+		 	padding: 0;
+			a{
+				font-size: rem-calc(16);
+				font-family: IndustryLight;
+				padding-left: rem-calc(25);
+				padding-right: rem-calc(25);
+			}
+			.Aside{
+				float: right;
+				span{
+					font-size: rem-calc(16);
+					font-family: IndustryLight;
+				}
+			}
+			&.Depth2{
+				a{
+					padding-left: rem-calc(40);
+				}
+			}
+		}
+	}
+}
+
+// Shared Accounts
+#SharedFingerprint{
+	.Count{
+		font-size: rem-calc(16);
+	}
+	li{
+		font-family: $industry-light;
+		height: rem-calc(40);
+	}
+}
+
+// Fix sidenav padding for medium screens
+@media #{$medium-only}{
+  .page-sidebar{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-content{
+    padding-left: 0;
+  }
+}
+
+
+
+
+// End Custom styles ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+}

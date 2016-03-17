@@ -1,0 +1,33 @@
+// _discussion-polls.scss - theme_options/dark
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Discussion Poll Answer Form
+.DP_AnswerForm, .DP_ResultsForm{
+  color: $silver-sand;
+  hr{
+    border-color: $charcoal;
+  }
+  .DP_AnswerQuestions, .DP_ResultsForm{
+    span{
+      color: $dark-gray;
+    }
+    .DP_AnswerOptions, .DP_ResultOptions{
+      .RadioLabel{
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+// Discustion Poll Tools
+#DP_Tools{
+  li a{
+    @extend %link;
+  }
+}
+
+// Attach Poll Checkbox
+label[for=Form_DP_Attach]{
+  color: $dark-gray;
+}

@@ -1,0 +1,163 @@
+// _discussion-header.scss - partials/vanilla_components
+///////////////////////////////////////////////////////////////////////////////
+
+
+// Page Title Layout
+.Discussion{
+  .PageTitle{
+    min-height: rem-calc(75);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: rem-calc(25);
+    h1{
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .Options{
+      position: static;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+.Title a, .TitleWrap a{
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0;
+  @media #{$medium-up}{
+    max-width: 100%;
+  }
+}
+.TitleWrap a{
+  white-space: pre-wrap;
+  word-break: break-word;
+  @media #{$small-only}{
+    max-width: 50%;
+  }
+}
+
+// Discussion Header Username
+.is-content{
+  .ItemDiscussion{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Discussion, .Comment{
+    .Author{
+      padding-left: 0;
+      .Username{
+        font-size: rem-calc(24);
+        line-height: rem-calc(34);
+        border-bottom: 1px solid transparent;
+        padding-bottom: rem-calc(3);
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+// Discussion Header
+.DiscussionHeader{
+  border-top: 1px solid;
+  padding: rem-calc(25);
+}
+
+// Comment Header
+.CommentHeader{
+  padding: rem-calc(25);
+}
+.DiscussionHeader, .CommentHeader{
+  .AuthorInfo{
+    margin-top: rem-calc(5);
+    float: right;
+  }
+  .MItem{
+    font-size: rem-calc(13);
+    line-height: rem-calc(22);
+    margin: 0;
+    &.Category a{
+      padding-bottom: rem-calc(3);
+      border-bottom: 1px solid transparent;
+    }
+    &.RoleTitle, &.Category, .DateUpdated{
+      &:before{
+        content: '\2022';
+        margin: rem-calc(0 5);
+      }
+    }
+  }
+  .DiscussionMeta{
+    .DateCreated time{
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+  }
+}
+
+// Add Icons to header
+.Discussion{
+  .PageTitle, .Comment{
+    .Options{
+      span.OptionsTitle{
+        background: url(/themes/vanilla-foundation/design/images/icons/forum.options.svg) no-repeat center;
+        height: rem-calc(15);
+        width: rem-calc(16);
+        transition: all .3s ease;
+        &:hover, &.Active, &.Active:hover{
+          background-image: url(/themes/vanilla-foundation/design/images/icons/forum.options.active.svg);
+        }
+      }
+      .Bookmark{
+        background: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg) no-repeat center;
+        &:hover, &.Active, &.Active:hover, &.Bookmarked{
+          background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark.active.svg);
+        }
+        &.Bookmarked:hover{
+          background-image: url(/themes/vanilla-foundation/design/images/icon/forum.bookmark-main.svg) no-repeat center;
+        }
+      }
+    }
+  }
+}
+
+// Fix space in comment header
+.Discussion{
+  .DataList .Item{
+    padding: 0;
+  }
+}
+
+// Add IP Address spacing
+.CommentHeader{
+  .MItem{
+    &.IPAddress{
+      border-bottom: 1px solid transparent;
+      margin: rem-calc(0 5);
+      padding-bottom: rem-calc(3);
+    }
+  }
+}
+
+// Fix Options Spacing
+.Comment{
+  .Options{
+    top: rem-calc(60);
+  }
+}
+
+// Discussion Header Warning Message
+.MessageList{
+  .Warning{
+    margin: rem-calc(0 25);
+  }
+}
+
+// Footer Spacing
+.Foot{
+  padding: rem-calc(0 25);
+}

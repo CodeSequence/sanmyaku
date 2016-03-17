@@ -1,0 +1,10 @@
+bower_components
+node_modules
+.DS_Store
+Thumbs.db
+*.log
+/js
+icons.svg
+icons.woff
+design/*.css
+.npmrc

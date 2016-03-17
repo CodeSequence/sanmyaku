@@ -1,0 +1,124 @@
+// _tab-bar.scss --partials
+// Styles for global tab bar. This is actually the top-bar but it is
+// called tab-bar when using off-canvas.
+/////////////////////////////////////////////////////////////////////////
+// This file is called in foundation_components/_offcanvas.scss
+
+
+
+$hamburger-size: rem-calc(27);
+$profile-size: rem-calc(44);
+
+
+
+// Add menu icon to the tab-bar left toggle button
+.off-canvas-wrap{
+	.left-off-canvas-toggle{
+		cursor: pointer;
+		.hamburger{
+			width: $hamburger-size;
+			height: $hamburger-size;
+			position: absolute;
+			top: calc(#{$tabbar-height} / 2 - #{$hamburger-size} / 2);
+			left: calc(#{$tabbar-height} / 2 - #{$hamburger-size} / 2);
+		}
+	}
+}
+
+
+// Add menu icon to the tab-bar right toggle
+// button (when signed in)
+.off-canvas-wrap{
+	.right-off-canvas-toggle{
+		cursor: pointer;
+		.hamburger{
+			width: $hamburger-size;
+			height: $hamburger-size;
+			position: absolute;
+			top: calc(#{$tabbar-height} / 2 - #{$hamburger-size} / 2);
+			right: calc(#{$tabbar-height} / 2 - #{$hamburger-size} / 2);
+			transform: rotate(180deg);
+		}
+	}
+}
+
+
+// Align the title text
+.off-canvas-wrap{
+  .tab-bar{
+    border-bottom: 1px solid transparent;
+  }
+	.TitleBar {
+	  text-align: left;
+    border-right: 1px solid;
+    border-left: 1px solid;
+	}
+}
+
+
+// Right tab-bar menu items (signedin)
+.off-canvas-wrap{
+	.right-menu-signedin{
+		width: rem-calc(600);
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+
+// Profile image
+.off-canvas-wrap{
+	.ProfilePhoto{
+    height: $profile-size;
+    width: $profile-size;
+    border-radius: 50%;
+    border: 2px solid;
+		position: absolute;
+		top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
+		right: calc(#{$tabbar-height} + #{rem-calc(22)});
+	}
+}
+
+
+// Username (signedin)
+.off-canvas-wrap{
+	.UserName{
+		position: absolute;
+		top: 0;
+		right: calc(#{$tabbar-height} + #{$profile-size} + #{rem-calc(22)} + #{rem-calc(22)});
+	}
+}
+
+
+// Right tab-bar menu items (signedout)
+.off-canvas-wrap{
+	.right-menu-signedout{
+		width: rem-calc(220);
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+
+// Avatar Placeholder
+.off-canvas-wrap{
+	.avatar-placeholder{
+    height: $profile-size;
+    width: $profile-size;
+	}
+	.right-menu-signedout{
+		a{
+			&:first-of-type{
+				padding-right: rem-calc(20);
+			}
+		}
+		.right-small{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-left-width: 0;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+// _sub-header.scss - theme-options/dark
+// Sub-header Styles
+// default styles found in custom_components/_sub-header.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Subheader background
+.sub-header{
+	background: $shark url(/themes/vanilla-foundation/design/images/dark/header-image.jpg) no-repeat center -90px;
+}
+
+// Search button styling
+.big-search{
+	background: transparent;
+	border: 2px solid $mountain-mist;
+	.InputBox, .Button{
+		background: transparent;
+	}
+	.InputBox{
+		background: rgba($lightblack, 0.65);
+		color: $white;
+		&::-webkit-input-placeholder{color: $white}
+		&:-moz-placeholder{color: $white}
+		&::-moz-placeholder{color: $white}
+		&:-ms-input-placeholder{color: $white}
+		&:focus{
+			background: rgba($lightblack, 0.65);
+			&::-webkit-input-placeholder{color: rgba($white, 0.5);}
+			&:-moz-placeholder{color: rgba($white, 0.5)}
+			&::-moz-placeholder{color: rgba($white, 0.5)}
+			&:-ms-input-placeholder{color: rgba($white, 0.5)}
+		}
+	}
+	.Button{
+		border-left: 1px solid rgba($white, 0.7);
+		background: rgba($lightblack, 0.75);
+	}
+}

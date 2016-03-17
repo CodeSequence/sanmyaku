@@ -1,0 +1,57 @@
+// _edit-profile.scss - partials/custom_components/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Back to profile link
+.Profile{
+  .ProfileOptions{
+    .ProfileButtons{
+      border-bottom: 1px solid transparent;
+      padding-bottom: rem-calc(3);
+    }
+  }
+}
+
+// Form settings
+body.Profile.Section-EditProfile{
+  .FormTitleWrapper{
+    margin-right: rem-calc(25);
+    ul{
+      margin-left: rem-calc(25);
+    }
+  }
+  ul{
+    li{
+      label{
+        padding-bottom: rem-calc(5);
+        font-family: $industry-light;
+        font-size: rem-calc(18);
+        line-height: rem-calc(26);
+        &.CheckBoxLabel{
+          display: flex;
+          align-items: center;
+          font-size: rem-calc(15);
+          line-height: rem-calc(22);
+          input{
+            margin-right: rem-calc(10);
+          }
+        }
+        &.RadioLabel{
+          font-size: rem-calc(15);
+          line-height: rem-calc(22);
+          input{
+            margin-right: rem-calc(5);
+          }
+        }
+      }
+      .InputBox{
+        border-radius: rem-calc(3);
+        border: 1px solid;
+        font-size: rem-calc(18);
+        line-height: rem-calc(26);
+        padding: rem-calc(10);
+        height: rem-calc(52);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// _link-colors.scss - modules/
+////////////////////////////////////////////////////////////////////////////////
+
+
+@mixin link-colors($color, $hover-color, $border-color){
+  color: $color;
+  &:hover{
+    color: $hover-color;
+    border-color: $border-color;
+  }
+}

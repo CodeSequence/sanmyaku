@@ -1,0 +1,10 @@
+// dark.scss --theme_options
+// This file is only to change colors for the theme-option.
+/////////////////////////////////////////////////////////////////////////
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+@import 'colors';
+@import 'modules/all';
+@import 'dark/base';

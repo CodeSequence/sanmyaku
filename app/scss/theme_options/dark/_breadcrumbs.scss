@@ -1,0 +1,19 @@
+// _breadcrumbs.scss - theme-options/dark
+// BreadCrumbs Styles
+////////////////////////////////////////////////////////////////////////////////
+
+
+.breadcrumb-container{
+  .breadcrumbs li{
+    &:hover a{
+      border-color: $sunglow;
+    }
+    a{
+      color: $snow;
+    }
+  }
+  .breadcrumbs > *:before,
+  .Breadcrumbs > *:before{
+    color: $mountain-mist;
+  }
+}

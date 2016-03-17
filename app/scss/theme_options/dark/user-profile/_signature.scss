@@ -1,0 +1,24 @@
+// _signature.scss - theme_options/dark/user-profile
+////////////////////////////////////////////////////////////////////////////////
+
+
+.Profile.Section-EditProfile.signature{
+  .FormTitleWrapper{
+    .SignatureRules, li{
+      color: $silver-sand;
+    }
+    .TextBoxWrapper{
+      textarea{
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+// Info Section
+.Profile.Section-EditProfile.signature{
+  .Info{
+    background: $scarlet;
+    color: $snow;
+  }
+}

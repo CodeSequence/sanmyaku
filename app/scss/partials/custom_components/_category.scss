@@ -1,0 +1,116 @@
+// _category.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+//General Layout
+.CategoryList{
+  padding-bottom: rem-calc(30);
+}
+
+// Fix icon spacing
+.CategoryList{
+  .Item .TitleWrap{
+    margin-left: rem-calc(85);
+  }
+  .Meta{
+    span{
+      font-family: $industry-light;
+      font-weight: normal;
+    }
+    .MItem.CommentCount{
+      margin-right: rem-calc(8);
+    }
+  }
+  .Category{
+    .PhotoWrap-Category{
+      margin: rem-calc(10 20 10 25);
+      &, & .CategoryPhoto{
+        border-radius: 50%;
+        height: rem-calc(40);
+        width: rem-calc(40);
+      }
+      .CategoryPhoto{
+        border: 2px solid;
+      }
+    }
+    .Options{
+      .OptionsTitle{
+        margin-right: rem-calc(-10);
+      }
+    }
+  }
+}
+
+// RSS Spacing
+.DataList .Meta .RSS{
+  margin-right: 0;
+}
+
+// Fix Last Discussion Title spacing
+.CategoryList{
+  .Meta .MItem.LastDiscussionTitle{
+    @media #{$small-up}{
+      white-space: pre-wrap;
+    }
+    @media #{$large-up}{
+      white-space: nowrap;
+    }
+    a:first-child{
+      margin: rem-calc(0 5);
+    }
+  }
+}
+
+// Category Description
+.CategoryList{
+  .Item{
+    .Meta{
+      width: 90%;
+      margin-left: rem-calc(60);
+    }
+    &.Depth2{
+      .Meta{
+        margin-left: 0;
+      }
+    }
+    .CategoryDescription{
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+      margin-left: rem-calc(25);
+      font-family: $industry-book;
+      width: 75%;
+    }
+  }
+}
+
+// Child Categories
+.CategoryList{
+  .Category{
+    .ChildCategories{
+      border: none;
+      b{
+        text-transform: uppercase;
+        font-family: $industry-book;
+        font-weight: 700;
+      }
+      &, b, a{
+        font-size: rem-calc(13);
+        line-height: rem-calc(22);
+      }
+      &, a{
+        font-family: $industry-light;
+      }
+      a{
+        padding-bottom: rem-calc(3);
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
+
+// Child Category Page
+.ChildCategoryList{
+  .Category{
+    width: 100%;
+  }
+}

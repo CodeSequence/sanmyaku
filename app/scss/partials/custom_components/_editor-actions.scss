@@ -1,0 +1,72 @@
+// _editor-actions.scss - partials/custom_components
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Emoji Styles
+.editor-dropdown{
+  [class^="emoji"]{
+    padding: rem-calc(2);
+    transition: background .3s ease-in;
+    border-radius: rem-calc(3);
+  }
+}
+
+// Add Link
+.editor-dropdown-link{
+  .Flyout{
+    max-width: rem-calc(300);
+    width: rem-calc(300);
+    padding: rem-calc(15);
+    .InputBox{
+      border-radius: rem-calc(3);
+      font-size: rem-calc(15);
+      font-family: $industry-light;
+    }
+    .MenuButtons{
+      display: flex;
+      justify-content: space-between;
+      .Button{
+        -webkit-appearance: none;
+        background: transparent;
+        text-transform: uppercase;
+        border: 2px solid;
+        border-radius: rem-calc(3);
+        text-shadow: none;
+        box-shadow: none;
+        margin-top: rem-calc(20);
+        font-weight: 300;
+        font-size: rem-calc(14);
+        padding: rem-calc(4 20 6);
+        font-family: $industry-book;
+      }
+    }
+  }
+}
+
+// File Drop
+.editor-dropdown{
+  .drop-section{
+    margin: rem-calc(15);
+    .InputBox{
+      border-radius: rem-calc(rem-calc(3));
+      font-size: rem-calc(15);
+      font-family: $industry-light;
+    }
+  }
+}
+
+// Full Page Editor View
+.editor-fullpage #editor-fullpage-candidate{
+  .TextBoxWrapper{
+    .TextBox{
+      border-radius: rem-calc(3);
+      font-family: $industry-light;
+      font-size: rem-calc(15);
+      line-height: rem-calc(22);
+    }
+  }
+  .Preview{
+    margin: rem-calc(50) auto;
+    max-width: rem-calc(800);
+  }
+}

@@ -1,0 +1,89 @@
+// _optionsMenu.scss --partials
+// Styles for the discussion options menu flyout.
+/////////////////////////////////////////////////////////////////////////
+// This file is called in _base.scss
+
+
+// Position the flyout box
+.OptionsMenu{
+  .MenuItems{
+    left: rem-calc(2);
+  }
+}
+
+// Adjust the flyout handle
+.OptionsMenu{
+  .Flyout:before,
+  .Flyout:after{
+    left: 9px;
+    right: auto;
+  }
+}
+
+// Position the Options span
+.Options{
+  position: absolute;
+  top: rem-calc(55);
+  right: rem-calc(45);
+  .OptionsTitle{
+    padding-left: 0;
+  }
+}
+
+// Section Discussion Options Spacing
+.Section-Discussion{
+  .Options{
+    right: rem-calc(20);
+    .OptionsTitle{
+      margin-right: rem-calc(15);
+    }
+    .OptionsMenu{
+      .MenuItems{
+        left: rem-calc(-9);
+      }
+    }
+  }
+}
+
+// Category Options Spacing
+.Section-CategoryList{
+  .Options{
+    right: rem-calc(50);
+  }
+}
+
+// Add Bookmark icons
+.ItemDiscussion{
+  .Options{
+    .Bookmark{
+      float: left;
+      display: none;
+      margin-right: rem-calc(5);
+      background: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg) no-repeat center;
+      transition: all .3s ease;
+      &:hover, &.Active, &.Active:hover, &.Bookmarked{
+        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark.active.svg);
+      }
+      &.Bookmarked:hover{
+        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg);
+      }
+    }
+  }
+}
+// Show/Hide icons
+.ItemDiscussion{
+  .AdminCheck{
+    display: none;
+  }
+  &:hover{
+    .Options{
+      .Bookmark{
+        display: inline-block;
+      }
+    }
+    .AdminCheck{
+      display: inline-block;
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+// custom.scss --MAIN FILE
+// This is our main starting scss file. It sets up the project,
+// imports foundation, sets foundation settings, then calls our partials.
+// Don't modify unless you know what you are doing.
+// No styling code here.
+/////////////////////////////////////////////////////////////////////////
+
+@charset "UTF-8";
+
+// First Normalize
+@import "foundation/normalize";
+
+// Set our variables
+@import "variables";
+
+// Import and Setup Foundation
+@import "settings";
+
+// Start writting our own stuff
+@import "partials/base";

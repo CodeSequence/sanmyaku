@@ -1,0 +1,22 @@
+// _pagination.scss - theme-options/dark
+// Pagination Styles
+// default styles found in foundation_components/_paginiation.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Pagination colors
+.Pager {
+  > a {
+    color: $snow;
+    &:hover,
+    a:focus {
+      color: $dark-gray;
+    }
+  }
+  > span {
+    color: $snow;
+  }
+  .Highlight {
+    color: $dark-gray;
+  }
+}

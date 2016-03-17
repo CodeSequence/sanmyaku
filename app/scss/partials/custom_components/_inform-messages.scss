@@ -1,0 +1,20 @@
+// _inform-messages.scss - partials/custom_components
+// This styles the box in the lower left portion after selecting a checkbox
+////////////////////////////////////////////////////////////////////////////////
+
+
+.InformMessages{
+  div{
+    font-family: $industry-book;
+    font-size: rem-calc(13);
+    line-height: rem-calc(19);
+    &.Actions{
+      .Delete, .Move, .Merge, .CancelAction, .Split{
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: rem-calc(3);
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+// _user-profile.scss - theme-options/dark
+// User Profile Styles
+// Default styles found in custom_components/_user-profile.scss
+////////////////////////////////////////////////////////////////////////////////
+
+
+// About Section
+.Profile{
+  .H{
+    color: $silver-sand;
+    a{
+      @extend %link;
+    }
+  }
+  #Status{
+    color: $silver-sand;
+    a{
+      @extend %link;
+    }
+  }
+  .About{
+    &:not(dl){
+      border-color: $charcoal;
+    }
+    dt{
+      color: $boulder;
+    }
+    dd{
+      color: $silver-sand;
+      a{
+        @extend %link;
+      }
+    }
+  }
+}
+
+// Profile message button
+.NavButton{
+  &:hover{
+    color: lighten($oil, 50%);
+  }
+}
+
+// Profile Warning Section
+.Profile{
+  .Warnings{
+    border-color: $charcoal;
+    div{
+      color: $dark-gray;
+    }
+  }
+}
+
+// Notifications
+.Profile{
+  .DataListWrap{
+    div{
+      color: $dark-gray;
+    }
+  }
+}
+
+// Profile Photo
+.PhotoWrapLarge{
+  background-color: $rangoon-green;
+  background: url(/themes/vanilla-foundation/design/images/dark/camobg.png) no-repeat center;
+  .ChangePicture{
+    @include link-colors($dark-gray, $white, $sunglow);
+  }
+  .ProfilePhotoLarge{
+    border-color: $sunglow-dark;
+  }
+}
