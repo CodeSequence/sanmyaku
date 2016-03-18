@@ -23,7 +23,11 @@
 // Position the Options span
 .Options{
   position: absolute;
-  top: rem-calc(55);
+  top: rem-calc(65);
+  @media #{$medium-up} {
+    top: rem-calc(55);
+    right: rem-calc(45);
+  }
   right: rem-calc(45);
   .OptionsTitle{
     padding-left: 0;
@@ -48,7 +52,10 @@
 // Category Options Spacing
 .Section-CategoryList{
   .Options{
-    right: rem-calc(50);
+    right: rem-calc(10);
+    @media #{$medium-up} {
+      right: rem-calc(50);
+    }
   }
 }
 

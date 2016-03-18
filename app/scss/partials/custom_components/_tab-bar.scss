@@ -70,13 +70,16 @@ $profile-size: rem-calc(44);
 // Profile image
 .off-canvas-wrap{
 	.ProfilePhoto{
-    height: $profile-size;
-    width: $profile-size;
-    border-radius: 50%;
-    border: 2px solid;
-		position: absolute;
-		top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
-		right: calc(#{$tabbar-height} + #{rem-calc(22)});
+		display: none;
+		@media #{$medium-up} {
+			height: $profile-size;
+			width: $profile-size;
+			border-radius: 50%;
+			border: 2px solid;
+			position: absolute;
+			top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
+			right: calc(#{$tabbar-height} + #{rem-calc(22)});
+		}
 	}
 }
 

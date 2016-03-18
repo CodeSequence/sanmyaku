@@ -153,11 +153,17 @@
 // Discussion Header Warning Message
 .MessageList{
   .Warning{
-    margin: rem-calc(0 25);
+    margin: rem-calc(0 10);
+    @media #{$medium-up} {
+      margin: rem-calc(0 25);
+    }
   }
 }
 
 // Footer Spacing
 .Foot{
-  padding: rem-calc(0 25);
+  padding: rem-calc(0 10);
+  @media #{$medium-up} {
+    padding: rem-calc(0 25);
+  }
 }

@@ -15,7 +15,10 @@
         padding-left: rem-calc(20);
       }
       .Meta{
-        padding-left: rem-calc(45);
+        padding-left: rem-calc(10);
+        @media #{$medium-up} {
+          padding-left: rem-calc(45);
+        }
       }
     }
   }
@@ -52,7 +55,10 @@
     .Title, .Excerpt{
       font-size: rem-calc(18);
       line-height: rem-calc(26);
-      padding-right: rem-calc(30);
+      padding-right: rem-calc(10);
+      @media #{$medium-up} {
+        padding-right: rem-calc(30);
+      }
     }
     .Title{
       margin-right: rem-calc(5);
@@ -64,7 +70,10 @@
     .Meta{
       font-size: rem-calc(13);
       line-height: rem-calc(22);
-      padding-right: rem-calc(30);
+      padding-right: rem-calc(10);
+      @media #{$medium-up} {
+        padding-right: rem-calc(30);
+      }
       .AddComment,
       .DeleteComment{
         margin-left: rem-calc(5);
@@ -75,7 +84,10 @@
 
 // Activiy Flag icon spacing
 .Activity .Reactions{
-  margin: rem-calc(0 30 25);
+  margin: rem-calc(0 10 25);
+  @media #{$medium-up} {
+    margin: rem-calc(0 30 25);
+  }
 }
 
 // Form Header user name
@@ -107,7 +119,10 @@
 .Activity .Item.Activity,
 .Profile .Item.Activity{
   .ItemContent.Activity{
-    margin-left: rem-calc(85);
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(85);
+    }
     .Reactions{
       margin-left: 0;
     }
