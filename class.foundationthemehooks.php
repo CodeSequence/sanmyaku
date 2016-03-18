@@ -3,7 +3,7 @@
  * Sample implementation of a theme hooks class to show
  * the use of custom Smarty plugins.
  */
-class MyThemeThemeHooks implements Gdn_IPlugin
+class FoundationThemeHooks implements Gdn_IPlugin
 {
     /**
      * Setup function is needed for this class, so don't delete it!
