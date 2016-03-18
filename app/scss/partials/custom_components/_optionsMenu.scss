@@ -23,7 +23,8 @@
 // Position the Options span
 .Options{
   position: absolute;
-  top: rem-calc(65);
+  top: rem-calc(55);
+  right: rem-calc(10);
   @media #{$medium-up} {
     top: rem-calc(55);
     right: rem-calc(45);

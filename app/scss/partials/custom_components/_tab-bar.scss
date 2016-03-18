@@ -70,19 +70,24 @@ $profile-size: rem-calc(44);
 // Profile image
 .off-canvas-wrap{
 	.ProfilePhoto{
-		display: none;
-		@media #{$medium-up} {
-			height: $profile-size;
-			width: $profile-size;
-			border-radius: 50%;
-			border: 2px solid;
-			position: absolute;
-			top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
-			right: calc(#{$tabbar-height} + #{rem-calc(22)});
-		}
+		height: $profile-size;
+		width: $profile-size;
+		border-radius: 50%;
+		border: 2px solid;
+		position: absolute;
+		top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
+		right: calc(#{$tabbar-height} + #{rem-calc(22)});
 	}
 }
 
+// Hide Profile Image in Top Bar on Small Devices
+@media #{$small-only} {
+	.off-canvas-wrap .tab-bar{
+		.ProfilePhoto{
+			display: none;
+		}
+	}
+}
 
 // Username (signedin)
 .off-canvas-wrap{

@@ -5,7 +5,10 @@
 
 // Top Page Controls
 .PageControls.Top{
-  padding-left: rem-calc(25);
+  padding-left: rem-calc(10);
+  @media #{$medium-up} {
+    padding-left: rem-calc(25);
+  }
   .BoxButtons{
     box-shadow: none;
     .Button{

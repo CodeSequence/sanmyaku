@@ -75,9 +75,12 @@
       transition: all .3s ease;
       border-top: 1px solid transparent;
       div.Title, .TitleWrap{
-        margin-left: rem-calc(25);
+        margin-left: rem-calc(10);
         @media #{$medium-only}{
           width: 55%;
+        }
+        @media #{$medium-up} {
+          margin-left: rem-calc(25);
         }
         @media #{$large-up}{
           width: 70%;
@@ -101,6 +104,30 @@
           a{
             padding-bottom: rem-calc(3);
             border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+
+  // Fix CommentCount Icon Spacing on Mobile
+  .Discussions{
+    .Meta, .Options{
+      .CommentCount{
+        @media #{$small-only} {
+          &.MItem{
+            margin-left: rem-calc(-15);
+          }
+        }
+      }
+    }
+  }
+  .CategoryList{
+    .Meta, .Options{
+      .CommentCount{
+        @media #{$small-only} {
+          &.MItem{
+            margin-left: rem-calc(-5);
           }
         }
       }
@@ -218,5 +245,8 @@
 }
 // Adds extra space for the Admin Checkbox
 .Meta-Discussion{
-  padding-right: rem-calc(125);
+  padding-right: rem-calc(10);
+  @media #{$medium-up} {
+    padding-right: rem-calc(125);
+  }
 }

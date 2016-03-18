@@ -33,7 +33,10 @@ $profile-photo-default-size: floor($rem-base * $paragraph-line-height) * 2 !defa
     .Author{
       width: rem-calc(40);
       margin-top: rem-calc(30);
-      padding-left: rem-calc(25);
+      padding-left: rem-calc(10);
+      @media #{$medium-up} {
+        padding-left: rem-calc(25);
+      }
       a, img{
         width: rem-calc(40);
         height: rem-calc(40);
@@ -47,5 +50,8 @@ $profile-photo-default-size: floor($rem-base * $paragraph-line-height) * 2 !defa
 }
 
 .Author .PhotoWrap{
-  margin-right: rem-calc(20);
+  margin-right: rem-calc(10);
+  @media #{$medium-up} {
+    margin-right: rem-calc(20);
+  }
 }
