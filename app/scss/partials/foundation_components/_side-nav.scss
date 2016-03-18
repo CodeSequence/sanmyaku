@@ -34,7 +34,6 @@
   }
 }
 
-
 // Side-nav Discussion Filter
 .BoxFilter{
 	@media #{$small-only} {
@@ -60,15 +59,11 @@
 	}
 }
 
-
-
 // Add icons beside Discussion Filter
 .BoxFilter{
 	.FilterMenu{
 		li{
 			$iconLeftPad: rem-calc(30);
-
-
 			@each $iconClass, $iconName in
 				(Activities    , activity),
 				(Activity      , activity),
@@ -93,7 +88,6 @@
 		}
 	}
 }
-
 
 // Side-nav Categories
 .BoxCategories, .BoxDiscussionSidebar,

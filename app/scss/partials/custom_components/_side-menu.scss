@@ -13,7 +13,6 @@
 	}
 }
 
-
 // Menu Bar title
 .left-off-canvas-menu{
 	.menu-top-bar-title{
@@ -26,7 +25,6 @@
 		padding-right: rem-calc(37);
 	}
 }
-
 
 // Menu close button
 .left-off-canvas-menu, .right-off-canvas-menu{
@@ -62,7 +60,6 @@
 	}
 }
 
-
 // Menu List Items
 .left-off-canvas-menu, .right-off-canvas-menu{
 	.off-canvas-list{
@@ -90,9 +87,6 @@
 .right-off-canvas-menu{
 	.off-canvas-list{
 		a{
-      span{
-
-      }
 			&:hover{
 				border-right: rem-calc(2) solid $white;
 				padding-right: rem-calc(35);
@@ -100,8 +94,6 @@
 		}
 	}
 }
-
-
 
 // Menu Seperator
 .left-off-canvas-menu, .right-off-canvas-menu{
@@ -111,7 +103,6 @@
 		border: 0;
 	}
 }
-
 
 // Forum Stats Styles
 .ForumStats{
@@ -144,7 +135,6 @@
 		}
 	}
 }
-
 
 // Social Icons
 .social-icons{
