@@ -37,6 +37,9 @@
 
 // Side-nav Discussion Filter
 .BoxFilter{
+	@media #{$small-only} {
+		display: none;
+	}
 	.FilterMenu{
 			padding: rem-calc(30 0);
 		 li{
@@ -146,7 +149,11 @@
   }
 }
 
-
+@media #{$small-only} {
+	.BoxDiscussionSidebar{
+		display: none;
+	}
+}
 
 
 // End Custom styles ////////////////////////////////////////////////////////////
