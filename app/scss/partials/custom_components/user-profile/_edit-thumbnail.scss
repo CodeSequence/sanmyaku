@@ -4,7 +4,10 @@
 
 .Profile.Section-EditProfile.thumbnail{
   .Thumbnail{
-    margin: rem-calc(16 25);
+    margin: rem-calc(16 10);
+    @media #{$medium-up} {
+      margin: rem-calc(16 25);
+    }
     .Info{
       font-size: rem-calc(15);
       line-height: rem-calc(22);

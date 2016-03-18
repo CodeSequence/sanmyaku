@@ -182,7 +182,10 @@ body.Section-ConversationList.inbox{
 // User Profile & signin view buttons
 .Profile.Section-EditProfile, .signin{
   .Buttons{
-    margin-left: rem-calc(25);
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(25);
+    }
   }
   .Buttons, p{
     .Button{

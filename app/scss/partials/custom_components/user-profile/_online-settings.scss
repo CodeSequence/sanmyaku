@@ -4,15 +4,21 @@
 
 .Profile.Section-EditProfile.OnlineNow{
   h2{
-    margin-left: rem-calc(25);
     padding-top: rem-calc(15);
     font-size: rem-calc(24);
     font-weight: 300;
     line-height: rem-calc(34);
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(25);
+    }
   }
   form{
     ul{
-      margin-left: rem-calc(25);
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
     }
   }
 }
