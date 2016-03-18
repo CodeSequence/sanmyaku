@@ -1,6 +1,6 @@
 # Foundation for Vanilla
 
-[![Release](http://img.shields.io/github/release/codesequence/vanilla-foundation.svg)](https://github.com/codesequence/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/valeryan/vanilla-foundation.svg)](https://gemnasium.com/valeryan/vanilla-foundation)
+[![Release](http://img.shields.io/github/release/codesequence/vanilla-foundation.svg)](https://github.com/codesequence/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/CodeSequence/vanilla-foundation.svg)](https://gemnasium.com/CodeSequence/vanilla-foundation)
 
 ## Getting started
 
