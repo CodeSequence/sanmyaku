@@ -14,7 +14,6 @@
   }
   .Meta{
     span{
-      font-family: $industry-light;
       font-weight: normal;
     }
     .MItem.CommentCount{
@@ -77,7 +76,6 @@
       font-size: rem-calc(15);
       line-height: rem-calc(22);
       margin-left: rem-calc(25);
-      font-family: $industry-book;
       width: 75%;
     }
   }
@@ -90,15 +88,11 @@
       border: none;
       b{
         text-transform: uppercase;
-        font-family: $industry-book;
         font-weight: 700;
       }
       &, b, a{
         font-size: rem-calc(13);
         line-height: rem-calc(22);
-      }
-      &, a{
-        font-family: $industry-light;
       }
       a{
         padding-bottom: rem-calc(3);

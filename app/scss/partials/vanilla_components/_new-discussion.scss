@@ -30,7 +30,6 @@
         b{
           font-size: rem-calc(18);
           font-weight: 300;
-          font-family: $industry-book;
           line-height: rem-calc(26);
         }
         .RadioLabel{
@@ -38,7 +37,6 @@
             font-size: rem-calc(15);
             font-weight: 300;
             line-height: rem-calc(22);
-            font-family: $industry-light;
           }
         }
       }
@@ -57,12 +55,5 @@
         }
       }
     }
-  }
-}
-
-// Buttons
-.Buttons{
-  .Cancel{
-    // float: right;
   }
 }

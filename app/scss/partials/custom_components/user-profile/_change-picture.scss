@@ -10,7 +10,6 @@
       thead{
         border-bottom: 1px solid;
         td{
-          font-family: $industry-light;
           font-size: rem-calc(13);
           line-height: rem-calc(22);
           padding-bottom: rem-calc(20);
@@ -30,7 +29,6 @@
     margin-left: rem-calc(25);
     margin-bottom: rem-calc(50);
     font-size: rem-calc(15);
-    font-family: $industry-light;
     line-height: rem-calc(22);
     text-align: center;
     padding: rem-calc(20 50);
@@ -41,7 +39,6 @@
 // Buttons
 .Profile.Section-EditProfile{
   input[type=file]{
-    font-family: $industry-light;
     font-size: rem-calc(13);
     padding-bottom: rem-calc(25);
     border-bottom: 1px solid;

@@ -33,7 +33,6 @@
     .Title a,
     .Meta:not(.Photo) a,
     .Name{
-      font-family: $industry-book;
       border-bottom: 1px solid transparent;
       padding-bottom: rem-calc(3);
     }
@@ -42,7 +41,6 @@
       font-size: rem-calc(18);
     }
     .Delete{
-      font-family: $industry-book;
       font-size: rem-calc(20);
       &:hover{
         background: transparent;

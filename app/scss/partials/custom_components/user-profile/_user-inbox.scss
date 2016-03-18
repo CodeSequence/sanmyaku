@@ -10,7 +10,6 @@
     box-shadow: none;
     .Button{
       text-transform: uppercase;
-      font-family: $industry-book;
       font-size: rem-calc(14);
       border-radius: rem-calc(4);
       border: 2px solid;
@@ -59,11 +58,9 @@ body.inbox{
   .Meta{
     margin-left: rem-calc(85);
     span{
-      font-family: $industry-book;
       font-size: rem-calc(13);
     }
     strong{
-      font-family: $industry-bold;
       text-transform: uppercase;
       font-family: rem-calc(13);
     }
