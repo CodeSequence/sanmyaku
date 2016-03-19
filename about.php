@@ -2,9 +2,9 @@
     exit;
 }
 
-$ThemeInfo['vanillafoundation'] = [
+$ThemeInfo['vanilla-foundation'] = [
   'Name'        => 'Zurb Foundation Theme',
-  'Description' => "A Zurb Foundation 6 Theme for vanilla forums",
+  'Description' => "A Zurb Foundation 5 Theme for vanilla forums",
   'Version'     => '0.0.1',
   'Author'      => 'Samuel Hilson, Ryan Jordan',
   'AuthorEmail' => 'samrhilson@gmail.com',
