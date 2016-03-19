@@ -23,14 +23,14 @@ label, .List b,
 .DataListWrap{
   .CommentForm{
     .CommentLink{
-      @include form-colors($dark-gray);
+      @include form-colors($paragraph-text);
       &:hover{
         cursor: pointer;
         background: $lightblack;
       }
     }
     .TextBox{
-      @include form-colors($dark-gray);
+      @include form-colors($paragraph-text);
     }
   }
 }
@@ -39,7 +39,7 @@ label, .List b,
 .Activities{
   .CommentForm{
     .CommentLink{
-      @include form-colors($dark-gray);
+      @include form-colors($paragraph-text);
       &:hover{
         cursor: pointer;
         background: $lightblack;
@@ -63,7 +63,7 @@ label, .List b,
   }
 }
 .editor-help-text{
-  color: $dark-gray;
+  color: $paragraph-text;
   a{
     @extend %link;
   }

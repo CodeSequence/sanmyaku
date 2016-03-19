@@ -6,13 +6,13 @@
 
 // Subheader background
 .sub-header{
-	background: $shark url(/themes/vanilla-foundation/design/images/dark/header-image.jpg) no-repeat center -90px;
+	background: $sub-header-background url($sub-header-image) no-repeat center -90px;
 }
 
 // Search button styling
 .big-search{
 	background: transparent;
-	border: 2px solid $mountain-mist;
+	border-color: $search-input-border;
 	.InputBox, .Button{
 		background: transparent;
 	}
@@ -32,7 +32,7 @@
 		}
 	}
 	.Button{
-		border-left: 1px solid rgba($white, 0.7);
+		border-color: $search-input-border;
 		background: rgba($lightblack, 0.75);
 	}
 }

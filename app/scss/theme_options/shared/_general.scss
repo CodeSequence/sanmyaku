@@ -3,12 +3,12 @@
 
 
 // Main background color
-html,body{background: $lightblack;}
+html,body{background: $body-background;}
 
 // Warning Divs
 span.Warning, div.Warning{
   background: $scarlet;
-  color: $white;
+  color: $paragraph-text;
   a{
     @extend %link;
   }
@@ -17,7 +17,7 @@ span.Warning, div.Warning{
 // Sign In or Register Link at bottom of Discussion
 .Note.Closed{
   &.SignInOrRegister{
-    color: $dark-gray;
+    color: $paragraph-text;
     a{
       @extend %link;
     }

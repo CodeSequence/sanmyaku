@@ -1,7 +1,55 @@
 // _settings.scss - theme_options/dark/
+// This file holds all color variables for the dark theme
 ////////////////////////////////////////////////////////////////////////////////
 
 // Theme Fonts
 $theme-font-light: $quicksand;
 $theme-font-normal: $open-sans;
 $theme-font-bold: $merriweather;
+
+// Theme Specific colors
+$body-background: $lightblack;
+
+// Top Bar
+$tab-bar-background: $lightblack;
+$tab-bar-logo: '/themes/vanilla-foundation/design/images/dark/header_logo.png';
+$profile-photo-border: $armadillo;
+
+// Off canvas
+$off-canvas-background: $onyx;
+$off-canvas-background-hover: $rangoon-green;
+
+// Sub Header
+$sub-header-background: $shark;
+$sub-header-image: '/themes/vanilla-foundation/design/images/dark/header-image.jpg';
+$search-input-border: $mountain-mist;
+
+// Breadcrumbs
+$breadcrumb-text: $snow;
+$breadcrumb-text-hover: $snow;
+$breadcrumb-border: $sunglow;
+$text-separator: $mountain-mist;
+
+// BoxFilter Colors
+$box-filter-background: $rangoon-green;
+$side-nav-text: $dark-gray;
+$side-nav-bg-hover: $dark-oil;
+
+// General
+$paragraph-text: $mountain-mist;
+
+// CheckBox
+$checkbox-border: $armadillo;
+
+// Discussion/Category views
+$meta-text: $dark-gray;
+$page-headers: $silver-sand;
+
+// Icons
+$theme-name: 'dark';
+
+// Footer
+$footer-main-background: $shark;
+$footer-border-top: $charcoal;
+$footer-background-image: '/themes/vanilla-foundation/design/images/dark/footer-image.jpg';
+$global-footer-background: $body-background;

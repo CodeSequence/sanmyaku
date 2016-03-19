@@ -7,7 +7,7 @@
 // About Section
 .Profile{
   .H{
-    color: $silver-sand;
+    color: $page-headers;
     a{
       @extend %link;
     }
@@ -46,7 +46,7 @@
   .Warnings{
     border-color: $charcoal;
     div{
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
 }
@@ -55,7 +55,7 @@
 .Profile{
   .DataListWrap{
     div{
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
 }

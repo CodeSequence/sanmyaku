@@ -7,13 +7,14 @@
   .breadcrumbs li{
     &:hover a{
       border-color: $sunglow;
+      color: $breadcrumb-text-hover;
     }
     a{
-      color: $snow;
+      color: $breadcrumb-text;
     }
   }
   .breadcrumbs > *:before,
   .Breadcrumbs > *:before{
-    color: $mountain-mist;
+    color: $text-separator;
   }
 }

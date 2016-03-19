@@ -6,12 +6,12 @@
 // Tab bar and side menu background color
 .off-canvas-wrap{
 	.tab-bar{
-		background: $lightblack;
+		background: $tab-bar-background;
 	}
 	.right-off-canvas-menu, .left-off-canvas-menu{
-		background: $onyx;
+		background: $off-canvas-background;
     li:hover{
-      background: $rangoon-green;
+      background: $off-canvas-background-hover;
     }
 	}
 }
@@ -22,7 +22,7 @@
 		padding-left: 20px;
 		.logo{
 			width: 300px;
-			background: url(/themes/vanilla-foundation/design/images/dark/header_logo.png) no-repeat center;
+			background: url($tab-bar-logo) no-repeat center;
 			background-size: contain;
 			text-indent: -99999px;
 		}
@@ -42,7 +42,7 @@
 // Profile image
 .off-canvas-wrap{
 	.ProfilePhoto{
-    border-color: $armadillo;
+    border-color: $profile-photo-border;
 	}
 }
 
@@ -68,7 +68,7 @@
 // Menu Header
 .left-off-canvas-menu, .right-off-canvas-menu{
 	.menu-top-bar{
-		background: $onyx;
+		background: $off-canvas-background;
 		color: $silver-sand;
 		border-bottom: 1px solid $bastille;
 	}
@@ -78,11 +78,11 @@
 .left-off-canvas-menu, .right-off-canvas-menu{
 	.off-canvas-list{
 		a{
-			color: $dark-gray;
+			color: $paragraph-text;
 			padding: rem-calc(8 0 8 37);
 			&:hover{
 				color: $white;
-				background: $rangoon-green;
+				background: $side-nav-bg-hover;
 			}
 		}
 	}

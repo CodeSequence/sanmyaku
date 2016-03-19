@@ -5,7 +5,7 @@
 // Page Discussion List
 .is-content{
   h1{
-    color: $silver-sand;
+    color: $page-headers;
   }
   .Discussion, .Comment,
   .Category{
@@ -15,10 +15,10 @@
       color: $white;
     }
     p, time{
-      color: $dark-gray;
+      color: $meta-text;
     }
     .MItem{
-      color: $dark-gray;
+      color: $meta-text;
       a{
         @extend %link;
       }
@@ -33,7 +33,7 @@
   }
   .Item{
     &:hover{
-      background: rgba($white, 0.03);
+      background: $side-nav-bg-hover;
     }
     .Title a:hover,
     .TitleWrap a:hover{
@@ -51,11 +51,11 @@
 blockquote.Quote{
   background: transparent;
   border-color: $charcoal;
-  color: $dark-gray;
+  color: $paragraph-text;
 }
 code.CodeInline{
   background: $lightblack;
-  color: $dark-gray;
+  color: $paragraph-text;
 }
 
 // Reactions Styles
@@ -67,7 +67,7 @@ code.CodeInline{
 
 // Comment Header
 .CommentHeading{
-  color: $dark-gray;
+  color: $page-headers;
   border-color: $charcoal;
 }
 
@@ -84,7 +84,7 @@ code.CodeInline{
 }
 .MessageForm{
   .H{
-    color: $silver-sand;
+    color: $page-headers;
   }
 }
 

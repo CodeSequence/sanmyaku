@@ -4,7 +4,7 @@
 
 // Username, Email & photo
 .UserBox{
-  background: $rangoon-green;
+  background: $box-filter-background;
   .WhoIs{
     .Username{
       @extend %link;
@@ -21,7 +21,7 @@
     .PanelInfo{
       li{
         a{
-          color: $dark-gray;
+          color: $paragraph-text;
           &:hover{
             color: $white;
           }

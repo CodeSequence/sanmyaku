@@ -15,3 +15,16 @@
     }
   }
 }
+
+// Guest Box Styling
+.GuestBox{
+  h4{
+    color: $page-headers;
+  }
+  p{
+    color: $paragraph-text;
+  }
+  .Button{
+    @extend %sage-btn;
+  }
+}

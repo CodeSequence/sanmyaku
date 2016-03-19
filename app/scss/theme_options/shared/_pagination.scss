@@ -10,13 +10,13 @@
     color: $snow;
     &:hover,
     a:focus {
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
   > span {
     color: $snow;
   }
   .Highlight {
-    color: $dark-gray;
+    color: $paragraph-text;
   }
 }

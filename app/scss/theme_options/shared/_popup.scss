@@ -7,7 +7,7 @@
   .Popup{
     .Footer{
       .Close span{
-        color: $dark-gray;
+        color: $paragraph-text;
         :hover{
           color: $white;
         }
@@ -34,7 +34,7 @@
   .Body{
     .Content{
       h2{
-        color: $silver-sand;
+        color: $page-headers;
       }
       form div{
         ul li{
@@ -78,7 +78,7 @@
       }
       .Buttons{
         .CreateAccount{
-          color: $dark-gray;
+          color: $paragraph-text;
           a{
             @extend %link;
           }

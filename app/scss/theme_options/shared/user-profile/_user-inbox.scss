@@ -11,7 +11,7 @@
   }
   .Meta{
     span{
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
 }
@@ -52,7 +52,7 @@ body.Section-Conversation{
   .page-sidebar{
     .Box{
       h4{
-        color: $silver-sand;
+        color: $page-headers;
       }
       &.InThisConversation{
         .PanelInfo{
