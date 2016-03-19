@@ -1,9 +1,9 @@
 <?php
 /**
- * determine if a register link is needed
+ * determine if a register link is needed when using sso
  * @return string
  */
-function agsRegisterLink()
+function dynamicRegisterLink()
 {
     $template = '<a href="%url" class="%class">%text</a>';
     if (strcasecmp(c('Garden.Registration.Method'), 'Connect') == 0) {
@@ -29,4 +29,4 @@ function agsRegisterLink()
     );
 }
 
-echo agsRegisterLink();
+echo dynamicRegisterLink();
