@@ -5,12 +5,18 @@
 .onlineNow{
   padding-bottom: rem-calc(25);
   h4{
-    padding: rem-calc(10 25 0);
     font-size: rem-calc(24);
     line-height: rem-calc(34);
+    padding: rem-calc(10 10 0);
+    @media #{$medium-up} {
+      padding: rem-calc(10 25 0);
+    }
   }
   .PanelInfo{
-    padding-left: rem-calc(25);
+    padding-left: rem-calc(10);
+    @media #{$medium-up} {
+      padding-left: rem-calc(25);
+    }
     li{
       font-size: rem-calc(15);
       line-height: rem-calc(22);

@@ -49,7 +49,10 @@
 // Setup the breadcrumb container
 .breadcrumb-container{
 	@extend .row;
-	padding: rem-calc(30 20);
+  padding: rem-calc(30 0);
+  @media #{$medium-up} {
+    padding: rem-calc(30 20);
+  }
   .breadcrumbs li a,
   .breadcrumbs > *:before,
   .Breadcrumbs > *:before{

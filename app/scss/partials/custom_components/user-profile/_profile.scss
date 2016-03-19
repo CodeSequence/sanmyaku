@@ -5,7 +5,10 @@
 
 // Profile NavButton
 .ProfileOptions{
-  margin: rem-calc(25);
+  margin: rem-calc(25 10);
+  @media #{$medium-up} {
+    margin: rem-calc(25);
+  }
 }
 
 // Profile Status
@@ -34,8 +37,12 @@
     }
   }
   .DataListWrap{
-    margin-left: rem-calc(25);
-    margin-right: rem-calc(25);
+    margin-left: rem-calc(10);
+    margin-right: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(25);
+      margin-right: rem-calc(25);
+    }
   }
   .About{
     padding-bottom: rem-calc(20);
@@ -44,8 +51,11 @@
       padding-bottom: rem-calc(3);
     }
     &:not(dl){
-      margin: rem-calc(50 25);
       border-bottom: 1px solid transparent;
+      margin: rem-calc(50 10);
+      @media #{$medium-up} {
+        margin: rem-calc(50 25);
+      }
       dt, dd{
         font-size: rem-calc(16);
         font-weight: 300;
@@ -55,13 +65,26 @@
       }
       dd{
         margin-right: rem-calc(10);
+        @media #{$small-only} {
+          padding: 0;
+          margin-right: 0;
+          &:after{
+            content: '';
+            display: block;
+          }
+        }
       }
       dt{
         padding-left: 0;
-        display: inline-block;
+        @media #{$medium-up} {
+          display: inline-block;
+        }
         &:after{
-          padding: rem-calc(0 3);
           content: ':';
+          padding: 0;
+          @media #{$medium-up} {
+            padding: rem-calc(0 3);
+          }
         }
       }
     }
@@ -72,8 +95,11 @@
 .Profile{
   .Warnings{
     border-bottom: 1px solid transparent;
-    margin: rem-calc(0 25);
     padding-bottom: rem-calc(50);
+    margin: rem-calc(0 10);
+    @media #{$medium-up} {
+      margin: rem-calc(0 25);
+    }
     div{
       text-align: left;
       font-size: rem-calc(15);
@@ -167,5 +193,14 @@
     height: rem-calc(160);
     border-radius: 50%;
     border: 3px solid;
+  }
+}
+
+// Profile Activity Meta on Small Devices
+@media #{$small-only} {
+  .Profile .ItemContent.Activity{
+    .Meta, .Excerpt{
+      margin-left: rem-calc(50);
+    }
   }
 }

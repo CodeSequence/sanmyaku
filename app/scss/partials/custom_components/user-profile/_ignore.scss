@@ -6,11 +6,17 @@
 .Profile.ignore{
   .is-content{
     .H{
-      margin-left: rem-calc(25);
       padding-top: rem-calc(15);
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
     }
     form{
-      margin: rem-calc(0 25);
+      margin: rem-calc(0 10);
+      @media #{$medium-up} {
+        margin: rem-calc(0 25);
+      }
       div{
         ul{
           margin-left: 0;

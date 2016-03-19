@@ -6,7 +6,10 @@
   h2{
     font-size: rem-calc(24);
     line-height: rem-calc(34);
-    margin-left: rem-calc(25);
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(25);
+    }
   }
   .PreferenceGroup{
     width: 100%;
@@ -14,14 +17,20 @@
     margin-bottom: rem-calc(30);
     thead, tbody, tr, td{
       border: none;
-      padding: rem-calc(0 25);
+      padding: rem-calc(0 10);
+      @media #{$medium-up} {
+        padding: rem-calc(0 25);
+      }
     }
     thead td{
       font-size: rem-calc(13);
-      line-height: rem-calc(22);
       padding-bottom: rem-calc(20);
+      line-height: rem-calc(22);
       &.PrefCheckBox, &.TopHeading{
-        padding-left: rem-calc(15);
+        padding-left: 0;
+        @media #{$medium-up} {
+          padding-left: rem-calc(15);
+        }
       }
       &.TopHeading{
         padding-bottom: 0;
@@ -29,7 +38,10 @@
     }
     tbody td{
       font-size: rem-calc(15);
-      line-height: rem-calc(40);
+      line-height: rem-calc(26);
+      @media #{$medium-up} {
+        line-height: rem-calc(40);
+      }
     }
   }
   .InfoMessage{
@@ -38,9 +50,12 @@
     line-height: rem-calc(22);
     text-align: center;
     padding: rem-calc(30 0 35);
-    margin: rem-calc(25);
     border-top: 1px solid;
     border-bottom: 1px solid;
+    margin: rem-calc(25 10);
+    @media #{$medium-up} {
+      margin: rem-calc(25);
+    }
   }
 }
 

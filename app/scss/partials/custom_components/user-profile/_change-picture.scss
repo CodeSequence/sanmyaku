@@ -26,13 +26,16 @@
 .Profile.Section-EditProfile.picture{
   .WarningMessage{
     border-radius: rem-calc(3);
-    margin-left: rem-calc(25);
     margin-bottom: rem-calc(50);
     font-size: rem-calc(15);
     line-height: rem-calc(22);
     text-align: center;
     padding: rem-calc(20 50);
     border: none;
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(25);
+    }
   }
 }
 

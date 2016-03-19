@@ -5,7 +5,10 @@
 .Profile.Section-EditProfile.signature{
   .FormTitleWrapper{
     h2.H{
-      margin-left: rem-calc(25);
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
     }
     .SignatureRules{
       font-size: rem-calc(13);

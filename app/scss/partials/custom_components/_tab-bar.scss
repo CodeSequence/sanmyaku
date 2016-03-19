@@ -10,7 +10,6 @@ $hamburger-size: rem-calc(27);
 $profile-size: rem-calc(44);
 
 
-
 // Add menu icon to the tab-bar left toggle button
 .off-canvas-wrap{
 	.left-off-canvas-toggle{
@@ -24,7 +23,6 @@ $profile-size: rem-calc(44);
 		}
 	}
 }
-
 
 // Add menu icon to the tab-bar right toggle
 // button (when signed in)
@@ -42,7 +40,6 @@ $profile-size: rem-calc(44);
 	}
 }
 
-
 // Align the title text
 .off-canvas-wrap{
   .tab-bar{
@@ -55,7 +52,6 @@ $profile-size: rem-calc(44);
 	}
 }
 
-
 // Right tab-bar menu items (signedin)
 .off-canvas-wrap{
 	.right-menu-signedin{
@@ -66,20 +62,27 @@ $profile-size: rem-calc(44);
 	}
 }
 
-
 // Profile image
 .off-canvas-wrap{
 	.ProfilePhoto{
-    height: $profile-size;
-    width: $profile-size;
-    border-radius: 50%;
-    border: 2px solid;
+		height: $profile-size;
+		width: $profile-size;
+		border-radius: 50%;
+		border: 2px solid;
 		position: absolute;
 		top: calc(#{$tabbar-height} / 2 - #{$profile-size} / 2);
 		right: calc(#{$tabbar-height} + #{rem-calc(22)});
 	}
 }
 
+// Hide Profile Image in Top Bar on Small Devices
+@media #{$small-only} {
+	.off-canvas-wrap .tab-bar{
+		.ProfilePhoto{
+			display: none;
+		}
+	}
+}
 
 // Username (signedin)
 .off-canvas-wrap{
@@ -90,7 +93,6 @@ $profile-size: rem-calc(44);
 	}
 }
 
-
 // Right tab-bar menu items (signedout)
 .off-canvas-wrap{
 	.right-menu-signedout{
@@ -100,7 +102,6 @@ $profile-size: rem-calc(44);
 		top: 0;
 	}
 }
-
 
 // Avatar Placeholder
 .off-canvas-wrap{

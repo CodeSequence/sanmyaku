@@ -6,10 +6,13 @@
 .Discussion{
   .Item-Body{
     .Message, .UserSignature{
-      padding: rem-calc(25 85);
       font-size: rem-calc(15);
       line-height: rem-calc(22);
       border-top: none;
+      padding: rem-calc(25 10);
+      @media #{$medium-up} {
+        padding: rem-calc(25 85);
+      }
       h1{
         padding-left: 0;
         font-size: rem-calc(45);
@@ -111,7 +114,10 @@ code.CodeInline{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin: rem-calc(0 85 25);
+  margin: rem-calc(0 10 25);
+  @media #{$medium-up} {
+    margin: rem-calc(0 85 25);
+  }
   a{
     font-size: rem-calc(13);
     font-weight: 300;
@@ -160,7 +166,17 @@ code.CodeInline{
   font-size: rem-calc(18);
   font-weight: 300;
   line-height: rem-calc(26);
-  padding: rem-calc(25 85);
   border-top: 1px solid;
   margin-top: 0;
+  padding: rem-calc(25 10);
+  @media #{$medium-up} {
+    padding: rem-calc(25 85);
+  }
+}
+
+// Extra Bottom Padding Profile > Discussions
+.Profile.discussions{
+  .DataList.Discussions{
+    padding-bottom: rem-calc(25);
+  }
 }

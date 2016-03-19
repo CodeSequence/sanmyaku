@@ -10,7 +10,10 @@
 // Fix icon spacing
 .CategoryList{
   .Item .TitleWrap{
-    margin-left: rem-calc(85);
+    margin-left: rem-calc(10);
+    @media #{$medium-up} {
+      margin-left: rem-calc(85);
+    }
   }
   .Meta{
     span{
@@ -23,6 +26,9 @@
   .Category{
     .PhotoWrap-Category{
       margin: rem-calc(10 20 10 25);
+      @media #{$small-only} {
+        display: none;
+      }
       &, & .CategoryPhoto{
         border-radius: 50%;
         height: rem-calc(40);
@@ -65,7 +71,9 @@
   .Item{
     .Meta{
       width: 90%;
-      margin-left: rem-calc(60);
+      @media #{$medium-up} {
+        margin-left: rem-calc(60);
+      }
     }
     &.Depth2{
       .Meta{
@@ -75,8 +83,11 @@
     .CategoryDescription{
       font-size: rem-calc(15);
       line-height: rem-calc(22);
-      margin-left: rem-calc(25);
       width: 75%;
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
     }
   }
 }

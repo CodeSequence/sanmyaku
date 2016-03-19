@@ -15,9 +15,15 @@
 // Form settings
 body.Profile.Section-EditProfile{
   .FormTitleWrapper{
-    margin-right: rem-calc(25);
+    margin-right: rem-calc(10);
+    @media #{$medium-up} {
+      margin-right: rem-calc(25);
+    }
     ul{
-      margin-left: rem-calc(25);
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
     }
   }
   ul{

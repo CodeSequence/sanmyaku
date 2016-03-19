@@ -10,7 +10,14 @@
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-right: rem-calc(25);
+    padding-right: rem-calc(10);
+    @media #{$small-only} {
+      display: block;
+      padding-top: rem-calc(10);
+    }
+    @media #{$medium-up} {
+      padding-right: rem-calc(25);
+    }
     h1{
       white-space: pre-wrap;
       word-break: break-all;
@@ -64,17 +71,28 @@
 // Discussion Header
 .DiscussionHeader{
   border-top: 1px solid;
-  padding: rem-calc(25);
+  padding: rem-calc(10);
+  @media #{$medium-up} {
+    padding: rem-calc(25);
+  }
 }
 
 // Comment Header
 .CommentHeader{
-  padding: rem-calc(25);
+  padding: rem-calc(10);
+  @media #{$medium-up} {
+    padding: rem-calc(25);
+  }
 }
 .DiscussionHeader, .CommentHeader{
   .AuthorInfo{
     margin-top: rem-calc(5);
-    float: right;
+    @media #{$small-only} {
+      display: block;
+    }
+    @media #{$medium-up} {
+      float: right;
+    }
   }
   .MItem{
     font-size: rem-calc(13);
@@ -153,11 +171,26 @@
 // Discussion Header Warning Message
 .MessageList{
   .Warning{
-    margin: rem-calc(0 25);
+    margin: rem-calc(0 10);
+    @media #{$medium-up} {
+      margin: rem-calc(0 25);
+    }
   }
 }
 
 // Footer Spacing
 .Foot{
-  padding: rem-calc(0 25);
+  padding: rem-calc(0 10);
+  @media #{$medium-up} {
+    padding: rem-calc(0 25);
+  }
+}
+
+// Comment Meta Padding on Small Devices
+@media #{$small-only} {
+  .CommentHeader, .DiscussionHeader{
+    .CommentMeta, .DiscussionMeta{
+      margin-left: rem-calc(50);
+    }
+  }
 }
