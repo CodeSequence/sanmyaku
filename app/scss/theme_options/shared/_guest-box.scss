@@ -10,7 +10,7 @@
     }
     &:hover{
       .ConnectLabel{
-        border-color: $sunglow;
+        border-color: $link-border;
       }
     }
   }
@@ -25,6 +25,6 @@
     color: $paragraph-text;
   }
   .Button{
-    @extend %sage-btn;
+    @extend %secondary-btn;
   }
 }

@@ -91,7 +91,7 @@
 	.off-canvas-list{
 		a{
 			&:hover{
-				border-left: 2px solid $sunglow !important;
+				border-left: 2px solid $link-border !important;
 			}
 		}
 	}
@@ -104,7 +104,7 @@
         color: $dark-gray;
       }
 			&:hover{
-				border-right: 2px solid $sunglow !important;
+				border-right: 2px solid $link-border !important;
 			}
 		}
 	}

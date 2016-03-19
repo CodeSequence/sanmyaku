@@ -21,7 +21,7 @@ body.inbox{
   .DataListWrap{
     .Users > a{
       &:hover{
-        border-color: $sunglow;
+        border-color: $link-border;
       }
     }
   }
@@ -46,7 +46,7 @@ body.Section-Conversation{
   }
   .FormWrapper{
     .Button{
-      @extend %yellow-btn;
+      @extend %primary-btn;
     }
   }
   .page-sidebar{

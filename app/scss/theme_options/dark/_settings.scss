@@ -1,6 +1,8 @@
 // _settings.scss - theme_options/dark/
 // This file holds all color variables for the dark theme
 ////////////////////////////////////////////////////////////////////////////////
+// Theme Name
+$theme-name: 'dark';
 
 // Theme Fonts
 $theme-font-light: $quicksand;
@@ -11,45 +13,64 @@ $theme-font-bold: $merriweather;
 $body-background: $lightblack;
 
 // Top Bar
-$tab-bar-background: $lightblack;
-$tab-bar-logo: '/themes/vanilla-foundation/design/images/dark/header_logo.png';
-$profile-photo-border: $armadillo;
+$tab-bar-background: $onyx;
+$tab-bar-logo: '/themes/vanilla-foundation/design/images/#{$theme-name}/header_logo.png';
+$profile-photo-border: $midnight-blue;
 
 // Off canvas
 $off-canvas-background: $onyx;
-$off-canvas-background-hover: $rangoon-green;
+$off-canvas-background-hover: $oil;
 
 // Sub Header
-$sub-header-background: $shark;
-$sub-header-image: '/themes/vanilla-foundation/design/images/dark/header-image.jpg';
-$search-input-border: $mountain-mist;
+$sub-header-background: $lightblack;
+$sub-header-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/header-image.jpg';
+$search-input-border: $midnight-blue;
 
 // Breadcrumbs
-$breadcrumb-text: $snow;
-$breadcrumb-text-hover: $snow;
-$breadcrumb-border: $sunglow;
-$text-separator: $mountain-mist;
+$breadcrumb-text: $white;
+$breadcrumb-text-hover: $white;
+$breadcrumb-border: $botticelli;
+$text-separator: $silver;
 
 // BoxFilter Colors
-$box-filter-background: $rangoon-green;
-$side-nav-text: $dark-gray;
-$side-nav-bg-hover: $dark-oil;
+$box-filter-background: $onyx;
+$side-nav-text: $silver;
+$side-nav-bg-hover: $midnight-blue;
 
 // General
-$paragraph-text: $mountain-mist;
+$paragraph-text: $nepal;
+
+// Buttons
+$primary-btn-text: $white;
+$primary-btn-border: $midnight-blue;
+$primary-btn-background: transparent;
+$primary-btn-text-hover: $white;
+$primary-btn-background-hover: $midnight-blue;
+
+$secondary-btn-text: $white;
+$secondary-btn-border: $nepal;
+$secondary-btn-background: transparent;
+$secondary-btn-text-hover: $midnight-blue;
+$secondary-btn-background-hover: $nepal;
+
+// Links
+$link-text: $white;
+$link-text-hover: $white;
+$link-border: $botticelli;
 
 // CheckBox
-$checkbox-border: $armadillo;
+$checkbox-border: $midnight-blue;
+
+$input-box-border: $midnight-blue;
+$input-box-background: $lightblack;
+$input-box-text: $nepal;
 
 // Discussion/Category views
-$meta-text: $dark-gray;
+$meta-text: $nepal;
 $page-headers: $silver-sand;
-
-// Icons
-$theme-name: 'dark';
 
 // Footer
 $footer-main-background: $shark;
-$footer-border-top: $charcoal;
-$footer-background-image: '/themes/vanilla-foundation/design/images/dark/footer-image.jpg';
+$footer-border-top: $shark;
+$footer-background-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/footer-image.jpg';
 $global-footer-background: $body-background;

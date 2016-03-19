@@ -29,7 +29,7 @@
 .CategoryList{
   .Item.Checked{
     background: rgba($white, 0.03);
-    border-color: $sunglow;
+    border-color: $link-border;
   }
   .Item{
     &:hover{
@@ -37,11 +37,11 @@
     }
     .Title a:hover,
     .TitleWrap a:hover{
-      border-color: $sunglow;
+      border-color: $link-border;
     }
     .MItem{
       &.LastCommentBy a:hover{
-        border-color: $sunglow;
+        border-color: $link-border;
       }
     }
   }

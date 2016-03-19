@@ -5,10 +5,10 @@
 input[type=checkbox]{
   border-color: $checkbox-border;
   &:hover{
-    border-color: $sunglow-dark;
+    border-color: $checkbox-border;
   }
   &:checked{
-    background: $sunglow-dark;
+    background: $checkbox-border;
   }
   &:checked:after{
     border-color: $lightblack;

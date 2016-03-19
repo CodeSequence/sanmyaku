@@ -65,9 +65,9 @@
   background-color: $rangoon-green;
   background: url(/themes/vanilla-foundation/design/images/dark/post-bg.png) no-repeat center;
   .ChangePicture{
-    @include link-colors($dark-gray, $white, $sunglow);
+    @include link-colors($dark-gray, $white, $link-border);
   }
   .ProfilePhotoLarge{
-    border-color: $sunglow-dark;
+    border-color: $checkbox-border;
   }
 }

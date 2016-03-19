@@ -8,13 +8,13 @@
 .Button.NewConversation,
 .BigButton.Popup,
 .BigButton.ClearConversation{
-  @extend %yellow-btn;
+  @extend %primary-btn;
 }
 
 // General Button Colors
 .Buttons{
   .Button{
-    @extend %yellow-btn;
+    @extend %primary-btn;
   }
 }
 
@@ -47,7 +47,7 @@ body.inbox{
       @extend %gray-btn;
     }
     a.SignInPopup.Stash{
-      @extend %sage-btn;
+      @extend %secondary-btn;
     }
     .Back a{
       @extend %link;
@@ -61,7 +61,7 @@ body.inbox{
 .DataListWrap{
   .Buttons{
     .Button{
-      @extend %yellow-btn;
+      @extend %primary-btn;
     }
   }
 }
@@ -88,7 +88,7 @@ body.inbox{
 .Profile.Section-EditProfile, .signin, .register{
   .Buttons, p{
     .Button{
-      @extend %sage-btn;
+      @extend %secondary-btn;
     }
   }
 }
@@ -96,13 +96,13 @@ body.inbox{
 // Multiple Entry Js Connect
 .signin .MultipleEntryMethods{
   .Button{
-    @extend %sage-btn;
+    @extend %secondary-btn;
   }
 }
 
 // SSO Sign in btn
 .GuestBox .P .Primary{
-  @extend %sage-btn;
+  @extend %secondary-btn;
 }
 
 // Popup Buttons
@@ -110,9 +110,9 @@ body.inbox{
   .Popup{
     .Body{
       .Buttons .Button{
-        @extend %sage-btn;
+        @extend %secondary-btn;
         &.Primary, &.Cancel{
-          @extend %sage-btn;
+          @extend %secondary-btn;
         }
         &.Close{
           @extend %gray-btn;
@@ -126,7 +126,7 @@ body.inbox{
 .Profile.ignore{
   .IgnoreUserAction{
     .Ignore{
-      @extend %sage-btn;
+      @extend %secondary-btn;
     }
   }
 }
@@ -135,7 +135,7 @@ body.inbox{
 .ChangeAuthorForm{
   .Buttons{
     .Button{
-      @extend %sage-btn;
+      @extend %secondary-btn;
     }
   }
 }
@@ -147,7 +147,7 @@ body.inbox{
 .DP_AnswerForm{
   .Buttons{
     .Button{
-      @extend %sage-btn;
+      @extend %secondary-btn;
     }
   }
 }
@@ -155,20 +155,20 @@ body.inbox{
 // Popup Flag Button
 .Buttons{
   #Form_Flagthis{
-    @extend %sage-btn;
+    @extend %secondary-btn;
   }
 }
 
 // Admin SignIn
 #Form_User_SignIn{
   .Buttons .Button{
-    @extend %sage-btn;
+    @extend %secondary-btn;
   }
 }
 
 // Js Connect
 .connect .Connect{
   .ButtonContainer .Button{
-    @extend %sage-btn;
+    @extend %secondary-btn;
   }
 }
