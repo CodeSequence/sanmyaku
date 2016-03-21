@@ -6,9 +6,13 @@
 // Position the Admin Check on Discussions view
 .AdminCheck{
   position: absolute;
-  right: rem-calc(125);
-  top: rem-calc(53);
   transition: all .3s ease;
+	top: rem-calc(70);
+	right: rem-calc(10);
+	@media #{$medium-up} {
+		top: rem-calc(53);
+		right: rem-calc(125);
+	}
 }
 
 // Header Admin Check Discussions View
@@ -26,7 +30,9 @@
   .AdminCheck{
     top: rem-calc(-3);
 		right: rem-calc(50);
-		display: none;
+		@media #{$medium-up} {
+			display: none;
+		}
   }
 	&:hover{
 		.AdminCheck{

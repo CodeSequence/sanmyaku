@@ -23,8 +23,13 @@
 // Position the Options span
 .Options{
   position: absolute;
-  top: rem-calc(55);
-  right: rem-calc(10);
+  top: rem-calc(20);
+  right: 0;
+  @media #{$small-only} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media #{$medium-up} {
     top: rem-calc(55);
     right: rem-calc(45);
@@ -37,7 +42,10 @@
 // Section Discussion Options Spacing
 .Section-Discussion{
   .Options{
-    right: rem-calc(20);
+    right: rem-calc(10);
+    @media #{$medium-up} {
+      right: rem-calc(20);
+    }
     .OptionsTitle{
       margin-right: rem-calc(15);
     }
@@ -64,10 +72,16 @@
   .Options{
     .Bookmark{
       float: left;
-      display: none;
       margin-right: rem-calc(5);
       background: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg) no-repeat center;
       transition: all .3s ease;
+      @media #{$small-only} {
+        margin-top: rem-calc(10);
+        margin-right: 0;
+      }
+      @media #{$medium-up} {
+        display: none;
+      }
       &:hover, &.Active, &.Active:hover, &.Bookmarked{
         background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark.active.svg);
       }
@@ -80,7 +94,9 @@
 // Show/Hide icons
 .ItemDiscussion{
   .AdminCheck{
-    display: none;
+    @media #{$medium-up} {
+      display: none;
+    }
   }
   &:hover{
     .Options{
