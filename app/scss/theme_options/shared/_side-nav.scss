@@ -63,7 +63,7 @@
 #SharedFingerprint{
 	h4 .Count{
 		background: transparent;
-		color: $silver-sand;
+		color: $paragraph-text;
 	}
 }
 
@@ -73,7 +73,7 @@
     color: $silver-sand;
   }
   p{
-    color: $mountain-mist;
+    color: $paragraph-text;
   }
   .Button{
 		@extend %secondary-btn;

@@ -32,7 +32,7 @@ body.inbox{
 .PageControls.Top{
   .BoxButtons{
     .Button{
-      border-color: $daisy;
+      border-color: $primary-btn-border;
     }
   }
 }
@@ -41,7 +41,7 @@ body.inbox{
 .FormWrapper{
   .Buttons{
     .CommentButton, .DiscussionButton{
-      border-color: $daisy;
+      border-color: $primary-btn-border;
     }
     .PreviewButton, .DraftButton, .Cancel, .WriteButton{
       @extend %gray-btn;
@@ -70,7 +70,7 @@ body.inbox{
   .FormWrapper{
     .Buttons{
       .Button{
-        border-color: $daisy;
+        border-color: $primary-btn-border;
       }
     }
   }
@@ -79,7 +79,7 @@ body.inbox{
 .Activity{
   .CommentForm{
     #Form_Comment{
-      border-color: $daisy;
+      border-color: $primary-btn-border;
     }
   }
 }

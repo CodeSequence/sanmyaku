@@ -7,11 +7,13 @@
   .MultiComplete,
   .token-input-list,
   .token-input-input-token input{
-    @include form-colors($silver-sand);
+    // @include form-colors($silver-sand);
+    @extend %forms;
   }
   .InputBox, .InputBox:focus,
   .TextBox, .TextBox:focus{
-    @include form-colors($silver-sand);
+    // @include form-colors($silver-sand);
+    @extend %forms;
   }
 }
 label, .List b,
@@ -23,14 +25,16 @@ label, .List b,
 .DataListWrap{
   .CommentForm{
     .CommentLink{
-      @include form-colors($paragraph-text);
+      // @include form-colors($paragraph-text);
+      @extend %forms;
       &:hover{
         cursor: pointer;
         background: $lightblack;
       }
     }
     .TextBox{
-      @include form-colors($paragraph-text);
+      // @include form-colors($paragraph-text);
+      @extend %forms;
     }
   }
 }
@@ -39,7 +43,8 @@ label, .List b,
 .Activities{
   .CommentForm{
     .CommentLink{
-      @include form-colors($paragraph-text);
+      // @include form-colors($paragraph-text);
+      @extend %forms;
       &:hover{
         cursor: pointer;
         background: $lightblack;
@@ -50,7 +55,8 @@ label, .List b,
 
 // Preview
 .P .Preview, .Preview{
-  @include form-colors($silver-sand);
+  // @include form-colors($silver-sand);
+  @extend %forms;
 }
 
 // BBCode styles
@@ -78,6 +84,7 @@ label, .List b,
     color: $scarlet;
   }
   .InputBox{
-    @include form-colors($silver-sand);
+    // @include form-colors($silver-sand);
+    @extend %forms;
   }
 }

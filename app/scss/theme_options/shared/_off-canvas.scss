@@ -21,7 +21,7 @@
 	.title{
 		padding-left: 20px;
 		.logo{
-			width: 300px;
+			width: $logo-width;
 			background: url($tab-bar-logo) no-repeat center;
 			background-size: contain;
 			text-indent: -99999px;
@@ -101,7 +101,7 @@
 		a{
       span{
         background-color: transparent;
-        color: $dark-gray;
+        color: $paragraph-text;
       }
 			&:hover{
 				border-right: 2px solid $link-border !important;
@@ -120,7 +120,10 @@
 // Forum Stats Styles
 .ForumStats{
 	h4{
-		color: $mountain-mist;
+		color: $paragraph-text;
+	}
+	.FSBox span{
+		color: $paragraph-text;
 	}
 }
 ////////////////////////////////////////////////////////////////////////////////

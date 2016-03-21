@@ -8,8 +8,8 @@
   a{
     color: $silver-sand !important;
     &:hover{
-      color: $lightblack !important;
-      background: $daisy !important;
+      color: $primary-btn-text !important;
+      background: $primary-btn-border !important;
     }
   }
 }

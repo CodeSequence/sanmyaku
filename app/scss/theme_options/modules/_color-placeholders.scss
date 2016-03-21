@@ -13,6 +13,11 @@
   @include input-boxes($input-box-text, $input-box-background, $input-box-border);
 }
 
+// Forms
+%forms{
+  @include form-colors($input-box-text, $input-box-background, $input-box-border);
+}
+
 // Buttons
 %primary-btn{
   @include btn-color($primary-btn-background, $primary-btn-border, $primary-btn-text);

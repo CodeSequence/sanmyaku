@@ -41,7 +41,7 @@ body.Section-Conversation{
       }
     }
     .Message{
-      color: $silver-sand;
+      color: $paragraph-text;
     }
   }
   .FormWrapper{
@@ -67,7 +67,7 @@ body.Section-Conversation{
       &.AddPeople{
         .Buttons{
           .Button{
-            border-color: $daisy;
+            border-color: $primary-btn-border;
           }
         }
       }

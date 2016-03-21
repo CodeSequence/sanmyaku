@@ -5,9 +5,9 @@
 $theme-name: 'dark';
 
 // Theme Fonts
-$theme-font-light: $quicksand;
-$theme-font-normal: $open-sans;
-$theme-font-bold: $merriweather;
+$theme-font-light: $open-sans;
+$theme-font-normal: $josefin-sans;
+$theme-font-bold: $josefin-sans;
 
 // Theme Specific colors
 $body-background: $lightblack;
@@ -15,6 +15,7 @@ $body-background: $lightblack;
 // Top Bar
 $tab-bar-background: $onyx;
 $tab-bar-logo: '/themes/vanilla-foundation/design/images/#{$theme-name}/header_logo.png';
+$logo-width: 100px;
 $profile-photo-border: $midnight-blue;
 
 // Off canvas
@@ -23,7 +24,7 @@ $off-canvas-background-hover: $oil;
 
 // Sub Header
 $sub-header-background: $lightblack;
-$sub-header-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/header-image.jpg';
+$sub-header-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/header-image.png';
 $search-input-border: $midnight-blue;
 
 // Breadcrumbs
@@ -72,5 +73,5 @@ $page-headers: $silver-sand;
 // Footer
 $footer-main-background: $shark;
 $footer-border-top: $shark;
-$footer-background-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/footer-image.jpg';
+$footer-background-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/footer-image.png';
 $global-footer-background: $body-background;
