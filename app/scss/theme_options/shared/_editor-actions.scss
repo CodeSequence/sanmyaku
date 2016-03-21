@@ -29,7 +29,7 @@
     .MenuButtons{
       .Button{
         &:not(.Cancel){
-          @extend %sage-btn;
+          @extend %secondary-btn;
         }
         &.Cancel{
           @extend %cancel-btn;

@@ -29,6 +29,7 @@ $search-bar-radius: rem-calc(3);
 	left: calc(50% - #{$search-width} / 2);
 	margin: 0 auto;
 	box-sizing: content-box;
+	border: 2px solid;
 	border-radius: $search-bar-radius;
 	max-width: 100%;
 	@media #{$small-only}{
@@ -52,6 +53,7 @@ $search-bar-radius: rem-calc(3);
 		position: absolute;
 		right: 0;
 		top: 0;
+		border-left: 1px solid;
 		border-radius: 0 $search-bar-radius $search-bar-radius 0;
 		padding: 0;
 		box-shadow: none;

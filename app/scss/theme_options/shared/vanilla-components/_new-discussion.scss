@@ -7,12 +7,12 @@
     .PostOptions{
       b{
         &:first-child{
-          color: $silver-sand;
+          color: $page-headers;
         }
       }
       .RadioLabel{
         &, & b{
-          color: $dark-gray;
+          color: $paragraph-text;
         }
       }
     }

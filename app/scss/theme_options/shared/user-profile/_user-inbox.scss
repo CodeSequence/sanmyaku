@@ -11,7 +11,7 @@
   }
   .Meta{
     span{
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
 }
@@ -21,7 +21,7 @@ body.inbox{
   .DataListWrap{
     .Users > a{
       &:hover{
-        border-color: $sunglow;
+        border-color: $link-border;
       }
     }
   }
@@ -41,18 +41,18 @@ body.Section-Conversation{
       }
     }
     .Message{
-      color: $silver-sand;
+      color: $paragraph-text;
     }
   }
   .FormWrapper{
     .Button{
-      @extend %yellow-btn;
+      @extend %primary-btn;
     }
   }
   .page-sidebar{
     .Box{
       h4{
-        color: $silver-sand;
+        color: $page-headers;
       }
       &.InThisConversation{
         .PanelInfo{
@@ -67,7 +67,7 @@ body.Section-Conversation{
       &.AddPeople{
         .Buttons{
           .Button{
-            border-color: $daisy;
+            border-color: $primary-btn-border;
           }
         }
       }

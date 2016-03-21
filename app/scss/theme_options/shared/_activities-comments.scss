@@ -16,7 +16,7 @@
     .Delete{
       color: $silver-sand;
       &:hover{
-        color: $sunglow;
+        color: $link-border;
       }
     }
   }
@@ -25,7 +25,7 @@
       color: $silver-sand;
     }
     .Meta{
-      color: $dark-gray;
+      color: $meta-text;
       .AddComment{
         @extend %link;
       }
@@ -43,7 +43,7 @@
   }
 }
 .Activities .Activity .Meta:not(.Photo) a:hover{
-	border-color: $sunglow;
+	border-color: $link-border;
 }
 
 // Form header user name

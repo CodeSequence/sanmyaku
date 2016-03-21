@@ -6,9 +6,9 @@
 .Discussion{
   .Item-Body{
     .Message, .UserSignature{
-      color: $dark-gray;
+      color: $paragraph-text;
       h1, h2, h3, h4, h5, h6{
-        color: $dark-gray;
+        color: $page-headers;
       }
       a{
         @extend %link;

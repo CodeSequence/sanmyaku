@@ -1,0 +1,57 @@
+// _color-placeholders.scss - theme_options/dark/
+// This is where all placeholders reside inside the dark forum project
+////////////////////////////////////////////////////////////////////////////////
+
+
+// A tag links
+%link{
+  @include link-colors($link-text, $link-text-hover, $link-border);
+}
+
+// .InputBox
+%input-box{
+  @include input-boxes($input-box-text, $input-box-background, $input-box-border);
+}
+
+// Forms
+%forms{
+  @include form-colors($input-box-text, $input-box-background, $input-box-border);
+}
+
+// Buttons
+%primary-btn{
+  @include btn-color($primary-btn-background, $primary-btn-border, $primary-btn-text);
+  &:hover{
+    @include btn-color($primary-btn-background-hover, $primary-btn-background-hover, $primary-btn-text-hover);
+  }
+  &:focus{
+    @include btn-color(darken($primary-btn-background-hover, 15%), darken($primary-btn-background-hover, 15%), $primary-btn-text-hover);
+  }
+}
+%secondary-btn{
+  @include btn-color($secondary-btn-background, $secondary-btn-border, $secondary-btn-text);
+  &:hover{
+    @include btn-color($secondary-btn-background-hover, $secondary-btn-background-hover, $secondary-btn-text-hover);
+  }
+  &:focus{
+    @include btn-color(darken($secondary-btn-background-hover, 15%), darken($secondary-btn-background-hover, 15%), $secondary-btn-text-hover);
+  }
+}
+%gray-btn{
+  @include btn-color(transparent, transparent, $wan-white);
+  &:hover{
+    @include btn-color($light-oil, $light-oil, $wan-white);
+  }
+  &:focus, &:active{
+    @include btn-color($ship-gray, $ship-gray, $wan-white);
+  }
+}
+%cancel-btn{
+  @include btn-color(transparent, transparent, $wan-white);
+  &:hover{
+    @include btn-color($charcoal, $charcoal, $wan-white);
+  }
+  &:focus, &:active{
+    @include btn-color($armadillo, $armadillo, $wan-white);
+  }
+}

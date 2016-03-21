@@ -7,25 +7,25 @@
 // Footer Main Section layout
 .global-footer{
 	.footer-main{
-		background: $shark;
+		background: $footer-main-background;
 		@media screen and (min-width: 770px){
-			background: $shark url(/themes/vanilla-foundation/design/images/dark/footer-image.jpg) no-repeat center;
+			background: $footer-main-background url($footer-background-image) no-repeat center;
 		}
 	}
 }
 
 // General footer layout stuff
 .global-footer{
-	background: $lightblack;
+	background: $global-footer-background;
 	color: $white;
-	border-color: $charcoal;
+	border-color: $footer-border-top;
 }
 
 // Footer links
 .global-footer{
 	.footer-links{
 		a{
-			@extend %link;
+			@include link-colors($breadcrumb-text, $breadcrumb-text-hover, $breadcrumb-border);
 		}
 	}
 }
@@ -33,7 +33,7 @@
 // Footer button style
 .global-footer{
 	.goarmy-button{
-		border-color: $sunglow;
+		border-color: $link-border;
 		color: $seashell;
 	}
 }

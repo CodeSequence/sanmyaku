@@ -10,8 +10,21 @@
     }
     &:hover{
       .ConnectLabel{
-        border-color: $sunglow;
+        border-color: $link-border;
       }
     }
+  }
+}
+
+// Guest Box Styling
+.GuestBox{
+  h4{
+    color: $page-headers;
+  }
+  p{
+    color: $paragraph-text;
+  }
+  .Button{
+    @extend %secondary-btn;
   }
 }

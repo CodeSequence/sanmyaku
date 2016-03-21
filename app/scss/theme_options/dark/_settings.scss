@@ -1,7 +1,77 @@
 // _settings.scss - theme_options/dark/
+// This file holds all color variables for the dark theme
 ////////////////////////////////////////////////////////////////////////////////
+// Theme Name
+$theme-name: 'dark';
 
 // Theme Fonts
-$theme-font-light: $quicksand;
-$theme-font-normal: $open-sans;
-$theme-font-bold: $merriweather;
+$theme-font-light: $open-sans;
+$theme-font-normal: $josefin-sans;
+$theme-font-bold: $josefin-sans;
+
+// Theme Specific colors
+$body-background: $lightblack;
+
+// Top Bar
+$tab-bar-background: $onyx;
+$tab-bar-logo: '/themes/vanilla-foundation/design/images/#{$theme-name}/header_logo.png';
+$logo-width: 100px;
+$profile-photo-border: $midnight-blue;
+
+// Off canvas
+$off-canvas-background: $onyx;
+$off-canvas-background-hover: $oil;
+
+// Sub Header
+$sub-header-background: $lightblack;
+$sub-header-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/header-image.png';
+$search-input-border: $midnight-blue;
+
+// Breadcrumbs
+$breadcrumb-text: $white;
+$breadcrumb-text-hover: $white;
+$breadcrumb-border: $botticelli;
+$text-separator: $silver;
+
+// BoxFilter Colors
+$box-filter-background: $onyx;
+$side-nav-text: $silver;
+$side-nav-bg-hover: $midnight-blue;
+
+// General
+$paragraph-text: $nepal;
+
+// Buttons
+$primary-btn-text: $white;
+$primary-btn-border: $midnight-blue;
+$primary-btn-background: transparent;
+$primary-btn-text-hover: $white;
+$primary-btn-background-hover: $midnight-blue;
+
+$secondary-btn-text: $white;
+$secondary-btn-border: $nepal;
+$secondary-btn-background: transparent;
+$secondary-btn-text-hover: $midnight-blue;
+$secondary-btn-background-hover: $nepal;
+
+// Links
+$link-text: $white;
+$link-text-hover: $white;
+$link-border: $botticelli;
+
+// CheckBox
+$checkbox-border: $midnight-blue;
+
+$input-box-border: $midnight-blue;
+$input-box-background: $lightblack;
+$input-box-text: $nepal;
+
+// Discussion/Category views
+$meta-text: $nepal;
+$page-headers: $silver-sand;
+
+// Footer
+$footer-main-background: $shark;
+$footer-border-top: $shark;
+$footer-background-image: '/themes/vanilla-foundation/design/images/#{$theme-name}/footer-image.png';
+$global-footer-background: $body-background;

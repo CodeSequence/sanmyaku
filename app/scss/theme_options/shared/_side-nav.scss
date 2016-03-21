@@ -9,10 +9,13 @@
 	.FilterMenu{
 		 li{
 			a{
-				color: $dark-gray;
+				color: $side-nav-text;
+				&:hover, &:active, &:focus{
+					color: $white;
+				}
 			}
 			&:hover, &.Active{
-				background-color: $dark-oil;
+				background-color: $side-nav-bg-hover;
 				a{
 					color: $white;
 				}
@@ -31,16 +34,17 @@
 .BoxCategories, .BoxDiscussionSidebar,
 #SharedFingerprint, #FollowingPluginUsers{
 	h4{
-		color: $silver-sand;
+		color: $page-headers;
 	}
 	.PanelCategories, .PanelDiscussionSidebar,
 	.PanelInfo{
 		li{
+			border-color: transparent;
 			a{
-				color: $dark-gray;
+				color: $side-nav-text;
 			}
 			&:hover, &.Active{
-				background-color: $dark-oil;
+				background-color: $side-nav-bg-hover;
 				a{
 					color: $white;
 				}
@@ -59,7 +63,7 @@
 #SharedFingerprint{
 	h4 .Count{
 		background: transparent;
-		color: $silver-sand;
+		color: $paragraph-text;
 	}
 }
 
@@ -69,9 +73,9 @@
     color: $silver-sand;
   }
   p{
-    color: $mountain-mist;
+    color: $paragraph-text;
   }
   .Button{
-		@extend %sage-btn;
+		@extend %secondary-btn;
   }
 }

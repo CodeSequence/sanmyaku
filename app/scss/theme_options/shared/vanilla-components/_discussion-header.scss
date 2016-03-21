@@ -22,7 +22,7 @@
 .is-content .Discussion, .is-content .Comment{
   .Username{
     &:hover{
-      border-color: $sunglow;
+      border-color: $link-border;
     }
   }
   .DiscussionMeta{

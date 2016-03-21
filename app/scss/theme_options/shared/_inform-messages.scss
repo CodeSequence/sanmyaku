@@ -11,9 +11,9 @@
         @extend %link;
       }
       .CancelAction{
-        color: $dark-gray;
+        color: $paragraph-text;
         &:hover{
-          border-color: $sunglow;
+          border-color: $link-border;
         }
       }
     }

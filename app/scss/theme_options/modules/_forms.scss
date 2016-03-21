@@ -10,8 +10,8 @@
 }
 
 // Forms
-@mixin form-colors($color){
-  background: $lightblack;
+@mixin form-colors($color, $background, $border-color){
   color: $color;
-  border-color: $ship-gray;
+  background: $background;
+  border-color: $border-color;
 }

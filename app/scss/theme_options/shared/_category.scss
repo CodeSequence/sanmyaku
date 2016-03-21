@@ -27,7 +27,7 @@
 .CategoryList{
   .Item{
     .CategoryDescription{
-      color: $dark-gray;
+      color: $paragraph-text;
     }
   }
 }
@@ -41,7 +41,7 @@
         @extend %link;
       }
       b{
-        color: $dark-gray;
+        color: $paragraph-text;
       }
     }
   }

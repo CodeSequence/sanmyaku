@@ -4,7 +4,7 @@
 
 .onlineNow{
   h4{
-    color: $silver-sand;
+    color: $page-headers;
   }
   .PanelInfo{
     li{
@@ -21,7 +21,7 @@
         @include online-color($tier1);
       }
       &:after{
-        color: $mountain-mist;
+        color: $text-separator;
       }
     }
   }
