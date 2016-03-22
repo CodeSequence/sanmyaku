@@ -88,8 +88,11 @@
     margin-bottom: 0;
   }
   .FormWrapper{
-    margin: rem-calc(25);
     background-color: transparent;
+    margin: rem-calc(25 10);
+    @media #{$medium-up} {
+      margin: rem-calc(25);
+    }
   }
   .MessageForm{
     padding: rem-calc(15 10);

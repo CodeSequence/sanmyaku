@@ -51,6 +51,12 @@
   line-height: rem-calc(22);
 }
 
+%mobile-btn{
+  @media #{$small-only} {
+    width: 100%;
+  }
+}
+
 // Our own styles applied to the new-discussion button
 .Button.NewDiscussion,
 .BigButton.NewConversation,
@@ -60,6 +66,7 @@
   line-height: rem-calc(34);
 	margin: rem-calc(30);
 	width: calc(100% - #{rem-calc(60)});
+  @extend %mobile-btn;
 }
 
 .Button.SignInPopup,
@@ -81,6 +88,7 @@
     .Button{
       @extend %btn;
       margin-top: 0;
+      @extend %mobile-btn;
     }
   }
 }
@@ -153,6 +161,7 @@ body.Section-ConversationList.inbox{
     .Buttons{
       flex-wrap: wrap;
       flex-direction: row-reverse;
+      @extend %mobile-btn;
     }
   }
 }
@@ -171,6 +180,7 @@ body.Section-ConversationList.inbox{
       justify-content: flex-start;
       .Button{
         @extend %btn;
+        @extend %mobile-btn;
         &:hover{
           border: 2px solid;
         }
@@ -178,6 +188,37 @@ body.Section-ConversationList.inbox{
     }
   }
 }
+
+// Inbox New Message Buttons
+@media #{$small-only} {
+  .Conversations.Messages.inbox{
+    .BoxButtons.BoxNewConversation{
+      margin-right: rem-calc(10);
+      .Button.NewConversation{
+        width: 100%;
+      }
+    }
+    .page-sidebar .Button.BigButton.NewConversation{
+      display: none;
+    }
+  }
+}
+
+@media #{$small-only} {
+  .Conversations.Messages.Index{
+    .page-sidebar{
+      width: 100%;
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+      .Button.BigButton{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 
 // User Profile & signin view buttons
 .Profile.Section-EditProfile, .signin{
@@ -190,6 +231,18 @@ body.Section-ConversationList.inbox{
   .Buttons, p{
     .Button{
       @extend %btn;
+      @extend %mobile-btn;
+    }
+  }
+}
+
+// Fix Buttons spacing on small devices
+.Profile{
+  &.preferences, &.OnlineNow, &.quotes{
+    .Buttons{
+      @media #{$small-only}{
+        margin-right: rem-calc(10);
+      }
     }
   }
 }
@@ -205,6 +258,7 @@ body.Section-ConversationList.inbox{
   .IgnoreUserAction{
     .Ignore{
       @extend %btn;
+      @extend %mobile-btn;
     }
   }
 }

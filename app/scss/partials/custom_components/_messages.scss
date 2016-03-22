@@ -10,7 +10,10 @@ body.Section-Conversation{
   }
   .Conversation{
     .Meta{
-      margin-left: rem-calc(25);
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
       .Author{
         padding: 0;
         .Name{
@@ -22,9 +25,12 @@ body.Section-Conversation{
       }
     }
     .Message{
-      margin-left: rem-calc(85);
       font-size: rem-calc(18);
       padding-right: rem-calc(60);
+      margin-left: rem-calc(50);
+      @media #{$medium-up} {
+        margin-left: rem-calc(85);
+      }
     }
   }
   .CommentForm{
@@ -52,24 +58,36 @@ body.Section-Conversation{
     .Box{
       h4{
         padding-top: rem-calc(20);
-        margin-left: rem-calc(25);
+        margin-left: rem-calc(0);
+        @media #{$medium-up} {
+          margin-left: rem-calc(25);
+        }
       }
       &.InThisConversation{
         h4{
-          margin-left: rem-calc(25);
+          margin-left: 0;
+          @media #{$medium-up} {
+            margin-left: rem-calc(25);
+          }
         }
         .PanelInfo{
           li{
             margin: 0;
-            a .Conversation-User{
-              display: flex;
-              align-items: center;
-              .ProfilePhoto{
-                position: static;
+            a{
+              .Conversation-User{
+                display: flex;
+                align-items: center;
+                .ProfilePhoto{
+                  position: static;
+                }
+                .Username{
+                  margin-left: rem-calc(10);
+                  font-size: rem-calc(15);
+                }
               }
-              .Username{
-                margin-left: rem-calc(10);
-                font-size: rem-calc(15);
+              @media #{$small-only} {
+                padding-left: 0;
+                padding-right: 0;
               }
             }
           }
@@ -77,16 +95,28 @@ body.Section-Conversation{
       }
       &.AddPeople{
         .TextBoxWrapper{
-          margin: rem-calc(25);
+          margin: rem-calc(25 0);
+          @media #{$medium-up} {
+            margin: rem-calc(25);
+          }
           textarea{
             font-size: rem-calc(18);
           }
         }
         .Buttons{
-          margin-left: rem-calc(25);
+          margin-left: 0;
+          @media #{$medium-up} {
+            margin-left: rem-calc(25);
+          }
         }
       }
     }
+  }
+}
+
+.Conversation .Meta{
+  @media #{$small-only} {
+    margin-left: rem-calc(50);
   }
 }
 

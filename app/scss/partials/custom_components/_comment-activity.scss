@@ -128,3 +128,12 @@
     }
   }
 }
+
+// Activity View on Small Devices
+@media #{$small-only} {
+  .Activity.index.Section-ActivityList{
+    .Meta, .Excerpt, .Title{
+      padding-left: rem-calc(50);
+    }
+  }
+}
