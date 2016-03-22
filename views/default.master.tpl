@@ -60,6 +60,10 @@
         </div>
 
         <ul class="off-canvas-list">
+          {if !$User.SignedIn}
+            <li class="mobile-login">{link path="signin" text="Login" target="current"}</li>
+            <li class="mobile-login">{link path="register" text="Register" target="current"}</li>
+          {/if}
           <li><a href="{link path="home"}">Forum Home</a></li>
           {categories_link}
           {discussions_link}
