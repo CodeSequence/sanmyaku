@@ -111,25 +111,27 @@
   }
 
   // Fix CommentCount Icon Spacing on Mobile
-  .Discussions{
-    .Meta, .Options{
-      .CommentCount{
-        @media #{$small-only} {
-          &.MItem{
-            margin-left: rem-calc(-15);
-          }
+  @media #{$small-only} {
+    .Discussions{
+      .Meta, .Options{
+        .CommentCount.MItem{
+          margin-left: rem-calc(-15);
         }
       }
+      .Meta .CommentCount.MItem{
+        margin-left: rem-calc(-25);
+        padding-left: rem-calc(55);
+      }
     }
-  }
-  .CategoryList{
-    .Meta, .Options{
-      .CommentCount{
-        @media #{$small-only} {
-          &.MItem{
-            margin-left: rem-calc(-5);
-          }
+    .CategoryList{
+      .Meta, .Options{
+        .CommentCount.MItem{
+          margin-left: rem-calc(-5);
         }
+      }
+      .Meta .CommentCount.MItem{
+        margin-left: rem-calc(-30);
+        padding-left: rem-calc(70);
       }
     }
   }
