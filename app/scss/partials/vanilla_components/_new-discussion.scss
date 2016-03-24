@@ -3,6 +3,11 @@
 
 
 .DiscussionForm{
+  .Buttons{
+    @media #{$small-only} {
+      flex-direction: column;
+    }
+  }
   .P{
     label{
       font-size: rem-calc(18);
