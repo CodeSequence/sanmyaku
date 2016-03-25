@@ -252,3 +252,16 @@
     padding-right: rem-calc(125);
   }
 }
+
+// Fix RSS Button on Mobile
+@media #{$small-only} {
+  .Section-CategoryList{
+    .CommentCount{
+      z-index: 1;
+    }
+    .RSS{
+      z-index: 9999;
+      position: relative;
+    }
+  }
+}
