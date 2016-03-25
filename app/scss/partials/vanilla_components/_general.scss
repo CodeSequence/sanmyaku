@@ -111,25 +111,27 @@
   }
 
   // Fix CommentCount Icon Spacing on Mobile
-  .Discussions{
-    .Meta, .Options{
-      .CommentCount{
-        @media #{$small-only} {
-          &.MItem{
-            margin-left: rem-calc(-15);
-          }
+  @media #{$small-only} {
+    .Discussions{
+      .Meta, .Options{
+        .CommentCount.MItem{
+          margin-left: rem-calc(-15);
         }
       }
+      .Meta .CommentCount.MItem{
+        margin-left: rem-calc(-25);
+        padding-left: rem-calc(55);
+      }
     }
-  }
-  .CategoryList{
-    .Meta, .Options{
-      .CommentCount{
-        @media #{$small-only} {
-          &.MItem{
-            margin-left: rem-calc(-5);
-          }
+    .CategoryList{
+      .Meta, .Options{
+        .CommentCount.MItem{
+          margin-left: rem-calc(-5);
         }
+      }
+      .Meta .CommentCount.MItem{
+        margin-left: rem-calc(-30);
+        padding-left: rem-calc(70);
       }
     }
   }
@@ -248,5 +250,18 @@
   padding-right: rem-calc(10);
   @media #{$medium-up} {
     padding-right: rem-calc(125);
+  }
+}
+
+// Fix RSS Button on Mobile
+@media #{$small-only} {
+  .Section-CategoryList{
+    .CommentCount{
+      z-index: 1;
+    }
+    .RSS{
+      z-index: 9999;
+      position: relative;
+    }
   }
 }

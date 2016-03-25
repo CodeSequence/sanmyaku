@@ -7,7 +7,10 @@
 // Position the flyout box
 .OptionsMenu{
   .MenuItems{
-    left: rem-calc(2);
+    left: rem-calc(-60);
+    @media #{$medium-up} {
+      left: rem-calc(2);
+    }
   }
 }
 
@@ -15,8 +18,11 @@
 .OptionsMenu{
   .Flyout:before,
   .Flyout:after{
-    left: 9px;
+    left: rem-calc(72);
     right: auto;
+    @media #{$medium-up} {
+      left: rem-calc(9);
+    }
   }
 }
 
@@ -51,7 +57,10 @@
     }
     .OptionsMenu{
       .MenuItems{
-        left: rem-calc(-9);
+        left: rem-calc(-73);
+        @media #{$medium-up} {
+          left: rem-calc(-9);
+        }
       }
     }
   }
@@ -63,6 +72,19 @@
     right: rem-calc(10);
     @media #{$medium-up} {
       right: rem-calc(50);
+    }
+  }
+}
+
+// Discussion List Mobile Spacing
+@media #{$small-only} {
+  .Section-DiscussionList{
+    .Options .MenuItems{
+      left: rem-calc(-100);
+    }
+    .Flyout:before,
+    .Flyout:after{
+      left: rem-calc(112);
     }
   }
 }
