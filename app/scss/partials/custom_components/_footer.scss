@@ -83,7 +83,7 @@ $flogo-width: rem-calc(212) / 1.5;
 
 // Vanilla logo in footer
 .global-footer{
-	.vanilla-logo{
+	.footer-logo{
 		height: $flogo-height;
 		width: $flogo-width;
 		position: absolute;
@@ -121,7 +121,7 @@ $flogo-width: rem-calc(212) / 1.5;
 	}
 }
 
-.vanilla-logo{
+.footer-logo{
   width: 70px;
 }
 .pre-footer-links {

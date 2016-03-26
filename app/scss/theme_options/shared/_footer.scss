@@ -45,3 +45,11 @@
 		color: $tin;
 	}
 }
+
+// Footer Logo
+.global-footer{
+	.footer-logo{
+		background: url($footer-logo) no-repeat center;
+		background-size: contain;
+	}
+}

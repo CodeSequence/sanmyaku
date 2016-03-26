@@ -151,7 +151,7 @@
           {theme_partial name="footer"}
 
           <a href="http://vanillaforums.org">
-            <img src="/themes/vanilla-foundation/design/images/logo.vanilla.png" alt="Vanilla Forums Logo" class="vanilla-logo">
+            <div class="footer-logo"></div>
           </a>
 
           {asset name="Foot"}
