@@ -17,14 +17,14 @@
       padding-left: rem-calc(15);
     }
     .Button{
-      background: url(/themes/vanilla-foundation/design/images/icons/forum.search-icon.svg) no-repeat center;
+      background: url(/themes/sanmyaku/design/images/icons/forum.search-icon.svg) no-repeat center;
       top: rem-calc(15);
       right: rem-calc(15);
       height: rem-calc(20);
       width: rem-calc(20);
       transition: background .3s ease;
       &:hover{
-        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.search-icon.active.svg);
+        background-image: url(/themes/sanmyaku/design/images/icons/forum.search-icon.active.svg);
       }
     }
   }

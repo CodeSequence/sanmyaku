@@ -58,7 +58,7 @@ $flogo-width: rem-calc(212) / 1.5;
 		text-align: center;
 		height: calc(#{$footer-main-height} * 2);
 		@media #{$medium-up}{
-			background: url(/themes/vanilla-foundation/design/images/generic-subheader-bg.jpg) no-repeat center;
+			background: url(/themes/sanmyaku/design/images/generic-subheader-bg.jpg) no-repeat center;
 			background-size: cover;
 			height: $footer-main-height;
 		}

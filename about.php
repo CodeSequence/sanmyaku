@@ -2,9 +2,9 @@
     exit;
 }
 
-$ThemeInfo['vanilla-foundation'] = [
-  'Name'        => 'Zurb Foundation Theme',
-  'Description' => "A Zurb Foundation 5 Theme for vanilla forums",
+$ThemeInfo['sanmyaku'] = [
+  'Name'        => 'Sanmyaku',
+  'Description' => "A mountain theme using Zurb Foundation 5",
   'Version'     => '0.0.1',
   'Author'      => 'Samuel Hilson, Ryan Jordan',
   'AuthorEmail' => 'samrhilson@gmail.com',

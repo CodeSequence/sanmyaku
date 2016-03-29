@@ -95,7 +95,7 @@
     .Bookmark{
       float: left;
       margin-right: rem-calc(5);
-      background: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg) no-repeat center;
+      background: url(/themes/sanmyaku/design/images/icons/forum.bookmark-main.svg) no-repeat center;
       transition: all .3s ease;
       @media #{$small-only} {
         margin-top: rem-calc(10);
@@ -105,10 +105,10 @@
         display: none;
       }
       &:hover, &.Active, &.Active:hover, &.Bookmarked{
-        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark.active.svg);
+        background-image: url(/themes/sanmyaku/design/images/icons/forum.bookmark.active.svg);
       }
       &.Bookmarked:hover{
-        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.bookmark-main.svg);
+        background-image: url(/themes/sanmyaku/design/images/icons/forum.bookmark-main.svg);
       }
     }
   }
