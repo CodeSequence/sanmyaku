@@ -39,7 +39,7 @@
 
         <div class="right-menu-signedout">
           {link path="signin" text="Login" target="current"}
-          {theme_partial name="register"}
+          {register_link}
 
           <section class="right-small">
             <img class="avatar-placeholder" src="/themes/vanilla-foundation/design/images/avatar-placeholder.svg" alt="">
@@ -62,7 +62,7 @@
         <ul class="off-canvas-list">
           {if !$User.SignedIn}
             <li class="mobile-login">{link path="signin" text="Login" target="current"}</li>
-            <li class="mobile-login">{link path="register" text="Register" target="current"}</li>
+            <li class="mobile-login">{register_link}}</li>
           {/if}
           <li><a href="{link path="home"}">Forum Home</a></li>
           {categories_link}
