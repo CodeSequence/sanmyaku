@@ -12,7 +12,7 @@
   .Item .TitleWrap{
     margin-left: rem-calc(10);
     @media #{$medium-up} {
-      margin-left: rem-calc(85);
+      margin-left: rem-calc(25);
     }
   }
   .Meta{
@@ -72,7 +72,7 @@
     .Meta{
       width: 90%;
       @media #{$medium-up} {
-        margin-left: rem-calc(60);
+        margin-left: 0;
       }
     }
     &.Depth2{
@@ -117,5 +117,11 @@
 .ChildCategoryList{
   .Category{
     width: 100%;
+    .CategoryDescription{
+      margin-left: rem-calc(10);
+      @media #{$medium-up} {
+        margin-left: rem-calc(25);
+      }
+    }
   }
 }
