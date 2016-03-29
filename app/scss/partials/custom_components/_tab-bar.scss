@@ -9,6 +9,17 @@
 $hamburger-size: rem-calc(27);
 $profile-size: rem-calc(44);
 
+.tab-bar{
+	.title{
+		padding-left: 20px;
+		.logo{
+			width: $logo-width;
+			background: url($tab-bar-logo) no-repeat center;
+			background-size: contain;
+			text-indent: -99999px;
+		}
+	}
+}
 
 // Add menu icon to the tab-bar left toggle button
 .off-canvas-wrap{

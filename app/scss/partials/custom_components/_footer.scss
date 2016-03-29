@@ -93,9 +93,10 @@ $flogo-width: rem-calc(212) / 1.5;
 			top: calc(50% - #{$flogo-height} / 2);
 			right: rem-calc(40);
 		}
+		background: url($footer-logo) no-repeat center;
+		background-size: contain;
 	}
 }
-
 
 // Footer Copyright
 .global-footer{
@@ -124,6 +125,7 @@ $flogo-width: rem-calc(212) / 1.5;
 .footer-logo{
   width: 70px;
 }
+
 .pre-footer-links {
   li {
     display: inline-block;
