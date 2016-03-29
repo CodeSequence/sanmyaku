@@ -58,7 +58,7 @@ $flogo-width: rem-calc(212) / 1.5;
 		text-align: center;
 		height: calc(#{$footer-main-height} * 2);
 		@media #{$medium-up}{
-			background: url(/themes/vanilla-foundation/design/images/generic-subheader-bg.jpg) no-repeat center;
+			background: url(/themes/sanmyaku/design/images/generic-subheader-bg.jpg) no-repeat center;
 			background-size: cover;
 			height: $footer-main-height;
 		}
@@ -89,12 +89,12 @@ $flogo-width: rem-calc(212) / 1.5;
 		position: absolute;
 		top: calc(60% - #{$flogo-height} / 2);
 		right: calc(50% - #{$flogo-width} / 2);
+		background: url($footer-logo) no-repeat center;
+		background-size: contain;
 		@media #{$medium-up}{
 			top: calc(50% - #{$flogo-height} / 2);
 			right: rem-calc(40);
 		}
-		background: url($footer-logo) no-repeat center;
-		background-size: contain;
 	}
 }
 

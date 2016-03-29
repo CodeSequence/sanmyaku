@@ -78,10 +78,10 @@
         (MyBookmarks   , bookmark)
 				{
 				&.#{$iconClass}{
-					background: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.svg) no-repeat $iconLeftPad center;
+					background: url(/themes/sanmyaku/design/images/icons/forum.#{$iconName}.svg) no-repeat $iconLeftPad center;
           transition: all .3s ease;
 					&:hover, &.Active, &.Active:hover{
-						background-image: url(/themes/vanilla-foundation/design/images/icons/forum.#{$iconName}.active.svg);
+						background-image: url(/themes/sanmyaku/design/images/icons/forum.#{$iconName}.active.svg);
 					}
 				}
 			}

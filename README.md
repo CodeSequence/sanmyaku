@@ -1,16 +1,16 @@
-# Foundation for Vanilla
+# Sanmyaku: A theme for Vanilla
 
-[![Release](http://img.shields.io/github/release/codesequence/vanilla-foundation.svg)](https://github.com/codesequence/vanilla-foundation/releases) [![Dependency Status](https://gemnasium.com/CodeSequence/vanilla-foundation.svg)](https://gemnasium.com/CodeSequence/vanilla-foundation)
+[![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases) [![Dependency Status](https://gemnasium.com/CodeSequence/sanmyaku.svg)](https://gemnasium.com/CodeSequence/sanmyaku)
 
 ## Getting started
 
-To get started using Foundation for Vanilla, either:
+To get started using Sanmyaku for Vanilla, either:
 
-* [__Download the latest release__](https://github.com/codesequence/vanilla-foundation/releases)
+* [__Download the latest release__](https://github.com/codesequence/sanmyaku/releases)
 * Clone the repository directly into your Vanilla `themes` directory:
 
 ```sh
-$ git clone codesequence/vanilla-foundation foundation
+$ git clone codesequence/sanmyaku foundation
 ```
 
 ## Compiling assets
@@ -34,13 +34,13 @@ To use the watch process you will need to update your (`gulp/config.js`) `projec
 #### Theme Options
 The actual theme is contained in theme options that must be set through the admin dashboard.
 
-## [Issue tracking](https://github.com/codesequence/vanilla-foundation/issues)
+## [Issue tracking](https://github.com/codesequence/sanmyaku/issues)
 
 If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. Foundation for Vanilla won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
 
-[__File a new issue or feature request__](https://github.com/codesequence/vanilla-foundation/issues/new)
+[__File a new issue or feature request__](https://github.com/codesequence/sanmyaku/issues/new)
 
 ---
 Copyright 2014 © [CodeSequence](https://github.com/codesequence). Licensed under the terms of the [MIT License](LICENSE.md)
-Original developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
+Original Foundation theme developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
 

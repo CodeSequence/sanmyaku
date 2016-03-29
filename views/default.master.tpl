@@ -13,7 +13,7 @@
       <nav class="tab-bar">
 
         <section class="left-small left-off-canvas-toggle">
-          <img class="hamburger" src="/themes/vanilla-foundation/design/images/open-menu.svg" alt="">
+          <img class="hamburger" src="/themes/sanmyaku/design/images/open-menu.svg" alt="">
         </section>
 
         <section class="middle tab-bar-section TitleBar">
@@ -31,7 +31,7 @@
           </a>
 
           <section class="right-small right-off-canvas-toggle">
-            <img class="hamburger" src="/themes/vanilla-foundation/design/images/open-menu.svg" alt="">
+            <img class="hamburger" src="/themes/sanmyaku/design/images/open-menu.svg" alt="">
           </section>
         </div>
 
@@ -42,7 +42,7 @@
           {register_link}
 
           <section class="right-small">
-            <img class="avatar-placeholder" src="/themes/vanilla-foundation/design/images/avatar-placeholder.svg" alt="">
+            <img class="avatar-placeholder" src="/themes/sanmyaku/design/images/avatar-placeholder.svg" alt="">
           </section>
         </div>
         {/if}
@@ -54,7 +54,7 @@
           <div class="menu-top-bar-title">Main Menu</div>
           <div class="menu-top-bar-close">
             <span class="exit-off-canvas">
-              <img src="/themes/vanilla-foundation/design/images/close-x.svg" alt="">
+              <img src="/themes/sanmyaku/design/images/close-x.svg" alt="">
             </span>
           </div>
         </div>
@@ -86,7 +86,7 @@
           <div class="menu-top-bar-title">User Menu</div>
           <div class="menu-top-bar-close">
             <span class="exit-off-canvas">
-              <img src="/themes/vanilla-foundation/design/images/close-x.svg" alt="">
+              <img src="/themes/sanmyaku/design/images/close-x.svg" alt="">
             </span>
           </div>
         </div>

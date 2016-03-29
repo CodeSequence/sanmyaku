@@ -126,7 +126,7 @@ code.CodeInline{
     align-items: center;
     text-transform: uppercase;
     .ReactQuote{
-      background: url(/themes/vanilla-foundation/design/images/icons/quote.forum.svg) no-repeat center;
+      background: url(/themes/sanmyaku/design/images/icons/quote.forum.svg) no-repeat center;
       margin-right: rem-calc(8);
       height: rem-calc(13);
       width: rem-calc(13);
@@ -137,7 +137,7 @@ code.CodeInline{
       width: rem-calc(85);
       &:hover{
         .ReactQuote{
-          background-image: url(/themes/vanilla-foundation/design/images/icons/quote.forum.active.svg);
+          background-image: url(/themes/sanmyaku/design/images/icons/quote.forum.active.svg);
         }
       }
     }
@@ -150,12 +150,12 @@ code.CodeInline{
         content: '';
         width: rem-calc(13);
         height: rem-calc(13);
-        background: url(/themes/vanilla-foundation/design/images/icons/forum.flag.svg) no-repeat center;
+        background: url(/themes/sanmyaku/design/images/icons/forum.flag.svg) no-repeat center;
         margin-right: rem-calc(8);
         transition: all .3s ease;
       }
       &:hover:before{
-        background-image: url(/themes/vanilla-foundation/design/images/icons/forum.flag.active.svg);
+        background-image: url(/themes/sanmyaku/design/images/icons/forum.flag.active.svg);
       }
     }
   }
