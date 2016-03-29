@@ -8,7 +8,29 @@
 .Button.NewConversation,
 .BigButton.Popup,
 .BigButton.ClearConversation{
+  @extend %btn;
+  margin: 1.875rem;
   @extend %primary-btn;
+}
+
+// Sign In
+.Button{
+  &.SignInPopup, &.ApplyButton{
+    @extend %btn;
+    margin: 0;
+  }
+  &.ApplyButton{
+    margin-left: 0.9375;
+  }
+}
+
+// General Button Styling
+.DataListWrap, .FormWrapper,
+.AddPeople, .Popup{
+  .Buttons .Button{
+    @extend %btn;
+    margin-top: 0;
+  }
 }
 
 // General Button Colors
@@ -40,6 +62,9 @@ body.inbox{
 // Form Buttons
 .FormWrapper{
   .Buttons{
+    .Button{
+      height: 2.5rem;
+    }
     .CommentButton, .DiscussionButton{
       border-color: $primary-btn-border;
     }
@@ -88,6 +113,7 @@ body.inbox{
 .Profile.Section-EditProfile, .signin, .register{
   .Buttons, p{
     .Button{
+      @extend %btn;
       @extend %secondary-btn;
     }
   }
@@ -102,6 +128,7 @@ body.inbox{
 
 // SSO Sign in btn
 .GuestBox .P .Primary{
+  @extend %btn;
   @extend %secondary-btn;
 }
 
@@ -126,6 +153,7 @@ body.inbox{
 .Profile.ignore{
   .IgnoreUserAction{
     .Ignore{
+      @extend %btn;
       @extend %secondary-btn;
     }
   }
@@ -142,11 +170,13 @@ body.inbox{
 
 // Discussion Polls Button
 #DP_NextQuestion, #DP_AddOption{
+  @extend %btn;
   @extend %gray-btn;
 }
 .DP_AnswerForm{
   .Buttons{
     .Button{
+      @extend %btn;
       @extend %secondary-btn;
     }
   }
@@ -162,6 +192,7 @@ body.inbox{
 // Admin SignIn
 #Form_User_SignIn{
   .Buttons .Button{
+    @extend %btn;
     @extend %secondary-btn;
   }
 }
@@ -169,6 +200,14 @@ body.inbox{
 // Js Connect
 .connect .Connect{
   .ButtonContainer .Button{
+    @extend %btn;
     @extend %secondary-btn;
+  }
+}
+
+// Sign in Js Connect Buttons
+.signin .MultipleEntryMethods{
+  .Button{
+    @extend %btn;
   }
 }

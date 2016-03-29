@@ -8,7 +8,7 @@
 .global-footer{
 	.footer-main{
 		background: $footer-main-background;
-		@media screen and (min-width: 770px){
+		@media screen and (min-width: 48.13rem){
 			background: $footer-main-background url($footer-background-image) no-repeat center;
 		}
 	}

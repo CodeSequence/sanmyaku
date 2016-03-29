@@ -8,6 +8,7 @@
 // Main Content items wrapper
 .is-content, .BoxFilter, .BoxButtons, .BoxCategories, .Box{
 	box-shadow: 0px 2px 0px 0px rgba($black, 0.2);
+	background: $seashell;
 	margin-bottom: rem-calc(30);
   border-radius: rem-calc(2);
 }
