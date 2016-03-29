@@ -9,12 +9,6 @@
 
 // Fix icon spacing
 .CategoryList{
-  .Item .TitleWrap{
-    margin-left: rem-calc(10);
-    @media #{$medium-up} {
-      margin-left: rem-calc(25);
-    }
-  }
   .Meta{
     span{
       font-weight: normal;
@@ -69,28 +63,38 @@
 // Category Description
 .CategoryList{
   .Item{
-    .Meta{
-      width: 90%;
-      @media #{$medium-up} {
-        margin-left: 0;
-      }
-    }
-    &.Depth2{
-      .Meta{
-        margin-left: 0;
-      }
-    }
     .CategoryDescription{
       font-size: rem-calc(15);
       line-height: rem-calc(22);
       width: 75%;
-      margin-left: rem-calc(10);
-      @media #{$medium-up} {
-        margin-left: rem-calc(25);
+    }
+  }
+}
+
+// Category Spacing with/without category icons
+.CategoryList{
+  .Item .PhotoWrap-Category{
+    &.NoPhoto{
+      & + .TitleWrap, & ~ .Meta,
+      & ~ .CategoryDescription{
+        margin-left: rem-calc(10);
+        @media #{$medium-up}{
+          margin-left: rem-calc(25);
+        }
+      }
+    }
+    &:not(.NoPhoto){
+      & + .TitleWrap, & ~ .Meta,
+      & ~.CategoryDescription{
+        margin-left: rem-calc(10);
+        @media #{$medium-up} {
+          margin-left: rem-calc(85);
+        }
       }
     }
   }
 }
+
 
 // Child Categories
 .CategoryList{

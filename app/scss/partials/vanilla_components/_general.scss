@@ -55,13 +55,17 @@
     }
   }
 
+  // Discussion Meta Spacing
+  .Discussions .Meta{
+    padding-left: rem-calc(10);
+    @media #{$medium-up} {
+      padding-left: rem-calc(25);
+    }
+  }
+
   // Discussions/Category layout
   .Discussions, .CategoryList{
     .Meta{
-      padding-left: rem-calc(10);
-      @media #{$medium-up} {
-        padding-left: rem-calc(25);
-      }
       .Tag:first-child{
         padding-left: 0;
       }
