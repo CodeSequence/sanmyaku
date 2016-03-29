@@ -13,8 +13,8 @@ $ThemeInfo['vanilla-foundation'] = [
 
   'Options' => [
     'Styles' => [
+      'Light' => '%s',
       'Dark'   => '%s_dark',
-      'Light'   => '%s_light',
     ],
   ]
 ];
