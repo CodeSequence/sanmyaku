@@ -1,10 +1,14 @@
 <?php
 /**
- * determine if a register link is needed when using sso
+ * Checks if sso is enable and has a register link configured.
+ *
+ * @param  array  $params options
+ * @param  object $Smarty Smarty Instance
  * @return string
  */
-function dynamicRegisterLink()
+function smarty_function_register_link($params, &$Smarty)
 {
+    //$mobile = val('mobile', $params, '', true);
     $template = '<a href="%url" class="%class">%text</a>';
     if (strcasecmp(c('Garden.Registration.Method'), 'Connect') == 0) {
         $jsconnect = Gdn::SQL()
@@ -28,5 +32,3 @@ function dynamicRegisterLink()
         $template
     );
 }
-
-echo dynamicRegisterLink();
