@@ -28,10 +28,16 @@
 .Discussions,
 .CategoryList{
   .Item.Checked{
-    background: rgba($white, 0.03);
+    background: rgba($side-nav-bg-hover, 0.75);
     border-color: $link-border;
+    &:hover{
+      background: $side-nav-bg-hover;
+    }
   }
   .Item{
+    &.Read:hover{
+      background: rgba($side-nav-bg-hover, 0.85);
+    }
     &:hover{
       background: $side-nav-bg-hover;
     }
@@ -94,4 +100,10 @@ code.CodeInline{
 }
 .PageDescription{
   color: $silver-sand;
+}
+
+.Discussion .Item{
+  &:hover{
+    background: transparent;
+  }
 }

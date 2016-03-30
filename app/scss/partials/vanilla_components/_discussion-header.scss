@@ -20,7 +20,7 @@
     }
     h1{
       white-space: pre-wrap;
-      word-break: break-all;
+      word-break: break-word;
     }
     .Options{
       position: static;
@@ -45,6 +45,13 @@
   @media #{$small-only}{
     max-width: 50%;
   }
+}
+
+// Read/Unread States
+.Item{
+  &.Read{ background: rgba($black, 0.075); }
+  &.Checked{ background: rgba($black, 0.1); }
+  &:hover{ background: rgba($white, 0.2); }
 }
 
 // Discussion Header Username

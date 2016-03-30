@@ -63,7 +63,7 @@
 // Profile Photo
 .PhotoWrapLarge{
   background-color: $rangoon-green;
-  background: url(/themes/sanmyaku/design/images/dark/post-bg.png) no-repeat center;
+  background: url($profile-background-image) no-repeat center;
   .ChangePicture{
     @include link-colors($dark-gray, $white, $link-border);
   }
