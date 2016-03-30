@@ -77,6 +77,9 @@
         }
       }
       .Buttons{
+        .Button.Primary{
+          width: 5.625rem;
+        }
         .CreateAccount{
           color: $paragraph-text;
           a{

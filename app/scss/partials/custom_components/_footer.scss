@@ -69,7 +69,8 @@ $flogo-width: rem-calc(212) / 1.5;
 // Footer Button Style
 .global-footer{
 	.footer-button{
-		border: 2px solid;
+		border: 2px solid $black;
+		color: $black;
 		font-size: rem-calc(15);
 		padding: rem-calc(14 48 15 48);
 		border-radius: rem-calc(50);

@@ -36,21 +36,6 @@
   @include button-size($full-width: true);
 }
 
-%btn{
-  box-sizing: border-box;
-  background: transparent;
-  text-transform: uppercase;
-  border: 2px solid;
-  border-radius: rem-calc(4);
-  text-shadow: none;
-  box-shadow: none;
-  margin-top: rem-calc(20);
-  font-weight: 300;
-  font-size: rem-calc(14);
-  padding: rem-calc(4 20 6);
-  line-height: rem-calc(22);
-}
-
 %mobile-btn{
   @media #{$small-only} {
     width: 100%;
@@ -62,20 +47,10 @@
 .BigButton.NewConversation,
 .BigButton.Popup,
 .BigButton.ClearConversation{
-  @extend %btn;
   line-height: rem-calc(34);
-	margin: rem-calc(30);
+  margin: rem-calc(30);
 	width: calc(100% - #{rem-calc(60)});
   @extend %mobile-btn;
-}
-
-.Button.SignInPopup,
-.Button.ApplyButton{
-  @extend %btn;
-  margin: 0;
-  &.ApplyButton{
-    margin-left: rem-calc(15);
-  }
 }
 
 // General Button Styling
@@ -86,8 +61,6 @@
   .Buttons{
     text-align: left;
     .Button{
-      @extend %btn;
-      margin-top: 0;
       @extend %mobile-btn;
     }
   }
@@ -122,7 +95,7 @@ body.Section-ConversationList.inbox{
       margin-right: auto;
     }
     .Button{
-      height: rem-calc(40);
+      height: rem-calc(50);
       @media #{$small-only}{
         width: 100%;
         margin: rem-calc(5 0);
@@ -230,7 +203,6 @@ body.Section-ConversationList.inbox{
   }
   .Buttons, p{
     .Button{
-      @extend %btn;
       @extend %mobile-btn;
     }
   }
@@ -247,56 +219,18 @@ body.Section-ConversationList.inbox{
   }
 }
 
-.GuestBox{
-  .P .Primary{
-    @extend %btn;
-  }
-}
-
 // Profile Ignore Button
 .Profile.ignore{
   .IgnoreUserAction{
     .Ignore{
-      @extend %btn;
       @extend %mobile-btn;
     }
   }
 }
 
 // Discussion Polls Buttons
-#DP_NextQuestion, #DP_AddOption{
-  @extend %btn;
-}
 #DP_AddOption{
   margin-left: rem-calc(15);
-}
-.DP_AnswerForm{
-  .Buttons{
-    .Button{
-      @extend %btn;
-    }
-  }
-}
-
-// Admin Sign In
-#Form_User_SignIn{
-  .Buttons .Button{
-    @extend %btn;
-  }
-}
-
-// Js Connect Button
-.connect .Connect{
-  .ButtonContainer .Button{
-    @extend %btn;
-  }
-}
-
-// Sign in Js Connect buttons
-.signin .MultipleEntryMethods{
-  .Button{
-    @extend %btn;
-  }
 }
 
 // End Custom styles ////////////////////////////////////////////////////////////
