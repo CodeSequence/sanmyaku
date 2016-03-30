@@ -16,7 +16,7 @@
 // Emoji Styles
 .editor-dropdown{
   [class^="emoji"]:hover{
-    background: $daisy;
+    background: $profile-photo-border;
   }
 }
 
@@ -46,7 +46,7 @@
       border-color: $ship-gray;
     }
     &.image-input{
-      border-top-color: $daisy;
+      border-top-color: $profile-photo-border;
       .InputBox{
         @extend %input-box;
       }
