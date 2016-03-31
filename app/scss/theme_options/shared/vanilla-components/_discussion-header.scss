@@ -6,15 +6,6 @@
 .DataList{
   .Item {
     border-color: $charcoal;
-    &.Read{
-      background: transparent;
-      &.Checked{
-        background: rgba($white, 0.03);
-      }
-      &:hover{
-        background: rgba($white, 0.03);
-      }
-    }
   }
 }
 
