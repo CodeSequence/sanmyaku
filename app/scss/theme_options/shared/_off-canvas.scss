@@ -126,4 +126,14 @@
 		color: $paragraph-text;
 	}
 }
+
+.exit-off-canvas{
+	svg{
+		fill: $close-icon-color;
+		&:hover{
+			fill: darken($close-icon-color, 20%);
+		}
+	}
+}
+
 ////////////////////////////////////////////////////////////////////////////////
