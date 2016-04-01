@@ -54,7 +54,13 @@
           <div class="menu-top-bar-title">Main Menu</div>
           <div class="menu-top-bar-close">
             <span class="exit-off-canvas">
-              <img src="/themes/sanmyaku/design/images/close-x.svg" alt="">
+              <svg version="1.1" id="close-x1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="-296 388 18 18" enable-background="new -296 388 18 18" xml:space="preserve">
+              <g id="cross">
+              	<polygon points="-278,389.1 -279,388 -287,396 -295,388 -296,389.1 -288,397 -296,404.9 -295,406 -287,398 -279,406 -278,404.9
+              		-286,397 	"/>
+              </g>
+              </svg>
             </span>
           </div>
         </div>
@@ -86,7 +92,13 @@
           <div class="menu-top-bar-title">User Menu</div>
           <div class="menu-top-bar-close">
             <span class="exit-off-canvas">
-              <img src="/themes/sanmyaku/design/images/close-x.svg" alt="">
+              <svg version="1.1" id="close-x2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="-296 388 18 18" enable-background="new -296 388 18 18" xml:space="preserve">
+                <g id="cross">
+                	<polygon points="-278,389.1 -279,388 -287,396 -295,388 -296,389.1 -288,397 -296,404.9 -295,406 -287,398 -279,406 -278,404.9
+                		-286,397 	"/>
+                </g>
+              </svg>
             </span>
           </div>
         </div>

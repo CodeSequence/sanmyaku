@@ -41,6 +41,17 @@
 	}
 }
 
+.exit-off-canvas{
+	svg{
+		height: rem-calc(20);
+		width: rem-calc(20);
+		fill: $oil;
+		&:hover{
+			fill: lighten($oil, 30%);
+		}
+	}
+}
+
 
 
 
