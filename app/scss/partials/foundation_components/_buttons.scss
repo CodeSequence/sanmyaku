@@ -232,6 +232,15 @@ body.Section-ConversationList.inbox{
 #DP_AddOption{
   margin-left: rem-calc(15);
 }
+.DP_AnswerForm{
+  .Buttons{
+    margin-left: 0;
+  }
+}
+#DP_Remove{
+  padding-left: rem-calc(35);
+}
+
 
 // End Custom styles ////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
