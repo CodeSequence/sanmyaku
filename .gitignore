@@ -6,5 +6,5 @@ Thumbs.db
 /js
 icons.svg
 icons.woff
-design/*.css
+design/*
 .npmrc
