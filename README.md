@@ -1,4 +1,4 @@
-# Sanmyaku: A theme for Vanilla
+# Sanmyaku: A theme for Vanilla Forums
 
 [![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases) [![Dependency Status](https://gemnasium.com/CodeSequence/sanmyaku.svg)](https://gemnasium.com/CodeSequence/sanmyaku)
 
@@ -10,8 +10,14 @@ To get started using Sanmyaku for Vanilla, either:
 * Clone the repository directly into your Vanilla `themes` directory:
 
 ```sh
-$ git clone codesequence/sanmyaku
+$ git clone https://github.com/CodeSequence/sanmyaku.git
 ```
+## prerequisites
+You will need to following tools globally installed to build this theme:
+
+* node  ~v5.5.0
+* npm   ~3.3.12
+* bower ~1.4.1
 
 ## Compiling assets
 
@@ -19,7 +25,7 @@ Run `npm install` to get started.
 
 #### Build - `gulp build`
 Runs the default Gulp task which will compile all theme assets.
-* Javascripts will be concatenated and output to (js/custom.js).
+* JavaScripts will be concatenated and output to (js/custom.js).
 * Sass stylesheets will be compiled to (design/custom.css).
 * Sass theme-option stylesheets will be prefixed with `custom_` and compiled to (design/custom_themeoptionname.css).
 * Images are optimized and placed in (app/images).
@@ -32,7 +38,7 @@ Starts the build process and then uses browserync to watch and update the browse
 To use the watch process you will need to update your (`gulp/config.js`) `projectUrl` to be the url used for development.
 
 #### Theme Options
-The actual theme is contained in theme options that must be set through the admin dashboard.
+The theme comes pre-configured with a light and dark theme. Light will is the default and dark can be set under theme options in the admin panel.
 
 ## [Issue tracking](https://github.com/codesequence/sanmyaku/issues)
 
@@ -41,6 +47,7 @@ If you come across any bugs or if you have a feature request, please file an iss
 [__File a new issue or feature request__](https://github.com/codesequence/sanmyaku/issues/new)
 
 ---
-Copyright 2014 © [CodeSequence](https://github.com/codesequence). Licensed under the terms of the [MIT License](LICENSE.md)
-Original Foundation theme developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
+Copyright 2016 © [CodeSequence](https://github.com/codesequence). Licensed under the terms of the [MIT License](LICENSE.md)
+
+Based on the original Foundation theme developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
 
