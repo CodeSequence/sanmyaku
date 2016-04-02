@@ -9,6 +9,7 @@ $ThemeInfo['sanmyaku'] = [
   'Author'      => 'Ryan Jordan, Sam Hilson',
   'AuthorEmail' => 'ryjordan@gmail.com',
   'AuthorUrl'   => 'https://github.com/codesequence',
+  'License'     => 'MIT',
   'RequiredApplications' => ['Vanilla' => '2.2.x'],
 
   'Options' => [
