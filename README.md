@@ -40,6 +40,10 @@ To use the watch process you will need to update your (`gulp/config.js`) `projec
 #### Theme Options
 The theme comes pre-configured with a light and dark theme. Light will is the default and dark can be set under theme options in the admin panel.
 
+#### Mobile Theme
+Sanmyaku is built to be responsive to set this theme as your mobile theme you will need to manually edit the vanilla forums `conf/config.php`
+Update or add `$Configuration['Garden']['MobileTheme'] = 'sanmyaku';`.
+
 ## [Issue tracking](https://github.com/codesequence/sanmyaku/issues)
 
 If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. the Sanmyaku theme won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!

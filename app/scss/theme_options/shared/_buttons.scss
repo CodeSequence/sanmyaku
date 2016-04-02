@@ -170,8 +170,8 @@ body.inbox{
 
 // Discussion Polls Button
 #DP_NextQuestion, #DP_AddOption{
+  border: none;
   @extend %btn;
-  @extend %gray-btn;
 }
 .DP_AnswerForm{
   .Buttons{

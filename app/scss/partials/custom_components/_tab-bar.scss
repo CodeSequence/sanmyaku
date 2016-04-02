@@ -111,6 +111,10 @@ $profile-size: rem-calc(44);
 		position: absolute;
 		right: 0;
 		top: 0;
+		.header-login{
+			float: right;
+			margin-right: rem-calc(60);
+		}
 	}
 }
 

@@ -8,14 +8,33 @@
   padding: 0;
 }
 
+#DP_NextQuestion{
+  position: absolute;
+  margin-left: rem-calc(-10);
+}
+#DP_NextQuestion, #DP_PreviousQuestion, #DP_AddOption{
+  text-indent: -9999px;
+  &:hover{
+    border: none;
+  }
+}
+
 // Discussion Poll Answer Form
 .DP_AnswerForm, .DP_ResultsForm{
   font-size: rem-calc(24);
   line-height: rem-calc(34);
   font-weight: 300;
-  margin: rem-calc(0 25);
+  margin: rem-calc(0 25) !important;
+  padding: 0 !important;
+  border: none !important;
+  @media #{$medium-up} {
+    margin: rem-calc(0 85) !important;
+  }
   .DP_AnswerQuestions, .DP_ResultQuestions{
     .DP_AnswerQuestion, .DP_ResultQuestion{
+      &:not(:first-child){
+        padding-top: rem-calc(15);
+      }
       span{
         font-size: rem-calc(18);
         line-height: rem-calc(22);
@@ -42,9 +61,6 @@
         }
       }
     }
-  }
-  .Buttons{
-    margin-left: rem-calc(25);
   }
 }
 
