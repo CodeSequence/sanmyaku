@@ -52,11 +52,11 @@
 
 // Library
 // -----------------------------------------------------------------------------
-@import "foundation/components/switch";
+@import "foundation/components/switches";
 
 // -----------------------------------------------------------------------------
 
-@include exports("vanilla-switch") {
+@include exports("vanilla-switches") {
 
   // Nothing to see here... yet!
 

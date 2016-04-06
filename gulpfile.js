@@ -29,3 +29,5 @@ gulp.task('scripts', function () {
     .pipe(concat('custom.js'))
     .pipe(gulp.dest('js'));
 });
+
+gulp.task('default', ['scripts', 'sass']);
