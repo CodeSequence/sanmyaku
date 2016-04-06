@@ -38,16 +38,21 @@ Starts the build process and then uses browserync to watch and update the browse
 To use the watch process you will need to update your (`gulp/config.js`) `projectUrl` to be the url used for development.
 
 #### Theme Options
-The theme comes pre-configured with a light and dark theme. Light will is the default and dark can be set under theme options in the admin panel.
+The theme comes pre-configured with a light and dark theme. Light is the default and dark can be set under theme options in the admin panel.
 
 #### Mobile Theme
 Sanmyaku is built to be responsive. To set this theme as your mobile theme you will need to manually edit the vanilla forums `conf/config.php`
 
 Update or add `$Configuration['Garden']['MobileTheme'] = 'sanmyaku';`.
 
+#### Easily Customizable
+The theme is easy to customize. Simply update the variables located in the  `app/scss/theme_options/dark/_settings.scss` file to easily change fonts, colors & images. Another option is to copy the dark theme directory and create a new theme folder. You will then need to add the theme options name to `about.php` file after `'Dark'   => '%s_dark'`.
+
+If you have built an awesome color scheme and want to share it with the community, submit a pull request!
+
 ## [Issue tracking](https://github.com/codesequence/sanmyaku/issues)
 
-If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. the Sanmyaku theme won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
+If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. The Sanmyaku theme won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
 
 [__File a new issue or feature request__](https://github.com/codesequence/sanmyaku/issues/new)
 
@@ -55,4 +60,3 @@ If you come across any bugs or if you have a feature request, please file an iss
 Copyright 2016 © [CodeSequence](https://github.com/codesequence). Licensed under the terms of the [MIT License](LICENSE.md)
 
 Based on the original Foundation theme developed by [Kasper Kronborg Isager](http://kasperisager.github.io)
-
