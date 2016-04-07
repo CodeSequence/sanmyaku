@@ -46,7 +46,7 @@ Sanmyaku is built to be responsive. To set this theme as your mobile theme you w
 Update or add `$Configuration['Garden']['MobileTheme'] = 'sanmyaku';`.
 
 #### Easily Customizable
-The theme is easy to customize. Simply update the variables located in the  `app/scss/theme_options/dark/_settings.scss` file to easily change fonts, colors & images. Another option is to copy the dark theme directory and create a new theme folder. You will then need to add the theme options name to `about.php` file after `'Dark'   => '%s_dark'`.
+The theme is easy to customize. Simply update the variables located in the  `app/scss/theme_options/dark/_settings.scss` file to easily change fonts, colors & images. Another option is to copy the dark theme directory and create a new theme folder and sass file with the name of your theme that imports the new theme folder. You will then need to add the theme options name to `about.php` file after `'Dark'   => '%s_dark'`.
 
 If you have built an awesome color scheme and want to share it with the community, submit a pull request!
 
