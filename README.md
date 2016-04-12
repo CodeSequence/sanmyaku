@@ -50,6 +50,9 @@ The theme is easy to customize. Simply update the variables located in the  `app
 
 If you have built an awesome color scheme and want to share it with the community, submit a pull request!
 
+#### Supported Plugins
+Check out the list of [supported plugins](./plugins.md).
+
 ## [Issue tracking](https://github.com/codesequence/sanmyaku/issues)
 
 If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. The Sanmyaku theme won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
