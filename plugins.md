@@ -1,4 +1,4 @@
-The theme supports the following plugins:
+## Supported Plugins
 
 | Name     | Version | Notes |
 | -------- | ------- | ----- |
