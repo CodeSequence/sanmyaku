@@ -48,33 +48,44 @@
 }
 
 // Search Results
-#search-results{
-  .Item-Search{
-    padding: rem-calc(20 25);
-    transition: background .3s ease;
-    h3 a{
-      font-size: rem-calc(24);
+.Item.Item-Search{
+  padding: rem-calc(20 25);
+  transition: background .3s ease;
+  border-top: 1px solid;
+  list-style-type: none;
+  h3 a{
+    font-size: rem-calc(24);
+    font-weight: 300;
+    line-height: rem-calc(34);
+    padding-bottom: rem-calc(3);
+    border-bottom: 1px solid transparent;
+  }
+  .Media-Body{
+    span{
+      font-size: rem-calc(15);
       font-weight: 300;
-      line-height: rem-calc(34);
-      padding-bottom: rem-calc(3);
-      border-bottom: 1px solid transparent;
-    }
-    .Media-Body{
-      span{
-        font-size: rem-calc(15);
-        font-weight: 300;
-        line-height: rem-calc(22);
-        &.Bullet{
-          padding: rem-calc(0 5);
-          font-weight: 700;
-        }
-        &.MItem-Author{
-          a{
-            padding-bottom: rem-calc(3);
-            border-bottom: 1px solid transparent;
-          }
+      line-height: rem-calc(22);
+      &.Bullet{
+        padding: rem-calc(0 5);
+        font-weight: 700;
+      }
+      &.MItem-Author{
+        a{
+          padding-bottom: rem-calc(3);
+          border-bottom: 1px solid transparent;
         }
       }
     }
   }
+}
+
+// Removed to make sidebar display consistent when searching, instead of being
+// randomly placed in different places inside the view due to a vanilla search bug
+.Search .page-sidebar{
+  display: none;
+}
+
+// Fixes extra margin when vanilla search puts <lis>'s outside of the <ol>
+#search-results{
+  margin-bottom: 0;
 }

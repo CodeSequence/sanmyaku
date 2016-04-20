@@ -101,4 +101,11 @@
     @include clearfix;
   }
 
+  // Fixes Broken search result styling
+  .Search .PageControls {
+    border-top: 1px solid;
+    padding-top: rem-calc(20);
+    margin-top: 0;
+  }
+
 }

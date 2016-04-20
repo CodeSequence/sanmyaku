@@ -24,27 +24,27 @@
 }
 
 // Search Results
-#search-results.DataList{
-  .Item-Search{
-    &:hover{
-      background: rgba($white, 0.03);
-    }
-    h3 a{
-      @extend %link;
-    }
-    .Media-Body{
-      span{
+.Item.Item-Search{
+  background: $box-filter-background;
+  border-color: $charcoal;
+  &:hover{
+    background: rgba($white, 0.03);
+  }
+  h3 a{
+    @extend %link;
+  }
+  .Media-Body{
+    span{
+      color: $mountain-mist;
+      &.MItem-Author{
         color: $mountain-mist;
-        &.MItem-Author{
-          color: $mountain-mist;
-          a{
-            @extend %link;
-          }
+        a{
+          @extend %link;
         }
       }
-      .Summary{
-        color: $silver-sand;
-      }
+    }
+    .Summary{
+      color: $silver-sand;
     }
   }
 }
