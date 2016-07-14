@@ -22,17 +22,14 @@
 @import "foundation/foundation/components/offcanvas";
 // -----------------------------------------------------------------------------
 
+@import "../custom_components/tab-bar"; // This is the top-bar. It is called tab-bar with off-canvas
+@import "../custom_components/side-menu";
+
 // Not sure what this export wrapper does but leave it
 @include exports("vanilla-offcanvas") {
 
 // Start Custom styles //////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
-
-
-@import "../custom_components/tab-bar"; // This is the top-bar. It is called tab-bar with off-canvas
-
-@import "../custom_components/side-menu";
-
 
 // Fix the screen when menu is open
 .off-canvas-wrap{
