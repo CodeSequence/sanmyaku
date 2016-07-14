@@ -100,7 +100,7 @@ $profile-size: rem-calc(44);
 	.UserName{
 		position: absolute;
 		top: 0;
-		right: calc(#{$tabbar-height} + #{$profile-size} + #{rem-calc(22)} + #{rem-calc(22)});
+		right: $tabbar-height + $profile-size + rem-calc(22) + rem-calc(22);
 	}
 }
 
