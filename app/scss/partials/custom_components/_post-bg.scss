@@ -5,7 +5,7 @@
 .Comments, .Discussion{
   [class*="Tier-"]{
     &:not(.MessageForm){
-      background: url(/themes/sanmyaku/design/images/dark/post-bg.png) center;
+      background: url(images/dark/post-bg.png) center;
     }
     .CommentHeader, .DiscussionHeader{
       border-top: 1px solid;
