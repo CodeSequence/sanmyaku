@@ -129,21 +129,21 @@
   .PageTitle, .Comment{
     .Options{
       span.OptionsTitle{
-        background: url(/themes/sanmyaku/design/images/icons/forum.options.svg) no-repeat center;
+        background: url(images/icons/forum.options.svg) no-repeat center;
         height: rem-calc(15);
         width: rem-calc(16);
         transition: all .3s ease;
         &:hover, &.Active, &.Active:hover{
-          background-image: url(/themes/sanmyaku/design/images/icons/forum.options.active.svg);
+          background-image: url(images/icons/forum.options.active.svg);
         }
       }
       .Bookmark{
-        background: url(/themes/sanmyaku/design/images/icons/forum.bookmark-main.svg) no-repeat center;
+        background: url(images/icons/forum.bookmark-main.svg) no-repeat center;
         &:hover, &.Active, &.Active:hover, &.Bookmarked{
-          background-image: url(/themes/sanmyaku/design/images/icons/forum.bookmark.active.svg);
+          background-image: url(images/icons/forum.bookmark.active.svg);
         }
         &.Bookmarked:hover{
-          background-image: url(/themes/sanmyaku/design/images/icon/forum.bookmark-main.svg) no-repeat center;
+          background-image: url(images/icon/forum.bookmark-main.svg) no-repeat center;
         }
       }
     }
