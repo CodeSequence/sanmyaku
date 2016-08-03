@@ -12,7 +12,13 @@ class SanmyakuThemeHooks implements Gdn_IPlugin
      */
     public function setup()
     {
-        return true;
+      // Set some config settings for a table layout & mobile theme
+      saveToConfig(array(
+          'Vanilla.Discussions.Layout' => 'modern',
+          'Vanilla.Categories.Layout' => 'modern',
+          'Garden.MobileTheme' => 'sanmyaku'
+      ), null, true);
+      return true;
     }
     /**
      * This function hooks the Smarty init to add our directory
