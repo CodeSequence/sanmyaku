@@ -46,7 +46,7 @@ The theme comes pre-configured with a light and dark theme. Light is the default
 #### Mobile Theme
 Sanmyaku is built to be responsive. The mobile theme will automatically be set to Sanmyaku during install.
 
-####### To manually set this as your mobile theme:
+###### To manually set this as your mobile theme:
 Edit the vanilla forums `conf/config.php` file
 
 Update or add `$Configuration['Garden']['MobileTheme'] = 'sanmyaku';`.
