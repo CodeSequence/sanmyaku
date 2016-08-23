@@ -5,7 +5,7 @@
 $ThemeInfo['sanmyaku'] = [
   'Name'        => 'Sanmyaku',
   'Description' => "A theme featuring mountains using Zurb Foundation 5",
-  'Version'     => '1.0.0',
+  'Version'     => '1.0.4',
   'Author'      => 'Ryan Jordan, Sam Hilson',
   'AuthorEmail' => 'ryjordan@gmail.com',
   'AuthorUrl'   => 'https://github.com/codesequence',
