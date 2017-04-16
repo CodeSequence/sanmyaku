@@ -21,7 +21,7 @@
 | [No Index](https://vanillaforums.org/addon/noindex-plugin) | 1.0 |  |
 | [NoCaps](https://vanillaforums.org/addon/nocaps-plugin) | 1.0.0 |  |
 | [Old Posts](https://vanillaforums.org/addon/oldposts-plugin) | 0.1 |  |
-| [OnlineNow](https://vanillaforums.org/addon/onlinenow-plugin) | 3.4 | Requires: RolePriority v1.0 (Not Yet Released)|
+| [OnlineNow](https://vanillaforums.org/addon/onlinenow-plugin) | 3.4 | Requires: RolePriority v1.0 |
 | [Participated Discussions](https://vanillaforums.org/addon/participated-plugin) | 1.1.1 |  |
 | [Pockets](https://vanillaforums.org/addon/pockets-plugin) | 1.2 |  |
 | [Post Count](https://vanillaforums.org/addon/postcount-plugin) | 1.0.3 |  |
