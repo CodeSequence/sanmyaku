@@ -8,7 +8,7 @@
 | [Bump](https://vanillaforums.org/addon/bump-plugin) | 1.0 |     |
 | Civil Tongue Ex | 1.1 |  |
 | [Discussion Polls](https://vanillaforums.org/addon/discussionpolls-plugin) | 1.3.5 |  |
-| Discussion Sidebar | 1.0.1 |  |
+| Discussion Sidebar | 1.0.1 | (Not Yet Released) |
 | Emoji Sets | 1.1 |  |
 | [Following](https://vanillaforums.org/addon/following-plugin) | 0.1 |  |
 | ForumStats | 3.2 | (Not Yet Released) |
