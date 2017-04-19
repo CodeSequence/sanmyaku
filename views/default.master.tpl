@@ -13,7 +13,7 @@
       <nav class="tab-bar">
 
         <section class="left-small left-off-canvas-toggle">
-          <img class="hamburger" src="/themes/sanmyaku/design/images/open-menu.svg" alt="">
+          <img class="hamburger" src="{smart_asset destination="themes/sanmyaku/design/images/open-menu.svg"}" alt="">
         </section>
 
         <section class="middle tab-bar-section TitleBar">
@@ -31,7 +31,7 @@
           </a>
 
           <section class="right-small right-off-canvas-toggle">
-            <img class="hamburger" src="/themes/sanmyaku/design/images/open-menu.svg" alt="">
+            <img class="hamburger" src="{smart_asset destination="themes/sanmyaku/design/images/open-menu.svg"}" alt="">
           </section>
         </div>
 
@@ -42,7 +42,7 @@
           {register_link}
 
           <section class="right-small">
-            <img class="avatar-placeholder" src="/themes/sanmyaku/design/images/avatar-placeholder.svg" alt="">
+            <img class="avatar-placeholder" src="{smart_asset destination="themes/sanmyaku/design/images/avatar-placeholder.svg"}" alt="">
           </section>
         </div>
         {/if}
