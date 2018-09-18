@@ -1,6 +1,7 @@
 # Sanmyaku: A theme for Vanilla Forums
 
-[![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases) [![Dependency Status](https://gemnasium.com/CodeSequence/sanmyaku.svg)](https://gemnasium.com/CodeSequence/sanmyaku)
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+[![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases)
 
 ## [Preview the theme!](http://sanmyaku.krjordan.co/index.php?p=/)
 A test forum has been set up to provide a working [preview](http://sanmyaku.krjordan.co/index.php?p=/) for the theme.
