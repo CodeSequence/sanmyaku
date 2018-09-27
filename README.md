@@ -11,10 +11,12 @@ A test forum has been set up to provide a working [preview](http://sanmyaku.krjo
 To get started using Sanmyaku for Vanilla, either:
 
 * [__Download the latest release__](https://github.com/codesequence/sanmyaku/releases)
-* Clone the repository directly into your Vanilla `themes` directory:
+* Clone the repository directly into your Vanilla `themes` directory and build the project:
 
 ```sh
 $ git clone https://github.com/CodeSequence/sanmyaku.git
+$ cd sanmyaku
+$ gulp build
 ```
 ## prerequisites
 You will need to following tools globally installed to build this theme:
