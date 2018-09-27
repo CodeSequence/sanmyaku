@@ -71,7 +71,7 @@ function formatBreadcrumbs($Data, $HomeLink = true, $Options = [])
  */
 function smarty_function_foundation_breadcrumbs($Params, &$Smarty)
 {
-    $breadcrumbs = $Smarty->Controller->Data('Breadcrumbs');
+    $breadcrumbs = Gdn::controller()->data('Breadcrumbs');
     if (!is_array($breadcrumbs)) {
         $breadcrumbs = [];
     }
