@@ -16,6 +16,7 @@ To get started using Sanmyaku for Vanilla, either:
 ```sh
 $ git clone https://github.com/CodeSequence/sanmyaku.git
 $ cd sanmyaku
+$ npm install
 $ gulp build
 ```
 ## prerequisites
