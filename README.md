@@ -1,6 +1,6 @@
 # Sanmyaku: A theme for Vanilla Forums
 
-[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/CodeSequence/sanmyaku/issues/59)
 [![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases)
 
 ## [Preview the theme!](http://sanmyaku.krjordan.co/index.php?p=/)
