@@ -29,8 +29,6 @@ class SanmyakuThemeHooks implements Gdn_IPlugin
      */
     public function gdn_smarty_init_handler($sender)
     {
-        // add directory "/themes/MyTheme/SmartyPlugins/"
-        $sender->plugins_dir[] = dirname(__FILE__).DS.'SmartyPlugins';
+        $sender->addPluginsDir(__DIR__.'/SmartyPlugins');
     }
-    // whatever...
 }
