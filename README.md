@@ -3,9 +3,6 @@
 [![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/CodeSequence/sanmyaku/issues/59)
 [![Release](http://img.shields.io/github/release/codesequence/sanmyaku.svg)](https://github.com/codesequence/sanmyaku/releases)
 
-## [Preview the theme!](http://sanmyaku.krjordan.co/index.php?p=/)
-A test forum has been set up to provide a working [preview](http://sanmyaku.krjordan.co/index.php?p=/) for the theme.
-
 ## Getting started
 
 To get started using Sanmyaku for Vanilla, either:
